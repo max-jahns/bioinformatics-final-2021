@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=reformat
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=katelane@mit.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=180G
+#SBATCH --time=08:00:00
+#SBATCH --output=reformat_%j.log
+#export OMP_NUM_THREADS=36
+
+reformat.sh unmappedonly in=diatom_reads_out.sam out=metagenome_reads.fa
+
