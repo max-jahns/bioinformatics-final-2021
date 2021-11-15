@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=flash
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=katelane@mit.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=180G
+#SBATCH --time=08:00:00
+#SBATCH --output=flash_%j.log
+#export OMP_NUM_THREADS=36
+
+for i in SRR10420346 SRR10420347 SRR10420348 SRR10420349 SRR10420350 SRR10420351 SRR10420352 SRR10420353
+do
+flash ${i}_1.trimmed.fastq.gz ${i}_2.trimmed.fastq.gz
+done
