@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=trim_data
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=katelane@mit.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=180G
+#SBATCH --time=08:00:00
+#SBATCH --output=trim_data_%j.log
+#export OMP_NUM_THREADS=36
+
+trimmomatic PE -threads 36 SRR10411456_1.fastq  SRR10411456_2.fastq SRR10411456_1.trimmed.fastq.gz SRR10411456_1un.trimmed.fastq.gz SRR10411456_2.trimmed.fastq.gz SRR10411456_2un.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:40:15 MINLEN:75
+
+

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=bbmap
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=katelane@mit.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=180G
+#SBATCH --time=08:00:00
+#SBATCH --output=bbmap_%j.log
+#export OMP_NUM_THREADS=36
+
+bbmap.sh ref=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/diatom_genome/GCA_014885115.2_ASM1488511v2_genomic.fna in=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/SRR10411456_1.trimmed.fastq.gz in=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/SRR10411456_2.trimmed.fastq.gz out=diatom_reads_out.sam

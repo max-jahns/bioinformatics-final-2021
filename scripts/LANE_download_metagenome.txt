@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=download_data
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=katelane@mit.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=180G
+#SBATCH --time=08:00:00
+#SBATCH --output=download_data_%j.log
+#export OMP_NUM_THREADS=36
+
+fasterq-dump --split-3 --verbose -O sra/ SRR10411456
+
+
