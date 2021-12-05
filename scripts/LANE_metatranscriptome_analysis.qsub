@@ -57,6 +57,20 @@ make the command be the outputis in the clean_Data folder
 #index is available in /tools/ directory, make sure to download there
 
 
-##Map
+##Map RNA to metagenome
+
+#concatenate genomes
+for i in *fna
+do
+cat $i >> all.fa
+done
+
+#bowtie2
+mkdir bt2 #create index directory
+bowtie2-build all.fa bt2/all.fa #create index
+
+
+
+
 
 
