@@ -49,6 +49,10 @@ bowtie2 -x bt2/diatom.fa -1 /vortexfs1/omics/env-bio/collaboration/jahala/data/r
 (jahala_clean_metagenome) [katherine.lane@poseidon-l2 sra]$ mv bowtie_metagenome_host_removed.2 bowtie_metagenome_host_removed.2.fq
 (jahala_clean_metagenome) [katherine.lane@poseidon-l2 sra]$ mv bowtie_metagenome_host_removed.1 bowtie_metagenome_host_removed.1.fq
 
+##Determine Taxonomic Composition of Metagenome
+Kaiju
+ wget https://kaiju.binf.ku.dk/database/kaiju_db_refseq_2021-02-26.tgz
+
 ##Assembly
 megahit
 
