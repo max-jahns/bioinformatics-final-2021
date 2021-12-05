@@ -16,6 +16,8 @@
 #Note - This script can be broken into parts in order to run on cluster if jobs must be shorter than 48hrs.
 
 ##Create conda environment
+conda env create -f LANE_metatranscriptome.yml
+
 
 ##Activate conda environment:
 conda activate metatranscriptome
