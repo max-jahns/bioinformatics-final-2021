@@ -45,7 +45,20 @@ done
 #un is unpaired output, TruSeq3-PE.fa is present in the raw_data/metagenome/ directory and in the the /tools/ directory for reference
 
 ##Filter and Remove Diatom Reads
+bowtie2 -x bt2/diatom.fa -1 /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/SRR10411456_1.trimmed.fastq.gz -2 /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/SRR10411456_2.trimmed.fastq.gz --un-conc bowtie_metagenome_host_removed
+(jahala_clean_metagenome) [katherine.lane@poseidon-l2 sra]$ mv bowtie_metagenome_host_removed.2 bowtie_metagenome_host_removed.2.fq
+(jahala_clean_metagenome) [katherine.lane@poseidon-l2 sra]$ mv bowtie_metagenome_host_removed.1 bowtie_metagenome_host_removed.1.fq
 
+##Assembly
+megahit
 
-##Map
+##Calculate Coverage
+#map reads to assembly
+
+##Bin Genomes
+metabat2
+
+#Assess Genomes
+checkm
+
 
