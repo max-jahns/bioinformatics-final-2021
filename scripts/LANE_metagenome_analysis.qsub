@@ -59,6 +59,9 @@ megahit
 metabat2
 
 #Assess Genomes
-checkm
+#to reduce redundancy in conda environments, use the checkm install in the MAGS environment
+conda deactivate
+conda activate MAGS
+
 
 
