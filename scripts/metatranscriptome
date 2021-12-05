@@ -1,0 +1,10 @@
+name: stacks
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - stacks=2.55
+  - eigensoft=7.2.1
+  - sra-tools=2.11.0
+prefix: /vortexfs1/home/katherine.lane/.conda/envs/stacks
