@@ -36,25 +36,15 @@ done
 
 
 ##Trim Reads
-cd ${rootdir}/data/raw_data/metatranscriptome
+cd ${rootdir}/data/raw_data/metagenome
 
-for i in `cat ../access_list_mt.txt`
+for i in `cat ../access_list_mg.txt`
 do
 trimmomatic PE -threads 36 ${i}_1.fastq  ${i}_2.fastq ${i}_1.trimmed.fastq.gz ${i}_1un.trimmed.fastq.gz ${i}_2.trimmed.fastq.gz ${i}_2un.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:40:15 MINLEN:75
 done
-#un is unpaired output, TruSeq3-PE.fa is present in the raw_data/metatranscriptome/ directory and in the the /tools/ directory for reference
+#un is unpaired output, TruSeq3-PE.fa is present in the raw_data/metagenome/ directory and in the the /tools/ directory for reference
 
-##Merge Paired Ends
-for i in `cat ../access_list.txt`
-do
-flash -o $i ${i}_1.trimmed.fastq.gz ${i}_2.trimmed.fastq.gz
-done
-
-##Remove rRNA reads
-SortMeRNA
-make the command be the outputis in the clean_Data folder
-
-#index is available in /tools/ directory, make sure to download there
+##Filter and Remove Diatom Reads
 
 
 ##Map
