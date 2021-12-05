@@ -78,6 +78,5 @@ conda activate MAGS
 
 cd ${rootdir}/d]
 checkm lineage_wf --pplacer_threads 1 --tab_table -t 16 -x fna ${rootdir}/data/raw_data/MAGS/ ${rootdir}/data/raw_data/MAGS/checkm_results
-tail -9 checkm*.log | head -7 > checkm_stats.tsv
-
+ tail -18 checkm*.log | head -16 > checkm_stats.tsv
 
