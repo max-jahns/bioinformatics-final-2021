@@ -8,7 +8,7 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=180G
 #SBATCH --time=48:00:00
-#SBATCH --output=metatranscriptome_%j.log
+#SBATCH --output=metagenome%j.log
 #export OMP_NUM_THREADS=36
 
 #Run the setup.sh script first
