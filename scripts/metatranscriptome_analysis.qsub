@@ -1,0 +1,58 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=metatranscriptome
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=katelane@mit.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=180G
+#SBATCH --time=48:00:00
+#SBATCH --output=metatranscriptome_%j.log
+#export OMP_NUM_THREADS=36
+
+git clone 
+#Note - This script can be broken into parts in order to run on cluster if jobs must be shorter than 48hrs.
+
+##Create conda environment
+
+#activate conda environment:
+conda activate metatranscriptome
+
+#define rootdir on your computing environment, this is the directory if you type `pwd` inside the directory from cloning this repo
+rootdir=
+
+
+cd ${rootdir}/data/raw_data/
+##Download Data
+for i in `cat  access_list.txt`
+do
+fasterq-dump --split-3 --verbose -O metatranscriptome/ $i
+done
+#access list is present in /tools/ directory
+
+##Trim Reads
+cd ${rootdir}/data/raw_data/metatranscriptome
+
+for i in `cat ../access_list.txt`
+do
+trimmomatic PE -threads 36 ${i}_1.fastq  ${i}_2.fastq ${i}_1.trimmed.fastq.gz ${i}_1un.trimmed.fastq.gz ${i}_2.trimmed.fastq.gz ${i}_2un.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:40:15 MINLEN:75
+done
+#un is unpaired output, TruSeq3-PE.fa is present in the raw_data/metatranscriptome/ directory and in the the /tools/ directory for reference
+
+##Merge Paired Ends
+for i in `cat ../access_list.txt`
+do
+flash -o $i ${i}_1.trimmed.fastq.gz ${i}_2.trimmed.fastq.gz
+done
+
+##Remove rRNA reads
+SortMeRNA
+make the command be the outputis in the clean_Data folder
+
+#index is available in /tools/ directory, make sure to download there
+
+
+##Map
+
+
