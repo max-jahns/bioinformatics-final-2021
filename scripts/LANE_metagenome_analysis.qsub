@@ -55,14 +55,22 @@ Kaiju
 
 ##Assembly
 megahit
+megahit -t 36 -o megahit_assembly2 -1 bowtie_metagenome_host_removed.1.fq -2 bowtie_metagenome_host_removed.2.fq
 
 ##Calculate Coverage
 #map reads to assembly
+dir=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra
+bwa index ${dir}/megahit_assembly2/final.contigs.fa
+bwa mem -t 48 ${dir}/megahit_assembly2/final.contigs.fa ${dir}/bowtie_metagenome_host_removed.1.fq ${dir}/bowtie_metagenome_host_removed.2.fq > aln-pe.sam
+samtools sort -@48 aln-pe.sam -o aln-pe.sorted.bam
+
 
 ##Bin Genomes
 metabat2
+jgi_summarize_bam_contig_depths --outputDepth depth.txt aln-pe.sorted.bam
+metabat2 -i final.contigs.fa -a depth.txt -o bins_dir/bin
 
-#Assess Genomes
+##Assess Genomes
 #to reduce redundancy in conda environments, use the checkm install in the MAGS environment
 conda deactivate
 conda activate MAGS
@@ -70,4 +78,5 @@ conda activate MAGS
 cd ${rootdir}/d]
 checkm lineage_wf --pplacer_threads 1 --tab_table -t 16 -x fna ${rootdir}/data/raw_data/MAGS/ ${rootdir}/data/raw_data/MAGS/checkm_results
 tail -9 checkm*.log | head -7 > checkm_stats.tsv
+
 
