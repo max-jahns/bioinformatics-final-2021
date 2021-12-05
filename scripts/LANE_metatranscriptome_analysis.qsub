@@ -32,7 +32,7 @@ for i in `cat  access_list_mt.txt`
 do
 fasterq-dump --split-3 --verbose -O metatranscriptome/ $i
 done
-#access list is present in /tools/ directory, and in /data/raw_data/ directory. Accession list is also here: SRR10420346 SRR10420347 SRR10420348 SRR10420349 SRR10420350 SRR10420351 SRR10420352 SRR10420353 SRR10411456
+#access list is present in /tools/ directory, and in /data/raw_data/ directory. Accession list is also here: SRR10420346 SRR10420347 SRR10420348 SRR10420349 SRR10420350 SRR10420351 SRR10420352 SRR10420353 
 
 
 ##Trim Reads
