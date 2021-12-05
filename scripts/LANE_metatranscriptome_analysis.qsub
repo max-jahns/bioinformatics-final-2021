@@ -11,32 +11,32 @@
 #SBATCH --output=metatranscriptome_%j.log
 #export OMP_NUM_THREADS=36
 
-#Clone this repo
-git clone git@github.com:max-jahns/bioinformatics-final-2021.git
+#Run the setup.sh script first
 
 #Note - This script can be broken into parts in order to run on cluster if jobs must be shorter than 48hrs.
 
 ##Create conda environment
 
-#activate conda environment:
+##Activate conda environment:
 conda activate metatranscriptome
 
-#define rootdir on your computing environment, this is the directory if you type `pwd` inside the directory from cloning this repo
-rootdir=
+#Define rootdir on your computing environment, this is the directory if you type `pwd` inside the directory from cloning this repo. For example, on the Poseidon HPC:
+rootdir=/vortexfs1/omics/env-bio/collaboration/jahala/
 
 
-cd ${rootdir}/data/raw_data/
 ##Download Data
-for i in `cat  access_list.txt`
+cd ${rootdir}/data/raw_data/
+for i in `cat  access_list_mt.txt`
 do
 fasterq-dump --split-3 --verbose -O metatranscriptome/ $i
 done
-#access list is present in /tools/ directory
+#access list is present in /tools/ directory, and in /data/raw_data/ directory. Accession list is also here: SRR10420346 SRR10420347 SRR10420348 SRR10420349 SRR10420350 SRR10420351 SRR10420352 SRR10420353 SRR10411456
+
 
 ##Trim Reads
 cd ${rootdir}/data/raw_data/metatranscriptome
 
-for i in `cat ../access_list.txt`
+for i in `cat ../access_list_mt.txt`
 do
 trimmomatic PE -threads 36 ${i}_1.fastq  ${i}_2.fastq ${i}_1.trimmed.fastq.gz ${i}_1un.trimmed.fastq.gz ${i}_2.trimmed.fastq.gz ${i}_2un.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:40:15 MINLEN:75
 done
