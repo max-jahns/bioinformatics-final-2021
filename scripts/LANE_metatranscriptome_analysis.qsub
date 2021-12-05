@@ -28,7 +28,7 @@ rootdir=/vortexfs1/omics/env-bio/collaboration/jahala/
 
 ##Download Data
 cd ${rootdir}/data/raw_data/
-for i in `cat  access_list_mt.txt`
+for i in `cat  ${rootdir}/data/raw_data/access_list_mt.txt`
 do
 fasterq-dump --split-3 --verbose -O metatranscriptome/ $i
 done
@@ -38,40 +38,57 @@ done
 ##Trim Reads
 cd ${rootdir}/data/raw_data/metatranscriptome
 
-for i in `cat ../access_list_mt.txt`
+for i in `cat  ${rootdir}/data/raw_data/access_list_mt.txt`
 do
 trimmomatic PE -threads 36 ${i}_1.fastq  ${i}_2.fastq ${i}_1.trimmed.fastq.gz ${i}_1un.trimmed.fastq.gz ${i}_2.trimmed.fastq.gz ${i}_2un.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:40:15 MINLEN:75
 done
 #un is unpaired output, TruSeq3-PE.fa is present in the raw_data/metatranscriptome/ directory and in the the /tools/ directory for reference
 
+
 ##Merge Paired Ends
-for i in `cat ../access_list.txt`
+for i in `cat  ${rootdir}/data/raw_data/access_list_mt.txt`
 do
 flash -o $i ${i}_1.trimmed.fastq.gz ${i}_2.trimmed.fastq.gz
 done
 
+
 ##Remove rRNA reads
-SortMeRNA
-make the command be the outputis in the clean_Data folder
+for i in `cat  ${rootdir}/data/raw_data/access_list_mt.txt`
+do
+idx=${rootdir}/tools/sortmerna
+sortmerna --ref ${idx}/silva-euk-18s-id95.fasta,${idx}/db1.idx:${idx}/silva-euk-28s-id98.fasta,${idx}/db2.idx \
+--ref ${idx}/rfam-5.8s-database-id98.fasta,${idx}/db3.idx:${idx}/rfam-5s-database-id98.fasta,${idx}/db4.idx \
+--ref ${idx}/silva-arc-16s-id95.fasta,${idx}/db5.idx:${idx}/silva-arc-23s-id98.fasta,${idx}/db6.idx \
+--ref ${idx}/silva-bac-16s-id90.fasta,${idx}/db7.idx:${idx}/silva-bac-23s-id98.fasta,${idx}/db8.idx \
+--reads ${rootdir}/data/raw_data/metatranscriptome/${i}.extendedFrags.fastq --sam --num_alignments 1 --fastx --aligned ${rootdir}/data/raw_data/metatranscriptome/out_${i}_aligned_rRNA.fq --other ${rootdir}/data/clean_data/metatranscriptome/out_${i}_filtered_rRNA.fq \
+-a 36 -m 180 -v
+done
+=
 
 #index is available in /tools/ directory, make sure to download there
 
 
 ##Map RNA to metagenome
+#keep directory names short with dx_dir
+dx_dir=${rootdir}/analysis/metatranscriptome_diff_express/
 
 #concatenate genomes
-for i in *fna
+for i in ${rootdir}/data/raw_data/MAGS/*fna
 do
-cat $i >> all.fa
+cat $i >> ${dxdir}/all.fa
 done
 
 #bowtie2
-mkdir bt2 #create index directory
-bowtie2-build all.fa bt2/all.fa #create index
+cd ${dx_dir}
+mkdir ${dx_dir}/bt2 #create index directory
+bowtie2-build ${dx_dir}/all.fa ${dx_dir}/bt2/all.fa #create index
 
-for i in `cat ../access_list_mt.txt`
+for i in `cat  ${rootdir}/data/raw_data/access_list_mt.txt`
 do
-bowtie2 -x bt2/all.fa -U /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metatranscriptome/sra/${i}.extendedFrags.fastq -S ${i}_mapped_all.sam
+bowtie2 -x dx_dir/bt2/all.fa -U ${rootdir}/data/raw_data/metatranscriptome/${i}.extendedFrags.fastq -S ${dx_dir}/${i}_mapped_all.sam
+
+
+
 
 
 
