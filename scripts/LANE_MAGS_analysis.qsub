@@ -1,0 +1,36 @@
+#!/bin/bash
+
+#SBATCH --partition=compute
+#SBATCH --job-name=MAGS
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=katelane@mit.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=180G
+#SBATCH --time=48:00:00
+#SBATCH --output=MAGS_%j.log
+#export OMP_NUM_THREADS=36
+
+#Run the setup.sh script first
+
+#Note - This script can be broken into parts in order to run on cluster if jobs must be shorter than 48hrs.
+
+##Create conda environment
+conda env create -f LANE_MAGS.yml
+
+
+##Activate conda environment:
+conda activate MAGS
+
+#Define rootdir on your computing environment, this is the directory if you type `pwd` inside the directory from cloning this repo. For example, on the Poseidon HPC:
+rootdir=/vortexfs1/omics/env-bio/collaboration/jahala/
+
+
+##CHECKM for stats on MAGS
+#As bacterial genomes are small, they are included in the github repo here.
+
+cd ${rootdir}/data/raw_data/MAGS
+checkm lineage_wf --pplacer_threads 1 --tab_table -t 16 -x fna ${rootdir}/data/raw_data/MAGS/ ${rootdir}/data/raw_data/MAGS/checkm_results
+tail -9 checkm*.log | head -7 > checkm_stats.tsv
+
+
