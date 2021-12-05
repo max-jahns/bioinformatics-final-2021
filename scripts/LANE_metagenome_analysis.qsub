@@ -52,6 +52,7 @@ bowtie2 -x bt2/diatom.fa -1 /vortexfs1/omics/env-bio/collaboration/jahala/data/r
 ##Determine Taxonomic Composition of Metagenome
 Kaiju
  wget https://kaiju.binf.ku.dk/database/kaiju_db_refseq_2021-02-26.tgz
+ (python_lab) [katherine.lane@poseidon-l2 tools]$ tar -xvzf kaiju_db_refseq_2021-02-26.tgz
 
 ##Assembly
 megahit
