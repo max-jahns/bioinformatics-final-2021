@@ -69,6 +69,11 @@ done
 mkdir bt2 #create index directory
 bowtie2-build all.fa bt2/all.fa #create index
 
+for i in `cat ../access_list_mt.txt`
+do
+bowtie2 -x bt2/all.fa -U /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metatranscriptome/sra/${i}.extendedFrags.fastq -S ${i}_mapped_all.sam
+
+
 
 
 
