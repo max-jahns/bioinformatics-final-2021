@@ -6,4 +6,8 @@ channels:
 dependencies:
   - sra-tools=2.11.3
   - 
-  - 
+  - trimmomatic
+  - flash
+  - express
+  - sortmerna
+  - bowtie2
