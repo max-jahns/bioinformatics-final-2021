@@ -51,8 +51,8 @@ bowtie2 -x bt2/diatom.fa -1 /vortexfs1/omics/env-bio/collaboration/jahala/data/r
 
 ##Determine Taxonomic Composition of Metagenome
 Kaiju
- wget https://kaiju.binf.ku.dk/database/kaiju_db_refseq_2021-02-26.tgz
- (python_lab) [katherine.lane@poseidon-l2 tools]$ tar -xvzf kaiju_db_refseq_2021-02-26.tgz
+wget https://kaiju.binf.ku.dk/database/kaiju_db_refseq_2021-02-26.tgz
+(python_lab) [katherine.lane@poseidon-l2 tools]$ tar -xvzf kaiju_db_refseq_2021-02-26.tgz
 
 ##Assembly
 megahit
@@ -80,14 +80,14 @@ cd ${rootdir}/d]
 checkm lineage_wf --pplacer_threads 1 --tab_table -t 16 -x fna ${rootdir}/data/raw_data/MAGS/ ${rootdir}/data/raw_data/MAGS/checkm_results
  tail -17 checkm*.log | head -15 > checkm_stats.tsv
  
- #Add bin to scaffold names
- for i in *fa; do b=`basename $i .fa`; sed "s/>/>${b}\ /g" $i > ${i}.renamed; done
+#Add bin to scaffold names
+for i in *fa; do b=`basename $i .fa`; sed "s/>/>${b}\ /g" $i > ${i}.renamed; done
   
-  /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/
+/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/
   
- #Assess MAG Taxonomy
-   for i in *renamed; do  sed 's/ /_/g' $i > ${i}.clean; done
-   gtdbtk classify_wf --pplacer_cpus 2 -x clean --genome_dir /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/bins_dir --out_dir /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/bins_dir/gtdbk_out2
+#Assess MAG Taxonomy
+for i in *renamed; do  sed 's/ /_/g' $i > ${i}.clean; done
+gtdbtk classify_wf --pplacer_cpus 2 -x clean --genome_dir /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/bins_dir --out_dir /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/bins_dir/gtdbk_out2
 
 #Calculate Depth of Coverage for each bin
 for i in *fa; do b=`basename $i .fa`; grep '>' $i | sed 's/>//g' >> ${i}.seqs; done
@@ -106,4 +106,4 @@ for i in `cat bin.15.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '      ' >>
 for i in bin_*counts.txt; do awk '{s+=$1} END {print FILENAME "\t" s}' $i >> total_bin_counts.tsv; done
 sed -i 's/_counts.txt//g' total_bin_counts.tsv
 
-#total_bin_counts.tsv is the input for 
+#total_bin_counts.tsv is the input for metagenome abundance part of Figure 1A
