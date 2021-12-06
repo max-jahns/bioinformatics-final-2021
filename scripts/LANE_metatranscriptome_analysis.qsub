@@ -100,6 +100,7 @@ for i in GCA_014872785.1_ASM1487278v1_genomic.fna GCA_014872805.1_ASM1487280v1_g
 for i in SRR10420346 SRR10420347 SRR10420348 SRR10420349 SRR10420350 SRR10420351 SRR10420352 SRR10420353
 do
 samtools view -bu ${i}_mapped_all.sam | samtools sort -@36 > ${i}_mapped_all.sorted.bam
+samtools index ${i}_mapped_all.sorted.bam
 
 mkdir ${i}_rhodo
     for c in `cat Rhodobacteraceae_contigs.txt`
@@ -118,6 +119,7 @@ samtools merge control.rhodo.bam SRR10420351_out.bam.rhodo.sorted SRR10420352_ou
 for i in SRR10420346 SRR10420347 SRR10420348 SRR10420349 SRR10420350 SRR10420351 SRR10420352 SRR10420353
 do
 #samtools view -bu ${i}_mapped_all.sam | samtools sort -@36 > ${i}_mapped_all.sorted.bam
+#samtools index ${i}_mapped_all.sorted.bam
 
 mkdir ${i}_alter
     for c in `cat Alteromonadaceae_contigs.txt`
