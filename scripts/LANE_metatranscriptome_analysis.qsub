@@ -96,10 +96,11 @@ for i in GCA_014872775.1_ASM1487277v1_genomic.fna GCA_014872815.1_ASM1487281v1_g
 (sam) [katherine.lane@poseidon-l2 MAGS]$ 
 for i in GCA_014872785.1_ASM1487278v1_genomic.fna GCA_014872805.1_ASM1487280v1_genomic.fna; do grep '>' $i  | sed 's/>//g' | cut -f 1 -d ' ' >> Alteromonadaceae_contigs.txt; done
 '
-samtools view -bu SRR10420346_mapped_all.sam | samtools sort -@6 > SRR10420346_mapped_all.sorted.bam
 
 for i in SRR10420346 SRR10420347 SRR10420348 SRR10420349 SRR10420350 SRR10420351 SRR10420352 SRR10420353
 do
+samtools view -bu ${i}_mapped_all.sam | samtools sort -@36 > ${i}_mapped_all.sorted.bam
+
 mkdir ${i}_rhodo
     for c in `cat Rhodobacteraceae_contigs.txt`
     do samtools view -b ${i}_mapped_all.sorted.bam $c > ${i}_rhodo/${c}_.bam.rhodo
@@ -112,6 +113,23 @@ samtools sort -n SRR10420346_out.bam.rhodo -o SRR10420346_out.bam.rhodo.sorted
 samtools merge reseeded_24.rhodo.bam SRR10420346_out.bam.rhodo.sorted SRR10420347_out.bam.rhodo.sorted
 samtools merge reseeded_05.rhodo.bam SRR10420348_out.bam.rhodo.sorted SRR10420349_out.bam.rhodo.sorted SRR10420350_out.bam.rhodo.sorted
 samtools merge control.rhodo.bam SRR10420351_out.bam.rhodo.sorted SRR10420352_out.bam.rhodo.sorted SRR10420353_out.bam.rhodo.sorted
+
+
+for i in SRR10420346 SRR10420347 SRR10420348 SRR10420349 SRR10420350 SRR10420351 SRR10420352 SRR10420353
+do
+#samtools view -bu ${i}_mapped_all.sam | samtools sort -@36 > ${i}_mapped_all.sorted.bam
+
+mkdir ${i}_alter
+    for c in `cat Alteromonadaceae_contigs.txt`
+    do samtools view -b ${i}_mapped_all.sorted.bam $c > ${i}_alter/${c}_.bam.alter
+    done
+    samtools merge ${i}_out.bam.alter ${i}_alter/*alter
+samtools sort -n ${i}_out.bam.alter -o ${i}_out.bam.alter.sorted
+done
+
+samtools merge reseeded_24.alter.bam SRR10420346_out.bam.alter.sorted SRR10420347_out.bam.alter.sorted
+samtools merge reseeded_05.alter.bam SRR10420348_out.bam.alter.sorted SRR10420349_out.bam.alter.sorted SRR10420350_out.bam.alter.sorted
+samtools merge control.alter.bam SRR10420351_out.bam.alter.sorted SRR10420352_out.bam.alter.sorted SRR10420353_out.bam.alter.sorted
 
 
 
