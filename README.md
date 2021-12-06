@@ -19,7 +19,7 @@ This repository contains the following directories:
  - directory: description
  - directory: description
 
-## Running analyses with provided code
+## How to run our analyses
 
 ### Type of analysis 1
 
