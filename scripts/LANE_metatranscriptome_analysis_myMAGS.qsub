@@ -2,6 +2,8 @@
 #make files containing scaffold names
 
 #
+for i in SRR10420346 SRR10420347 SRR10420348 SRR10420349 SRR10420350 SRR10420351 SRR10420352 SRR10420353; do samtools view -bu ${i}_mapped_all.sam | samtools sort -@ 36 > ${i}_mapped_all.sorted.bam; samtools index ${i}_mapped_all.sorted.bam; done
+
 for i in SRR10420346 SRR10420347 SRR10420348 SRR10420349 SRR10420350 SRR10420351 SRR10420352 SRR10420353
 do
 mkdir ${i}_bin.10
@@ -10,3 +12,27 @@ mkdir ${i}_bin.10
     done
 samtools merge ${i}_out.bam.bin.10 ${i}_bin.10/*bin.10
 done
+
+for i in `cat bins.txt`
+do
+samtools merge reseeded_24.${i}.bam SRR10420346_out.bam.${i} SRR10420347_out.bam.${i} 
+samtools merge reseeded_05.${i}.bam SRR10420348_out.bam.${i} SRR10420349_out.bam.${i}  SRR10420350_out.bam.${i} 
+samtools merge control.${i}.bam SRR10420351_out.bam.${i} SRR10420352_out.bam.${i} SRR10420353_out.bam.${i}
+
+samtools fastq  reseeded_05.${i}.bam >  reseeded_05.${i}.bam.fastq
+samtools fastq  reseeded_24.${i}.bam >  reseeded_24.${i}.bam.fastq
+samtools fastq  control.${i}.bam > control.${i}.bam.fastq
+done
+
+for i in `cat bins.txt`
+do
+echo "humann --input reseeded_05.${i}.bam.fastq --output humman_out_reseeded_05.${i}_FASTQ" > humann_reseeded_05_${i}.qsub
+echo "humann --input reseeded_24.${i}.bam.fastq --output humman_out_reseeded_24.${i}_FASTQ" > humann_reseeded_24_${i}.qsub
+echo "humann --input control.${i}.bam.fastq --output control.${i}_FASTQ"  > humann_control_${i}.qsub
+done
+
+for i in humann*qsub
+do
+sbatch $i
+done
+#submits 36 jobs to the cluster
