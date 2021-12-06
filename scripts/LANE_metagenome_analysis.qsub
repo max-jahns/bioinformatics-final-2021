@@ -58,6 +58,7 @@ tool=/vortexfs1/omics/env-bio/collaboration/jahala/tools
 dir=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra
 
 kaiju -t ${tool}/nodes.dmp -f ${tool}/kaiju_db_refseq.fmi -i ${dir}/bowtie_metagenome_host_removed.1.fq -j ${dir}/bowtie_metagenome_host_removed.2.fq
+#could include further instructions on kaiju
 
 
 ##Assembly
@@ -93,6 +94,13 @@ for i in *fa; do b=`basename $i .fa`; sed "s/>/>${b}\ /g" $i > ${i}.renamed; don
   
 #Assess MAG Taxonomy
 for i in *renamed; do  sed 's/ /_/g' $i > ${i}.clean; done
+mkdir gtdbk_input
+ for i in `ls`
+> do
+> b=`basename $i .fa.renamed.clean`
+> mv $i ${b}.fasta
+> done
+
 gtdbtk classify_wf --pplacer_cpus 2 -x clean --genome_dir /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/bins_dir --out_dir /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/bins_dir/gtdbk_out2
 
 #Calculate Depth of Coverage for each bin
