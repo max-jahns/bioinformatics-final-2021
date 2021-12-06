@@ -1,0 +1,12 @@
+
+#make files containing scaffold names
+
+#
+for i in SRR10420346 SRR10420347 SRR10420348 SRR10420349 SRR10420350 SRR10420351 SRR10420352 SRR10420353
+do
+mkdir ${i}_bin.10
+    for c in `cat bin.10.contigs` 
+    do samtools view -b ${i}_mapped_all.sorted.bam $c > ${i}_bin.10/${c}_.bam.bin.10
+    done
+samtools merge ${i}_out.bam.bin.10 ${i}_bin.10/*bin.10
+done
