@@ -71,12 +71,39 @@ metabat2
 jgi_summarize_bam_contig_depths --outputDepth depth.txt aln-pe.sorted.bam
 metabat2 -i final.contigs.fa -a depth.txt -o bins_dir/bin
 
-##Assess Genomes
+##Assess MAG Completeness and Quality
 #to reduce redundancy in conda environments, use the checkm install in the MAGS environment
 conda deactivate
 conda activate MAGS
 
 cd ${rootdir}/d]
 checkm lineage_wf --pplacer_threads 1 --tab_table -t 16 -x fna ${rootdir}/data/raw_data/MAGS/ ${rootdir}/data/raw_data/MAGS/checkm_results
- tail -18 checkm*.log | head -16 > checkm_stats.tsv
+ tail -17 checkm*.log | head -15 > checkm_stats.tsv
+ 
+ #Add bin to scaffold names
+ for i in *fa; do b=`basename $i .fa`; sed "s/>/>${b}\ /g" $i > ${i}.renamed; done
+  
+  /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/
+  
+ #Assess MAG Taxonomy
+   for i in *renamed; do  sed 's/ /_/g' $i > ${i}.clean; done
+   gtdbtk classify_wf --pplacer_cpus 2 -x clean --genome_dir /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/bins_dir --out_dir /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/bins_dir/gtdbk_out2
 
+#Calculate Depth of Coverage for each bin
+for i in *fa; do b=`basename $i .fa`; grep '>' $i | sed 's/>//g' >> ${i}.seqs; done
+for i in `cat bin.1.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '      ' >> bin_1_counts.txt; done 
+for i in `cat bin.2.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_2_counts.txt; done
+for i in `cat bin.3.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_3_counts.txt; done                                                                                                                                      
+for i in `cat bin.4.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_4_counts.txt; done
+for i in `cat bin.5.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_5_counts.txt; done                                                                                                                                       for i in `cat bin.6.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_6_counts.txt; done                                                                                                                                       for i in `cat bin.7.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_7_counts.txt; done                                                                                                                                       for i in `cat bin.8.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_8_counts.txt; done
+for i in `cat bin.9.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_9_counts.txt; done
+for i in `cat bin.10.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '      ' >> bin_10_counts.txt; done
+for i in `cat bin.11.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '      ' >> bin_11_counts.txt; done
+for i in `cat bin.12.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '      ' >> bin_12_counts.txt; done
+for i in `cat bin.13.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '      ' >> bin_13_counts.txt; done
+for i in `cat bin.14.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '      ' >> bin_14_counts.txt; done
+for i in `cat bin.15.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '      ' >> bin_15_counts.txt; done
+for i in bin_*counts.txt; do awk '{s+=$1} END {print FILENAME "\t" s}' $i >> total_bin_counts.tsv; done
+sed -i 's/_counts.txt//g' total_bin_counts.tsv
+
+#total_bin_counts.tsv is the input for 
