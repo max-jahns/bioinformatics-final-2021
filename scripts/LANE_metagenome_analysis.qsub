@@ -50,9 +50,15 @@ bowtie2 -x bt2/diatom.fa -1 /vortexfs1/omics/env-bio/collaboration/jahala/data/r
 (jahala_clean_metagenome) [katherine.lane@poseidon-l2 sra]$ mv bowtie_metagenome_host_removed.1 bowtie_metagenome_host_removed.1.fq
 
 ##Determine Taxonomic Composition of Metagenome
+#kaiju requires greater than 24 hrs of computation, as the input was not needed for downstream analyses
 Kaiju
 wget https://kaiju.binf.ku.dk/database/kaiju_db_refseq_2021-02-26.tgz
 (python_lab) [katherine.lane@poseidon-l2 tools]$ tar -xvzf kaiju_db_refseq_2021-02-26.tgz
+tool=/vortexfs1/omics/env-bio/collaboration/jahala/tools
+dir=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra
+
+kaiju -t ${tool}/nodes.dmp -f ${tool}/kaiju_db_refseq.fmi -i ${dir}/bowtie_metagenome_host_removed.1.fq -j ${dir}/bowtie_metagenome_host_removed.2.fq
+
 
 ##Assembly
 megahit
