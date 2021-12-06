@@ -104,6 +104,10 @@ mkdir gtdbk_input
 > done
 
 gtdbtk classify_wf --pplacer_cpus 2 -x clean --genome_dir /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/bins_dir --out_dir /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/bins_dir/gtdbk_out2
+(gtdbtk-1.3.0) [katherine.lane@poseidon-l2 gtdbk_out3]$ cut -d '        ' -f 1 gtdbtk.bac120.summary.tsv > temp.tsv
+(gtdbtk-1.3.0) [katherine.lane@poseidon-l2 gtdbk_out3]$ less temp.tsv
+(gtdbtk-1.3.0) [katherine.lane@poseidon-l2 gtdbk_out3]$ cut -d ';' -f 5 gtdbtk.bac120.summary.tsv | tail -12 | paste -d '\t' temp.tsv - >bin_taxonomy.tsv
+/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/bins_dir/gtdbk_out3
 
 #Calculate Depth of Coverage for each bin
 for i in *fa; do b=`basename $i .fa`; grep '>' $i | sed 's/>//g' >> ${i}.seqs; done
