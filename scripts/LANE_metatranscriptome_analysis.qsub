@@ -133,13 +133,24 @@ samtools merge reseeded_24.alter.bam SRR10420346_out.bam.alter.sorted SRR1042034
 samtools merge reseeded_05.alter.bam SRR10420348_out.bam.alter.sorted SRR10420349_out.bam.alter.sorted SRR10420350_out.bam.alter.sorted
 samtools merge control.alter.bam SRR10420351_out.bam.alter.sorted SRR10420352_out.bam.alter.sorted SRR10420353_out.bam.alter.sorted
 
-humann --input reseeded_24.rhodo.bam --output humman_out_reseeded_24.rhodo
-humann --input reseeded_05.rhodo.bam --output humman_out_reseeded_05.rhodo
-humann --input control.rhodo.bam --output humman_out_control.rhodo
 
-humann --input reseeded_24.alter.bam --output humman_out_reseeded_24.alter
-humann --input reseeded_05.alter.bam --output humman_out_reseeded_05.alter
-humann --input control.alter.bam --output humman_out_control.alter
+samtools fastq  reseeded_24.alter.bam >  reseeded_24.alter.bam.fastq
+humann --input reseeded_24.alter.bam.fastq --output humman_out_reseeded_24.alter_FASTQ
+
+samtools fastq  reseeded_05.alter.bam  > reseeded_05.alter.bam.fastq
+humann --input reseeded_05.alter.bam.fastq --output humman_out_reseeded_05.alter_FASTQ
+
+samtools fastq  control.alter.bam  > control.alter.bam.fastq
+humann --input control.alter.bam.fastq --output humman_out_control.alter_FASTQ
+
+samtools fastq  reseeded_24.rhodo.bam  > reseeded_24.rhodo.bam.fastq
+humann --input reseeded_24.rhodo.bam.fastq --output humman_out_reseeded_24.rhodo_FASTQ
+
+samtools fastq  reseeded_05.rhodo.bam  > reseeded_05.rhodo.bam.fastq
+humann --input reseeded_05.rhodo.bam.fastq --output humman_out_reseeded_05.rhodo_FASTQ
+
+samtools fastq  control.rhodo.bam  > control.rhodo.bam.fastq
+humann --input control.rhodo.bam.fastq --output humman_out_control.rhodo_FASTQ
 
 
 
