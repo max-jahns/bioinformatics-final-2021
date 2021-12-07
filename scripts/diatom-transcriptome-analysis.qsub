@@ -1,0 +1,198 @@
+#!/bin/bash
+#SBATCH --partition=compute
+#SBATCH --job-name=diatom-transcriptome
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=mjahns@mit.edu
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=36
+#SBATCH --mem=180gb
+#SBATCH --time=23:00:00
+#SBATCH --output=diatom-transcriptome_%j.log
+#export OMP_NUM_THREADS=36
+
+########## WELCOME FRIEND #########
+##########  READ ME FIRST #########
+##all data and analyses are based on Shibl et al. 2021 *PNAS*
+###This pipeline is designed to be submitted as a single batch job to create all the files necissary to perform the DE analysis of the diatom transcriptome between the control and reseeded communities and create figure1b
+
+###BEFORE YOU BEGIN THOUGH, PLEASE NOTE THE FOLLOWING THINGS...
+
+# -- make sure you have the following files in your 'tools' directory : 
+#### -a file called 'diatom.transcripts.for.aquistion.txt' containing the SRA accession numbers for all transcript read files on NCBI
+#### -a subdirectory called 'trinotate' that contains a 'uniprot_sprot.pep', 'Trinotate.sqlite', and a 'Pfam-A.hmm' (if you do not, navigate to the path for the conda environment where trinotate is installed and look for the directory 'trinotate-sample-data', inside you will see a bash script called 'runMe.sh'. Run this in the tools folder and it will get all of these files for you.
+#### -a file to convert stringtie ouput into a table for DESeq called 'prepDE.py' (is this is missing, it is avaliable on the stringtie website  
+#### -a file containing the sequences of the illumina adapters called 'TruSeq3-PE.fa'
+# --make sure you are running this script from a conda environment identical to the 'diatom-transcriptome.yml' found in 'envs'
+# -this script will stop at functional annotation. differential expression and figure creation are carried out in the jupyter notebooks 'differential-expression-analysis.ipynb' and 'figure1b-creator-and-discussion.ipynb' respectively
+
+
+
+##this pipeline is broken up into ".job" sections
+##each ".job" is a different "link" in the pipeline, as it takes in a different set of input from the previous and makes a new set of outputs
+##the jobs can be run seperately, but they must be run in this order
+
+## please reach out to mjahns@mit.edu with any questions
+
+
+Pipeline:
+### :: get_transcripts_for_diatom.job :: ###
+##this code will pull the diatom transcriptome fasta files from the NCBI website
+##inputs: a list of all SRA numbers from the project (provided in 'diatom.transcripts.for.aquistion.txt')
+##outputs: 12 fa transcriptome raw-read files to '/data/raw_data/diatom_transcriptome/sra'
+while read line
+do
+fasterq-dump --split-3 --verbose --outdir ../data/raw_data/diatom_transcriptome/sra $line
+done < ../diatom.transcripts.for.aquistion.txt
+
+### :: diatom-transcrips-trimmomatic-cleaning.job :: ###
+##this script will trim the aquired transcripts from 'get_transcripts_for_diatom.job' according to the specifications of the paper using trimomatic
+##inputs: .fastq files in the diatom_transcriptome/sra directory ... and ... the illuminia adapter sequences in the 'TruSeq3-PE.fa' file in the 'tools' directory
+##outputs: trimmed paired and unpaired .fq.qz files to '../output/ diatom_transcriptome'
+for file in ../data/raw_data/diatom_transcriptome/sra/*_1.fastq
+do
+SAMPLE=$(echo ${file} | cut -d "/" -f 2 | cut -d "_" -f 1)
+echo "Now Processing ... $SAMPLE"
+trimmomatic PE -threads 36 sra/${SAMPLE}_1.fastq sra/${SAMPLE}_2.fastq -baseout ../output/ diatom_transcriptome/${SAMPLE}.fq.qz ILLUMINACLIP:../tools/TruSeq3-PE.fa:2:40:$done
+
+### :: get-diatom-genome.job :: ###
+##this script will get all of the fa files from BCI that make up the assembled diatom genome
+##inputs: the SRA accession
+##ouputs: all contigs on the diatom genome assembly to ../data/raw_data/diatomgenome
+fastq-dump KC509520.1 --outdir ../data/raw_data/diatomgenome 
+
+##we will then also index this genome for steps downstream
+samtools faidx GCA_014885115.2_ASM1488511v2_genomic.fna
+
+### :: mapping-diatom.job :: ###
+##this code will map the cleaned transcripts onto the diatom genome
+##inputs: the diatom genome in ../data/raw_data/diatom_genome ... and ... the cleaned transcriptome reads in ../output/diatom_transcriptome
+##outputs: a sam mapping file for every sample to ../output/diatom_transcritome 
+
+for file in ../data/raw_data/diatom_transcriptome/sra/*fastq
+do
+SAMPLE=$(echo ${file} | cut -d "/" -f 7 | cut -d "_" -f 1)
+echo "Now Processing ... $SAMPLE"
+hisat2 -p 36 -x ../raw_data/diatom_genome/ -1 ../output/diatom_transcriptome/${SAMPLE}.fq.qz_1P -2 ../output/diatom_transcriptome/${SAMPLE}.fq.qz_2P -S ../output/diatom_transcriptome/${SAMPLE}.sam
+done
+
+### :: sam-to-bam-conversion.job :: ###
+##this code will take those pesky readable sam files from your mapping and make less readable binary bams
+##inputs: the sam files from 'mapping-diatom.job'
+##outputs: the same mappings, but in bam form
+
+for file in ../output/diatom_transcriptome/*sam
+do
+NEWNAME="$(echo $file | cut -d "/" -f 2| cut -d "." -f 1)"
+samtools view -sB $file > ../output/diatom_transcriptome${NEWNAME}.sam
+done
+
+### :: bam-sort.job :: ###
+##now we sort of each of the bam files so all samples are in the same order
+##inputs: bams files for each samples
+##outputs: sorted bam files (to a new folder in ‘output’ called ‘sorted-mappings’)
+for file in ../output/diatom_transcriptome/*sam
+do
+NEWNAME="$(echo $file | cut -d "/" -f 2| cut -d "." -f 1)"
+samtools sort - $file -o ../output/diatom_transcriptome/sorted-mappings/${NEWNAME}-sorted
+done
+
+
+### :: stringtie.job :: ###
+##this code will tie your sorted mapped reads together and produce transcript files
+##inputs: sorted bam files (in output/diatom_transcriptome/sorted-mappings)
+##outputs: .gtf (gene to transcript) files for each sample(in a new folder called ‘GTF-files/individual-samps’ in ‘output’)
+for file in sorted-mappings/*sorted
+do
+NEWNAME="$(echo $file | cut -d "/" -f 2| cut -d "." -f 1)"
+echo "now processing $file"
+stringtie -o GTF-files/individual-samps/${NEWNAME}.gtf -p 36 $file
+done
+
+
+### :: stringtie-merge.job :: ###
+##now we’re going to merge all of the stringtie gtf transctipt files into a single non-redundant list of all of our transcripts (which the authors call the transcriptome)
+##inputs: .gtf files from each samples
+##outputs: a single .gtf called merged-transcriptome.gtf representing the entire transcriptome, with every transcript we’ve found (in a new folder called ‘merged-transcriptome’)
+
+##first though, we’ll need to make a list of all of the samples, since stringtie expects a textfile input when merging
+rm assembly-GTF-list.txt
+for file in ./GTF-files/individual-samps/*.gtf
+do
+echo $file >> assembly-GTF-list.txt
+done
+
+stringtie --merge -p 18 -o GTF-files/merged-transcriptome/merged-transcriptome.gtf assembly-GTF-list.txt
+
+
+### :: stringtie-count.job :: ###
+##we’re going to take that complete transcriptome and reanalyze each of the gene-transcript mappings against this complete one, to find the coverage of each gene in every sample. We can use this to infer expression levels.
+##inputs: the ‘merge-transcriptome.gtf’ file we just created ... and ... the individual GTF files we created for each sample
+for file in ../output/diatom_transcriptome/sorted-mappings/*
+do
+NEWNAME=$(echo $file | cut -d "/" -f 2)
+stringtie -o ../output/diatom_transcriptome/stringtie-counts/${NEWNAME}/${NEWNAME}.gtf -p 18 -v -B -e -G ../output/diatom_transcriptome/GTF-files/merged-transcriptome/merged-transcriptome.gtf $file
+done
+
+
+### :: make-deseq-reable-files.job :: ###
+##what we’ve just made and deposited into ‘stringtie-counts’ is a set of expression tables for every sample. We need to combine these into a single table so DESeq2 can read it. Luckily, stringtie provides us a script for this.
+##esentially we will merge all of the transcript counts from the individual samples we collected in the stringtie -B command into a single table that can be accepted by DESeq for our differential expression analysis
+##inputs: a folder containing subdirectories for every sample that contain the tables from the stringtie -B command ... and ... the prepDE.py folder provided by the stringtie website that will merge all of these samples (see ‘tools’)
+python ../tools/prepDE.py stringtie-counts
+
+
+### :: make-files-reable-for-trinotate.job :: ###
+##the .gtfs we’ve been generating with stringtie are also not the preferred format for trinotate. Since its meant to run with trinity it expects a fasta version of the transcriptome sequences, so we can pull that out with a function called gffread which will take the total merged-transcriptome annotations and pull each gene out of the genome making a .fa with a BP sequence for each gene/transcript.
+##inputs: the total ‘merged-transcriptome’ .gtf file ... and ... the total diatom genome we mapped our reads to
+##outputs: a 
+gffread -w ../output/diatom_transcriptome/transcriptome-seqs.fa -g ../data/raw_data/diatom_genome/GCA_014885115.2_ASM1488511v2_genomic.fna --gtf ../output/diatom_transcriptome/GTF-files/merged-transcriptome/merged-transcriptome.gtf
+
+##after that we’re going to need to do a little bit of formatting. Trinotate expects a ‘gene-to-transcript-map’ file, which has a column of genes and a column of corresponding transcript names. Its easy enough to generate, we just take out the little transcript tag that is an extra number attached to each gene to designate it as a transcript in stringie and ba-da-bing ba-da-boom...
+grep ">" ../output/diatom_transcriptome/transcriptome-seqs.fa | cut -d ">" -f 2 > ../output/diatom_transcriptome/seq.txt
+while read line
+do
+GENEID=$(echo $line | cut -d "." -f 2)
+echo -e "MSTRG.${GENEID}\t${line}" >> ../output/diatom_transcriptome/gene_trans_map.txt
+done < seq.txt
+
+### :: transdecoder.job :: ###
+##now we’ll use transdecoder to convert our sequences into best guesses of translatable regions (stringtie already kind of did this, but we have to get the output from this particular function for trinotate)
+#inputs: the gene_trans_map we made by reformatting our seq.txt file ... and ... a list of transcript sequences
+#outputs: lots! They all have a ‘.transdeocer’ tag and then a file extension. The one we really care about is the .pep file.
+TransDecoder.LongOrfs -t ../output/diatom_transcriptome/transcriptome-seqs.fa --gene_trans_map ../output/diatom_transcriptome/gene_trans_map.txt --output_dir ../output/diatom_transcriptome/transdecoder-output
+TransDecoder.Predict -t ../output/diatom_transcriptome/transcriptome-seqs.fa --output_dir ../output/diatom_transcriptome/transdecoder-output
+
+### :: trinotate.job :: ###
+##now we will functionally annotate all of the identified gene sequences using trinotate a package that compares the results of multiple functional databases
+##requires: many different databases downloaded into the ‘tools’ folder. 
+##NOTE: be sure you have the uniprot_sprot.pep, Trinotate.sqlite, Pfam-A.hmm.gz files in your ‘tools’ folder before continuing. If you do not have these files in your ‘tools’ folders go to the path to the conda environment containing the trinotate package. Under ‘env/ENVNAME/trinotate_tools’ execute the following while in the tools directory:
+#######bash ‘env/ENVNAME/trinotate_tools/runMe.sh’#######
+##other inputs: gene_trans_map.txt from make-files-reable-for-trinotate.job, our complete transcriptome sequences in transcriptome-seqs.fa, and the .pep transdecoder output ‘transcriptome-seqs.fa.transdecoder.pep’
+
+##first we’ll get these databases ready to rumble
+makeblastdb -in ../tools/uniprot_sprot.pep -dbtype prot
+gunzip ../tools/Pfam-A.hmm.gz
+hmmpress ../tools/Pfam-A.hmm
+
+##then we’ll initialize the Trinotate.sqlite object that will hold our information
+Trinotate ../tools/Trinotate.sqlite init --gene_trans_map ../output/diatom_transcriptome/gene_trans_map.txt --transcript_fasta ../output/diatom_transcriptome/transcriptome-seqs.fa --transdecoder_pep ../output/diatom_transcriptome/transcriptome-seqs.fa.transdecoder.pep
+
+##next we’ll quert our sequences against different databases
+blastx -db ../tools/uniprot_sprot.pep -query ../output/diatom_transcriptome/transcriptome-seqs.fa -num_threads 36 -max_target_seqs 1 -outfmt 6 > ../output/diatom_transcriptome/transcriptome.blastx.outfmt6
+blastp -db ../tools/uniprot_sprot.pep -query ../output/diatom_transcriptome/transcriptome-seqs.fa.transdecoder.pep -num_threads 36 -max_target_seqs 1 -outfmt 6 > ../output/diatom_transcriptome/transcriptome.blastp.outfmt6
+hmmscan --cpu 36 --domtblout ../output/diatom_transcriptome/TrinonatePFAM.out ../tools/Pfam-A.hmm ../output/diatom_transcriptome/transcriptome-seqs.fa.transdecoder.pep
+
+##then we’ll add the results of those queries to our trinotate.sqlite object
+Trinotate ../tools/Trinotate.sqlite LOAD_swissprot_blastp ../output/diatom_transcriptome/transcriptome.blastp.outfmt6
+Trinotate ../tools/Trinotate.sqlite LOAD_swissprot_blastxTrinotate ../output/diatom_transcriptome/transcriptome.blastx.outfmt6
+Trinotate ../tools/Trinotate.sqlite LOAD_pfam ../output/diatom_transcriptome/TrinonatePFAM.out
+
+Finally, we’ll ask trinotate to look over that .sqlite object and turn it into something readable
+Trinotate ../tools/Trinotate.sqlite report > ../output/diatom_transcriptome/trinotations/Trinotate.xls
+
+
+###NOTE
+##You have reached the end of the pipeline in bash, but please open up differential-expression-analysis.ipynb to complete the differential expression in DESeq and then use figure1b-creator-and-discussion.ipynb to pull everything together into figure1b
+
+echo “CONGRATS! You have reached the end of the pipeline in bash, but please open up differential-expression-analysis.ipynb to complete the differential expression in DESeq and then use figure1b-creator-and-discussion.ipynb to pull everything together into figure1b”
+
