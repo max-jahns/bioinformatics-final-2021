@@ -27,7 +27,7 @@ This repository contains the following directories:
 
 ### Metabolomics analysis
 
-The metabolomic data used in this project were relatively small and manageable, and required analysis in R. We find R much easier to use locally rather than on Poseidon, so analysis was performed locally, and relevant scripts, data, and outputs were then moved to Poseidon. Analysis was performed in R version 4.1.2.
+The metabolomic data used in this project were relatively small and manageable, and required analysis in R. Analysis was performed in R version 4.1.2.
 
 Data underwent some manual manipulation prior to being used in R. "Clean" data reflects this manual manipulation: 
  - Metadata information was collapsed into a single identifier to simplify analysis
@@ -36,4 +36,17 @@ Data underwent some manual manipulation prior to being used in R. "Clean" data r
    - Retention time (RT) in seconds was manually calculated in Excel from RT in minutes, which was given. 
  - Metadata (not collapsed into a single identifier) in Dataset_S01 was preserved in a separate file
 
-Data for re-running metabolomics analyses can be found in data/clean_data/metabolome; scripts can be found in scripts/metabolomics; and output figures can be found in output/metabolomics. In addition, analysis/figure_2* contains the scripts used to generate the relevant figures described by the directory name. Scripts will require editing the data path - to reflect the local environment, if rerunning analysis is also more easily done locally, or Poseidon path.
+R packages required for this analysis include tidyverse, BiocManager, rstatix, devtools, ComplexHeatmap, and pcaMethods. If not already installed, these packages can be installed as follows: 
+
+```
+install.packages("tidyverse")
+install.packages("BiocManager")
+install.packages("rstatix")
+install.packages("devtools")
+install_github("jokergoo/ComplexHeatmap")
+BiocManager::install("pcaMethods")
+```
+
+Alternately, if it's easier to run a re-analysis locally than on Poseidon: data for re-running metabolomics analyses can be found in data/clean_data/metabolome; .Rmd scripts can be found in scripts/metabolomics; and output figures can be found in output/metabolomics. In addition, analysis/figure_2* contains the .Rmd files used to generate the relevant figures described by the directory name. Scripts will require editing the data path to reflect the local environment, if rerunning analysis is more done locally. 
+
+In this project, we tried to replicate two kinds of metabolomic analysis reported by Shibl et al. - PCA 
