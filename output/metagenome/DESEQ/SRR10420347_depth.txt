@@ -1,0 +1,1 @@
+contigName	contigLen	totalAvgDepth	SRR10420347_mapped_all.sorted.bam	SRR10420347_mapped_all.sorted.bam-var
