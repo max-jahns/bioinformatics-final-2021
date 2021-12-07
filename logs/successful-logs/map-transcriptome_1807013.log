@@ -1,0 +1,120 @@
+Now Processing ... SRR10416456
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416456.sam -1 ../../diatom_transcriptome/SRR10416456.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416456.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416456
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416456.sam -1 ../../diatom_transcriptome/SRR10416456.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416456.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416457
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416457.sam -1 ../../diatom_transcriptome/SRR10416457.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416457.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416457
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416457.sam -1 ../../diatom_transcriptome/SRR10416457.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416457.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416458
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416458.sam -1 ../../diatom_transcriptome/SRR10416458.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416458.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416458
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416458.sam -1 ../../diatom_transcriptome/SRR10416458.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416458.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416459
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416459.sam -1 ../../diatom_transcriptome/SRR10416459.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416459.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416459
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416459.sam -1 ../../diatom_transcriptome/SRR10416459.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416459.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416460
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416460.sam -1 ../../diatom_transcriptome/SRR10416460.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416460.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416460
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416460.sam -1 ../../diatom_transcriptome/SRR10416460.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416460.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416461
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416461.sam -1 ../../diatom_transcriptome/SRR10416461.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416461.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416461
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416461.sam -1 ../../diatom_transcriptome/SRR10416461.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416461.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416462
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416462.sam -1 ../../diatom_transcriptome/SRR10416462.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416462.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416462
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416462.sam -1 ../../diatom_transcriptome/SRR10416462.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416462.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416463
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416463.sam -1 ../../diatom_transcriptome/SRR10416463.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416463.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416463
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416463.sam -1 ../../diatom_transcriptome/SRR10416463.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416463.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416464
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416464.sam -1 ../../diatom_transcriptome/SRR10416464.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416464.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416464
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416464.sam -1 ../../diatom_transcriptome/SRR10416464.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416464.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416465
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416465.sam -1 ../../diatom_transcriptome/SRR10416465.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416465.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416465
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416465.sam -1 ../../diatom_transcriptome/SRR10416465.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416465.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416466
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416466.sam -1 ../../diatom_transcriptome/SRR10416466.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416466.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416466
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416466.sam -1 ../../diatom_transcriptome/SRR10416466.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416466.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416467
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416467.sam -1 ../../diatom_transcriptome/SRR10416467.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416467.fq.qz_2P 
+(ERR): hisat2-align exited with value 1
+Now Processing ... SRR10416467
+Could not locate a HISAT2 index corresponding to basename "../../diatom_genome"
+Error: Encountered internal HISAT2 exception (#1)
+Command: /vortexfs1/home/mjahns/.conda/envs/hisat2-2.0.4/bin/hisat2-align-s --wrapper basic-0 -p 36 -x ../../diatom_genome -S SRR10416467.sam -1 ../../diatom_transcriptome/SRR10416467.fq.qz_1P -2 ../../diatom_transcriptome/SRR10416467.fq.qz_2P 
+(ERR): hisat2-align exited with value 1

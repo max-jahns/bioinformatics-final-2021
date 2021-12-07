@@ -1,0 +1,12 @@
+./GTF-files/individual-samps/SRR10416456-sorted.gtf
+./GTF-files/individual-samps/SRR10416457-sorted.gtf
+./GTF-files/individual-samps/SRR10416458-sorted.gtf
+./GTF-files/individual-samps/SRR10416459-sorted.gtf
+./GTF-files/individual-samps/SRR10416460-sorted.gtf
+./GTF-files/individual-samps/SRR10416461-sorted.gtf
+./GTF-files/individual-samps/SRR10416462-sorted.gtf
+./GTF-files/individual-samps/SRR10416463-sorted.gtf
+./GTF-files/individual-samps/SRR10416464-sorted.gtf
+./GTF-files/individual-samps/SRR10416465-sorted.gtf
+./GTF-files/individual-samps/SRR10416466-sorted.gtf
+./GTF-files/individual-samps/SRR10416467-sorted.gtf

@@ -1,0 +1,12 @@
+./sorted-mappings/SRR10416456-sorted
+./sorted-mappings/SRR10416457-sorted
+./sorted-mappings/SRR10416458-sorted
+./sorted-mappings/SRR10416459-sorted
+./sorted-mappings/SRR10416460-sorted
+./sorted-mappings/SRR10416461-sorted
+./sorted-mappings/SRR10416462-sorted
+./sorted-mappings/SRR10416463-sorted
+./sorted-mappings/SRR10416464-sorted
+./sorted-mappings/SRR10416465-sorted
+./sorted-mappings/SRR10416466-sorted
+./sorted-mappings/SRR10416467-sorted

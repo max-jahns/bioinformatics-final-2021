@@ -1,0 +1,2 @@
+rm: cannot remove ‘maps.txt’: No such file or directory
+Error: reference annotation file (GTF-files/merged-transcritome/merged-transcriptome.gtf) not found.
