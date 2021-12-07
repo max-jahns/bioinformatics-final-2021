@@ -1,3 +1,7 @@
+submission header, activate metatranscriptome conda environment
+
+##Differential Expression with Humann
+
 ##Humann Analysis of Bins Provided
 
 #format the files first
@@ -104,4 +108,6 @@ sbatch $i
 done
 #submits 36 jobs to the cluster
 
-#DESeq
+
+
+#Differential Expression with DESeq
