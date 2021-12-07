@@ -67,74 +67,68 @@ megahit -t 36 -o output/metagenome/megahit_assembly -1 output/metagenome/filter_
 
 ##Calculate Coverage
 #map reads to assembly
-dir=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra
-bwa index ${dir}/megahit_assembly2/final.contigs.fa
-bwa mem -t 48 ${dir}/megahit_assembly2/final.contigs.fa ${dir}/bowtie_metagenome_host_removed.1.fq ${dir}/bowtie_metagenome_host_removed.2.fq > aln-pe.sam
+
+bwa index /output/metagenome/megahit_assembly/final.contigs.fa
+bwa mem -t 48 /output/metagenome/megahit_assembly/final.contigs.fa /output/metagenome/filter_host/bowtie_metagenome_host_removed.1.fq /output/metagenome/filter_host/bowtie_metagenome_host_removed.2.fq > /output/metagenome/metabat/aln-pe.sam
 samtools sort -@48 aln-pe.sam -o aln-pe.sorted.bam
 
 
 ##Bin Genomes
-metabat2
-jgi_summarize_bam_contig_depths --outputDepth depth.txt aln-pe.sorted.bam
-metabat2 -i final.contigs.fa -a depth.txt -o bins_dir/bin
+jgi_summarize_bam_contig_depths --outputDepth /output/metagenome/metabat/depth.txt /output/metagenome/metabat/aln-pe.sorted.bam
+metabat2 -i /output/metagenome/megahit_assembly/final.contigs.fa -a /output/metagenome/metabat/depth.txt -o /output/metagenome/metabat/bins_dir/bin
 
 ##Assess MAG Completeness and Quality
 #to reduce redundancy in conda environments, use the checkm install in the MAGS environment
 conda deactivate
 conda activate MAGS
 
-cd ${rootdir}/d]
-checkm lineage_wf --pplacer_threads 1 --tab_table -t 16 -x fna ${rootdir}/data/raw_data/MAGS/ ${rootdir}/data/raw_data/MAGS/checkm_results
- tail -17 checkm*.log | head -15 > checkm_stats.tsv
+checkm lineage_wf --pplacer_threads 1 --tab_table -t 16 -x fna /output/metagenome/metabat/bins_dir/ /output/metagenome/checkm/checkm_results
+
+#make tsv for genome comparison table
+tail -17 /output/metagenome/checkm/checkm_results/checkm*.log | head -15 > /output/metagenome/checkm/checkm_stats.tsv
  
-#Add bin to scaffold names
+#Add bin to scaffold names and remove space
+cd /output/metagenome/metabat/bins_dir/
 for i in *fa; do b=`basename $i .fa`; sed "s/>/>${b}\ /g" $i > ${i}.renamed; done
-  
-/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/
-  
-#Assess MAG Taxonomy
 for i in *renamed; do  sed 's/ /_/g' $i > ${i}.clean; done
-mkdir gtdbk_input
- for i in `ls`
-> do
-> b=`basename $i .fa.renamed.clean`
-> mv $i ${b}.fasta
-> done
+for i in *clean; do b=`basename = $i .renamed.clean`; mv $i $b; done
 
-gtdbtk classify_wf --pplacer_cpus 2 -x clean --genome_dir /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/bins_dir --out_dir /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/bins_dir/gtdbk_out2
+  
+#back to metagenome conda environment
+conda deactivate
+conda activate metagenome
 
-(gtdbtk-1.3.0) [katherine.lane@poseidon-l2 gtdbk_out3]$ cut -d ';' -f 5 gtdbtk.bac120.summary.tsv | tail -12 | paste -d '\t' temp.tsv - > bin_taxonomy.tsv
 
-(gtdbtk-1.3.0) [katherine.lane@poseidon-l2 gtdbk_out3]$ cut -d ';' -f 5 gtdbtk.bac120.summary.tsv | tail -12 | sed 's/f__//g' | paste -d '\t' temp.tsv - > bin_taxonomy.tsv
-/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/bins_dir/gtdbk_out3
+#Assess MAG Taxonomy
+gtdbtk classify_wf --pplacer_cpus 2 -x fa --genome_dir /output/metagenome/metabat/bins_dir --out_dir /output/metagenome/gtdbk/
+
+#format output for genome taxonomy csv
+cut -d ';' -f 5 gtdbtk.bac120.summary.tsv | tail -12 | sed 's/f__//g' | paste -d '\t' temp.tsv - > bin_taxonomy.tsv
 
 
 #Calculate Depth of Coverage for each bin
+cd /output/metagenome/metabat/bins_dir
 for i in *fa; do b=`basename $i .fa`; grep '>' $i | sed 's/>//g' >> ${i}.seqs; done
-for i in `cat bin.1.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '      ' >> bin_1_counts.txt; done 
-for i in `cat bin.2.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_2_counts.txt; done
-for i in `cat bin.3.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_3_counts.txt; done                                                                                                                                      
-for i in `cat bin.4.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_4_counts.txt; done
-for i in `cat bin.5.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_5_counts.txt; done                                                                                                                                       for i in `cat bin.6.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_6_counts.txt; done                                                                                                                                       for i in `cat bin.7.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_7_counts.txt; done                                                                                                                                       for i in `cat bin.8.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_8_counts.txt; done
-for i in `cat bin.9.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_9_counts.txt; done
-for i in `cat bin.10.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '      ' >> bin_10_counts.txt; done
-for i in `cat bin.11.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '      ' >> bin_11_counts.txt; done
-for i in `cat bin.12.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '      ' >> bin_12_counts.txt; done
-for i in `cat bin.13.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '      ' >> bin_13_counts.txt; done
-for i in `cat bin.14.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '      ' >> bin_14_counts.txt; done
-for i in `cat bin.15.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '      ' >> bin_15_counts.txt; done
+for i in `cat bin.1.fa.seqs`; do grep $i /output/metagenome/metabat/depth.txt | cut -f 3 -d '      ' >> bin_1_counts.txt; done 
+for i in `cat bin.2.fa.seqs`; do grep $i /output/metagenome/metabat/depth.txt | cut -f 3 -d '       ' >> bin_2_counts.txt; done
+for i in `cat bin.3.fa.seqs`; do grep $i /output/metagenome/metabat/depth.txt | cut -f 3 -d '       ' >> bin_3_counts.txt; done                                                                                                                                      
+for i in `cat bin.4.fa.seqs`; do grep $i /output/metagenome/metabat/depth.txt | cut -f 3 -d '       ' >> bin_4_counts.txt; done
+for i in `cat bin.5.fa.seqs`; do grep $i /output/metagenome/metabat/depth.txt | cut -f 3 -d '       ' >> bin_5_counts.txt; done                                                                                                                                       for i in `cat bin.6.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_6_counts.txt; done                                                                                                                                       for i in `cat bin.7.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_7_counts.txt; done                                                                                                                                       for i in `cat bin.8.fa.seqs`; do grep $i ../depth.txt | cut -f 3 -d '       ' >> bin_8_counts.txt; done
+for i in `cat bin.9.fa.seqs`; do grep $i /output/metagenome/metabat/depth.txt | cut -f 3 -d '       ' >> bin_9_counts.txt; done
+for i in `cat bin.10.fa.seqs`; do grep $i /output/metagenome/metabat/depth.txt | cut -f 3 -d '      ' >> bin_10_counts.txt; done
+for i in `cat bin.11.fa.seqs`; do grep $i /output/metagenome/metabat/depth.txt | cut -f 3 -d '      ' >> bin_11_counts.txt; done
+for i in `cat bin.12.fa.seqs`; do grep $i /output/metagenome/metabat/depth.txt | cut -f 3 -d '      ' >> bin_12_counts.txt; done
+for i in `cat bin.13.fa.seqs`; do grep $i /output/metagenome/metabat/depth.txt | cut -f 3 -d '      ' >> bin_13_counts.txt; done
+for i in `cat bin.14.fa.seqs`; do grep $i /output/metagenome/metabat/depth.txt | cut -f 3 -d '      ' >> bin_14_counts.txt; done
+for i in `cat bin.15.fa.seqs`; do grep $i /output/metagenome/metabat/depth.txt | cut -f 3 -d '      ' >> bin_15_counts.txt; done
 for i in bin_*counts.txt; do awk '{s+=$1} END {print FILENAME "\t" s}' $i >> total_bin_counts.tsv; done
 sed -i 's/_counts.txt//g' total_bin_counts.tsv
 
 #total_bin_counts.tsv is the input for metagenome abundance part of Figure 1A
 
 #Annotate Bins
-#Performed according to the methods. Here we did not use genes in downstream analysis, as they are not needed for humann3, however they may be useful in manual GO ontology enrichment.
-Prokka
-mkdir /vortexfs1/omics/env-bio/users/katherine.lane/hw3-binning-kate-lane/scripts/prokka_bins_dir/
-
-for i in /vortexfs1/omics/env-bio/users/katherine.lane/hw3-binning-kate-lane/scripts/bins_dir/*fa
+for i in /output/metagenome/metabat/bins_dir/*fa
 do
 b=`basename $i .fa`
-cp $i /vortexfs1/omics/env-bio/users/katherine.lane/hw3-binning-kate-lane/scripts/prokka_bins_dir/${b}.fasta
-prokka --locustag $b --outdir $b --prefix $b /vortexfs1/omics/env-bio/users/katherine.lane/hw3-binning-kate-lane/scripts/prokka_bins_dir/${b}.fasta
+cp $i output/metagenome/prokka_bins_dir/${b}.fasta
+prokka --locustag $b --outdir $b --prefix $b output/metagenome/prokka_bins_dir/${b}.fasta
