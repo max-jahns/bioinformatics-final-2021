@@ -13,3 +13,4 @@ dependencies:
   - humann3
   - samtools
   - gtdbtk=1.3.0
+  - prokka
