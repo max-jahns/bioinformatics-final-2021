@@ -1,0 +1,40 @@
+Creating output directory: /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/humman_out_reseeded_05.bin.3_FASTQ
+Output files will be written to: /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/humman_out_reseeded_05.bin.3_FASTQ
+
+Running metaphlan ........
+
+
+Total species selected from prescreen: 0
+
+Selected species explain 0.00% of predicted community composition
+
+
+
+No species were selected from the prescreen.
+Because of this the custom ChocoPhlAn database is empty.
+This will result in zero species-specific gene families and pathways.
+
+
+
+Running diamond ........
+
+
+Aligning to reference database: uniref90_201901b_full.dmnd
+
+Total bugs after translated alignment: 1
+unclassified: 657222 hits
+
+Total gene families after translated alignment: 2568
+
+Unaligned reads after translated alignment: 77.7900826902 %
+
+
+Computing gene families ...
+
+Computing pathways abundance and coverage ...
+
+Output files created: 
+/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/humman_out_reseeded_05.bin.3_FASTQ/reseeded_05.bin.3.bam_genefamilies.tsv
+/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/humman_out_reseeded_05.bin.3_FASTQ/reseeded_05.bin.3.bam_pathabundance.tsv
+/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/humman_out_reseeded_05.bin.3_FASTQ/reseeded_05.bin.3.bam_pathcoverage.tsv
+

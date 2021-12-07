@@ -1,0 +1,51 @@
+Creating output directory: /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/humman_out_reseeded_05.bin.6_FASTQ
+Output files will be written to: /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/humman_out_reseeded_05.bin.6_FASTQ
+
+Running metaphlan ........
+
+Found g__Alteromonas.s__Alteromonas_macleodii : 100.00% of mapped reads
+
+Total species selected from prescreen: 1
+
+Selected species explain 100.00% of predicted community composition
+
+
+Creating custom ChocoPhlAn database ........
+
+
+Running bowtie2-build ........
+
+
+Running bowtie2 ........
+
+Total bugs from nucleotide alignment: 1
+g__Alteromonas.s__Alteromonas_macleodii: 378435 hits
+
+Total gene families from nucleotide alignment: 2231
+
+Unaligned reads after nucleotide alignment: 40.9874641147 %
+
+
+Running diamond ........
+
+
+Aligning to reference database: uniref90_201901b_full.dmnd
+
+Total bugs after translated alignment: 2
+g__Alteromonas.s__Alteromonas_macleodii: 378435 hits
+unclassified: 39660 hits
+
+Total gene families after translated alignment: 2686
+
+Unaligned reads after translated alignment: 35.9255487861 %
+
+
+Computing gene families ...
+
+Computing pathways abundance and coverage ...
+
+Output files created: 
+/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/humman_out_reseeded_05.bin.6_FASTQ/reseeded_05.bin.6.bam_genefamilies.tsv
+/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/humman_out_reseeded_05.bin.6_FASTQ/reseeded_05.bin.6.bam_pathabundance.tsv
+/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/humman_out_reseeded_05.bin.6_FASTQ/reseeded_05.bin.6.bam_pathcoverage.tsv
+

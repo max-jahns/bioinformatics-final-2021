@@ -1,0 +1,1212 @@
+[bam_merge] File 'reseeded_05.bin.6.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_merge] File 'control.bin.6.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[E::hts_open_format] Failed to open file "reseeded_05.bin.6.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_05.bin.6.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.6.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_24.bin.6.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.6.bam.sorted" : No such file or directory
+samtools index: failed to open "control.bin.6.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_05.bin.6.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_05.bin.6.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.6.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_24.bin.6.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.6.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "control.bin.6.bam.sorted": No such file or directory
+[bam_merge] File 'reseeded_05.bin.1.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_merge] File 'control.bin.1.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[E::hts_open_format] Failed to open file "reseeded_05.bin.1.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_05.bin.1.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.1.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_24.bin.1.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.1.bam.sorted" : No such file or directory
+samtools index: failed to open "control.bin.1.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_05.bin.1.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_05.bin.1.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.1.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_24.bin.1.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.1.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "control.bin.1.bam.sorted": No such file or directory
+[bam_merge] File 'reseeded_05.bin.11.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_merge] File 'control.bin.11.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[E::hts_open_format] Failed to open file "reseeded_05.bin.11.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_05.bin.11.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.11.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_24.bin.11.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.11.bam.sorted" : No such file or directory
+samtools index: failed to open "control.bin.11.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_05.bin.11.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_05.bin.11.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.11.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_24.bin.11.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.11.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "control.bin.11.bam.sorted": No such file or directory
+[bam_merge] File 'reseeded_05.bin.15.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_merge] File 'control.bin.15.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[E::hts_open_format] Failed to open file "reseeded_05.bin.15.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_05.bin.15.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.15.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_24.bin.15.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.15.bam.sorted" : No such file or directory
+samtools index: failed to open "control.bin.15.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_05.bin.15.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_05.bin.15.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.15.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_24.bin.15.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.15.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "control.bin.15.bam.sorted": No such file or directory
+[bam_merge] File 'reseeded_05.bin.13.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_merge] File 'control.bin.13.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[E::hts_open_format] Failed to open file "reseeded_05.bin.13.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_05.bin.13.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.13.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_24.bin.13.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.13.bam.sorted" : No such file or directory
+samtools index: failed to open "control.bin.13.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_05.bin.13.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_05.bin.13.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.13.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_24.bin.13.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.13.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "control.bin.13.bam.sorted": No such file or directory
+[bam_merge] File 'reseeded_05.bin.5.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_merge] File 'control.bin.5.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[E::hts_open_format] Failed to open file "reseeded_05.bin.5.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_05.bin.5.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.5.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_24.bin.5.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.5.bam.sorted" : No such file or directory
+samtools index: failed to open "control.bin.5.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_05.bin.5.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_05.bin.5.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.5.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_24.bin.5.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.5.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "control.bin.5.bam.sorted": No such file or directory
+[bam_merge] File 'reseeded_05.bin.12.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_merge] File 'control.bin.12.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[E::hts_open_format] Failed to open file "reseeded_05.bin.12.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_05.bin.12.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.12.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_24.bin.12.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.12.bam.sorted" : No such file or directory
+samtools index: failed to open "control.bin.12.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_05.bin.12.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_05.bin.12.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.12.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_24.bin.12.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.12.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "control.bin.12.bam.sorted": No such file or directory
+[bam_merge] File 'reseeded_05.bin.14.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_merge] File 'control.bin.14.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[E::hts_open_format] Failed to open file "reseeded_05.bin.14.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_05.bin.14.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.14.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_24.bin.14.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.14.bam.sorted" : No such file or directory
+samtools index: failed to open "control.bin.14.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_05.bin.14.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_05.bin.14.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.14.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_24.bin.14.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.14.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "control.bin.14.bam.sorted": No such file or directory
+[bam_merge] File 'reseeded_05.bin.8.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_merge] File 'control.bin.8.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[E::hts_open_format] Failed to open file "reseeded_05.bin.8.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_05.bin.8.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.8.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_24.bin.8.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.8.bam.sorted" : No such file or directory
+samtools index: failed to open "control.bin.8.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_05.bin.8.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_05.bin.8.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.8.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_24.bin.8.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.8.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "control.bin.8.bam.sorted": No such file or directory
+[bam_merge] File 'reseeded_05.bin.2.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_merge] File 'control.bin.2.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[E::hts_open_format] Failed to open file "reseeded_05.bin.2.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_05.bin.2.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.2.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_24.bin.2.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.2.bam.sorted" : No such file or directory
+samtools index: failed to open "control.bin.2.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_05.bin.2.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_05.bin.2.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.2.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_24.bin.2.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.2.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "control.bin.2.bam.sorted": No such file or directory
+[bam_merge] File 'reseeded_05.bin.10.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_merge] File 'control.bin.10.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[E::hts_open_format] Failed to open file "reseeded_05.bin.10.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_05.bin.10.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.10.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_24.bin.10.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.10.bam.sorted" : No such file or directory
+samtools index: failed to open "control.bin.10.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_05.bin.10.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_05.bin.10.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.10.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_24.bin.10.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.10.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "control.bin.10.bam.sorted": No such file or directory
+[bam_merge] File 'reseeded_05.bin.3.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_merge] File 'control.bin.3.bam' exists. Please apply '-f' to overwrite. Abort.
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[bam_sort] Use -T PREFIX / -o FILE to specify temporary and final output files
+Usage: samtools sort [options...] [in.bam]
+Options:
+  -l INT     Set compression level, from 0 (uncompressed) to 9 (best)
+  -u         Output uncompressed data (equivalent to -l 0)
+  -m INT     Set maximum memory per thread; suffix K/M/G recognized [768M]
+  -M         Use minimiser for clustering unaligned/unplaced reads
+  -K INT     Kmer size to use for minimiser [20]
+  -n         Sort by read name (not compatible with samtools index command)
+  -t TAG     Sort by value of TAG. Uses position as secondary index (or read name if -n is set)
+  -o FILE    Write final output to FILE rather than standard output
+  -T PREFIX  Write temporary files to PREFIX.nnnn.bam
+  --no-PG    do not add a PG line
+      --input-fmt-option OPT[=VAL]
+               Specify a single input file format option in the form
+               of OPTION or OPTION=VALUE
+  -O, --output-fmt FORMAT[,OPT[=VAL]]...
+               Specify output format (SAM, BAM, CRAM)
+      --output-fmt-option OPT[=VAL]
+               Specify a single output file format option in the form
+               of OPTION or OPTION=VALUE
+      --reference FILE
+               Reference sequence FASTA FILE [null]
+  -@, --threads INT
+               Number of additional threads to use [0]
+      --write-index
+               Automatically index the output files [off]
+      --verbosity INT
+               Set level of verbosity
+[E::hts_open_format] Failed to open file "reseeded_05.bin.3.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_05.bin.3.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.3.bam.sorted" : No such file or directory
+samtools index: failed to open "reseeded_24.bin.3.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.3.bam.sorted" : No such file or directory
+samtools index: failed to open "control.bin.3.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_05.bin.3.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_05.bin.3.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "reseeded_24.bin.3.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "reseeded_24.bin.3.bam.sorted": No such file or directory
+[E::hts_open_format] Failed to open file "control.bin.3.bam.sorted" : No such file or directory
+samtools bam2fq: Cannot read file "control.bin.3.bam.sorted": No such file or directory

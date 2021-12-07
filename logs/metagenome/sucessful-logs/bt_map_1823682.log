@@ -1,0 +1,105 @@
+[main_samview] region "k119_11638" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_6745" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21413" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_4955" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_20303" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_19035" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_15073" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12196" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_16404" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_13078" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_14067" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21793" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12745" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+samtools merge: failed to read header from "SRR10420347_bin.13/k119_11638_.bam.bin.13"
+[main_samview] region "k119_11638" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_6745" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21413" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_4955" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_20303" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_19035" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_15073" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12196" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_16404" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_13078" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_14067" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21793" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12745" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_11638" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_6745" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21413" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_4955" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_20303" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_19035" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_15073" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12196" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_16404" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_13078" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_14067" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21793" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12745" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_11638" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_6745" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21413" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_4955" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_20303" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_19035" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_15073" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12196" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_16404" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_13078" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_14067" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21793" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12745" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_11638" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_6745" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21413" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_4955" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_20303" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_19035" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_15073" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12196" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_16404" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_13078" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_14067" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21793" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12745" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_11638" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_6745" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21413" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_4955" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_20303" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_19035" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_15073" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12196" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_16404" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_13078" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_14067" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21793" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12745" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_11638" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_6745" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21413" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_4955" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_20303" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_19035" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_15073" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12196" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_16404" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_13078" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_14067" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21793" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12745" specifies an invalid region or unknown reference. Continue anyway.

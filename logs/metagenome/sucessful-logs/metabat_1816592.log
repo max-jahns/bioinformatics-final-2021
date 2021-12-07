@@ -1,0 +1,12 @@
+Output depth matrix to depth.txt
+jgi_summarize_bam_contig_depths 2.15 (Bioconda) 2020-01-04T21:10:40
+Output matrix to depth.txt
+0: Opening bam: aln-pe.sorted.bam
+Processing bam files
+Thread 0 finished: aln-pe.sorted.bam with 903199935 reads and 869974863 readsWellMapped
+Creating depth matrix file: depth.txt
+Closing most bam files
+Closing last bam file
+Finished
+MetaBAT 2 (2.15 (Bioconda)) using minContig 2500, minCV 1.0, minCVSum 1.0, maxP 95%, minS 60, maxEdges 200 and minClsSize 200000. with random seed=1638686904
+15 bins (38553729 bases in total) formed.

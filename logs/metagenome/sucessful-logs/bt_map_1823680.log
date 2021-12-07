@@ -1,0 +1,17 @@
+[main_samview] region "k119_6508" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21897" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+samtools merge: failed to read header from "SRR10420347_bin.1/k119_21897_.bam.bin.1"
+[main_samview] region "k119_6508" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21897" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_6508" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21897" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_6508" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21897" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_6508" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21897" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_6508" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21897" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_6508" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_21897" specifies an invalid region or unknown reference. Continue anyway.

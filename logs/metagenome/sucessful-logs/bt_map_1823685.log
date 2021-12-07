@@ -1,0 +1,41 @@
+[main_samview] region "k119_12908" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_4392" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_13677" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_9834" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_14458" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+[main_samview] fail to read the header from "SRR10420347_mapped_all.sorted.bam".
+samtools merge: failed to read header from "SRR10420347_bin.2/k119_12908_.bam.bin.2"
+[main_samview] region "k119_12908" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_4392" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_13677" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_9834" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_14458" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12908" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_4392" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_13677" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_9834" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_14458" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12908" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_4392" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_13677" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_9834" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_14458" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12908" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_4392" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_13677" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_9834" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_14458" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12908" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_4392" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_13677" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_9834" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_14458" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_12908" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_4392" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_13677" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_9834" specifies an invalid region or unknown reference. Continue anyway.
+[main_samview] region "k119_14458" specifies an invalid region or unknown reference. Continue anyway.

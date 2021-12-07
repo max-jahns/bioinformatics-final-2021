@@ -1,0 +1,10 @@
+java -ea -Xmx200m -cp /vortexfs1/home/katherine.lane/.conda/envs/jahala_clean_metagenome/bbtools/lib/current/ jgi.ReformatReads unmappedonly in=diatom_reads_out.sam out=metagenome_reads.fa
+Executing jgi.ReformatReads [unmappedonly, in=diatom_reads_out.sam, out=metagenome_reads.fa]
+
+Input is being processed as unpaired
+Input:                  	452106267 reads          	45662732967 bases
+Output:                 	450366322 reads (99.62%) 	45486998522 bases (99.62%)
+
+Time:                         	303.186 seconds.
+Reads Processed:        452m 	1491.19k reads/sec
+Bases Processed:      45662m 	150.61m bases/sec

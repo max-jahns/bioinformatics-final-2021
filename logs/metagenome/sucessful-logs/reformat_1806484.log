@@ -1,0 +1,7 @@
+java -ea -Xmx200m -cp /vortexfs1/home/katherine.lane/.conda/envs/jahala_clean_metagenome/bbtools/lib/current/ jgi.ReformatReads unmappedonly in=diatom_reads_out.sam out=metagenome_reads.fa
+Executing jgi.ReformatReads [unmappedonly, in=diatom_reads_out.sam, out=metagenome_reads.fa]
+
+Exception in thread "main" java.lang.AssertionError: File metagenome_reads.fa exists and overwrite=false
+	at shared.Tools.testOutputFiles(Tools.java:620)
+	at jgi.ReformatReads.<init>(ReformatReads.java:334)
+	at jgi.ReformatReads.main(ReformatReads.java:44)

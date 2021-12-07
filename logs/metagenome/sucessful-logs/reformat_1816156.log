@@ -1,0 +1,13 @@
+java -ea -Xmx200m -cp /vortexfs1/home/katherine.lane/.conda/envs/jahala_clean_metagenome/bbtools/lib/current/ jgi.ReformatReads in=metagenome_reads_out.sam out1=metagenome_reads_NEW.1.fq out2=metagenome_reads_NEW.2.fq
+Executing jgi.ReformatReads [in=metagenome_reads_out.sam, out1=metagenome_reads_NEW.1.fq, out2=metagenome_reads_NEW.2.fq]
+
+Set INTERLEAVED to true
+Input is being processed as paired
+java.lang.AssertionError: There is something wrong with the read pairing.
+0, 0, true, true, 0, 0
+java.lang.AssertionError: There is something wrong with the read pairing.
+0, 0, true, true, 0, 0
+	at stream.ConcurrentGenericReadInputStream.readLists(ConcurrentGenericReadInputStream.java:430)
+	at stream.ConcurrentGenericReadInputStream.run0(ConcurrentGenericReadInputStream.java:197)
+	at stream.ConcurrentGenericReadInputStream.run(ConcurrentGenericReadInputStream.java:173)
+	at java.lang.Thread.run(Thread.java:745)

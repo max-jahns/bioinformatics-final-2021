@@ -1,0 +1,14 @@
+java -ea -Xmx200m -cp /vortexfs1/home/katherine.lane/.conda/envs/jahala_clean_metagenome/bbtools/lib/current/ jgi.ReformatReads in=diatom_reads_out.sam out=metagenome_reads.1.fq out2=metagenome_reads.2.fq
+Executing jgi.ReformatReads [in=diatom_reads_out.sam, out=metagenome_reads.1.fq, out2=metagenome_reads.2.fq]
+
+Set INTERLEAVED to true
+Input is being processed as paired
+Exception in thread "Thread-3" java.lang.AssertionError: 
+SRR10411456.6208 6208 length=101	0	-1	+	-1	99	1000000000000000000	1	0	0	ACCGACTCAGCAGCTTGGAGCGACGCTACTCGTTGCGGCAGGGGCGGCCGCCCCGCAACCACATTGATCGGAGATCCAACAACCTGCTGGGAGGTGGCGTT	BBBFF'BFFFFFFF7FBFBFFBBF'BBFBBB7B0B0BFFFFF###########################################################	.	14	.	.
+
+null
+	at stream.ReadStreamByteWriter.writeFastq(ReadStreamByteWriter.java:459)
+	at stream.ReadStreamByteWriter.processJobs(ReadStreamByteWriter.java:96)
+	at stream.ReadStreamByteWriter.run2(ReadStreamByteWriter.java:41)
+	at stream.ReadStreamByteWriter.run(ReadStreamByteWriter.java:27)
+slurmstepd: error: *** JOB 1806487 ON pn080 CANCELLED AT 2021-12-02T13:06:14 ***

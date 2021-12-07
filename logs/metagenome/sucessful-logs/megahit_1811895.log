@@ -1,0 +1,16 @@
+2021-12-03 12:29:25 - MEGAHIT v1.2.9
+2021-12-03 12:29:25 - Using megahit_core with POPCNT and BMI2 support
+2021-12-03 12:29:25 - Convert reads to binary library
+2021-12-03 12:29:25 - b'INFO  sequence/io/sequence_lib.cpp  :   75 - Lib 0 (/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/metagenome_reads.1.fq,/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/metagenome_reads.2.fq): pe, 0 reads, 0 max length'
+2021-12-03 12:29:25 - b'INFO  utils/utils.h                 :  152 - Real: 0.0151\tuser: 0.0010\tsys: 0.0010\tmaxrss: 12284'
+2021-12-03 12:29:25 - Start assembly. Number of CPU threads 36 
+2021-12-03 12:29:25 - k list: 21,29,39,59,79,99,119,141 
+2021-12-03 12:29:25 - Memory used: 181269529804
+2021-12-03 12:29:25 - Extract solid (k+1)-mers for k = 21 
+2021-12-03 12:29:25 - Build graph for k = 21 
+2021-12-03 12:29:26 - Assemble contigs from SdBG for k = 21
+2021-12-03 12:29:26 - Local assembly for k = 21
+2021-12-03 12:29:26 - Extract iterative edges from k = 21 to 29 
+2021-12-03 12:29:26 - Merging to output final contigs 
+2021-12-03 12:29:26 - 0 contigs, total 0 bp, min 0 bp, max 0 bp, avg 0 bp, N50 0 bp
+2021-12-03 12:29:26 - ALL DONE. Time elapsed: 0.991846 seconds 

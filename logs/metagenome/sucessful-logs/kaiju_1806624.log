@@ -1,0 +1,18 @@
+# infilename= proteins.faa
+# outfilename= proteins
+# Alphabet= ACDEFGHIKLMNPQRSTVWY
+# nThreads= 5
+# length= 0.000000
+# checkpoint= 5
+# caseSens=OFF
+# revComp=OFF
+# term= *
+# revsort=OFF
+# help=OFF
+proteins.faa
+# filenm= proteins
+# removecmd= NULL (null)
+# help=OFF
+ERROR: File proteins.bwt containing BWT could not be opened for reading
+Error: Could not open file nodes.dmp
+

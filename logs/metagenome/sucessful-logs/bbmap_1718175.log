@@ -1,0 +1,52 @@
+java -Djava.library.path=/vortexfs1/home/katherine.lane/.conda/envs/jahala_clean_metagenome/bbtools/lib/jni/ -ea -Xmx49195m -cp /vortexfs1/home/katherine.lane/.conda/envs/jahala_clean_metagenome/bbtools/lib/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 ref=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/diatom_genome/GCA_014885115.2_ASM1488511v2_genomic.fna in=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/SRR10411456_1.trimmed.fastq.gz in=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/SRR10411456_2.trimmed.fastq.gz out=diatom_reads_out.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, ref=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/diatom_genome/GCA_014885115.2_ASM1488511v2_genomic.fna, in=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/SRR10411456_1.trimmed.fastq.gz, in=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/SRR10411456_2.trimmed.fastq.gz, out=diatom_reads_out.sam]
+
+BBMap version 37.62
+Retaining first best site only for ambiguous mappings.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.936 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	1.618 seconds.
+Analyzed Index:   	1.987 seconds.
+Started output stream:	0.680 seconds.
+Cleared Memory:    	0.454 seconds.
+Processing reads in single-ended mode.
+Started read stream.
+Started 36 mapping threads.
+Detecting finished threads: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35
+
+   ------------------   Results   ------------------   
+
+Genome:                	1
+Key Length:            	13
+Max Indel:             	16000
+Minimum Score Ratio:  	0.56
+Mapping Mode:         	normal
+Reads Used:           	452106267	(45662732967 bases)
+
+Mapping:          	806.909 seconds.
+Reads/sec:       	560293.72
+kBases/sec:      	56589.67
+
+
+Read 1 data:      	pct reads	num reads 	pct bases	   num bases
+
+mapped:          	  0.3849% 	  1739945 	  0.3849% 	   175734445
+unambiguous:     	  0.3301% 	  1492485 	  0.3301% 	   150740985
+ambiguous:       	  0.0547% 	   247460 	  0.0547% 	    24993460
+low-Q discards:  	  3.9815% 	 18000782 	  3.9815% 	  1818078982
+
+perfect best site:	  0.2044% 	   924146 	  0.2044% 	    93338746
+semiperfect site:	  0.2086% 	   942997 	  0.2086% 	    95242697
+
+Match Rate:      	      NA 	       NA 	 93.8135% 	   170297971
+Error Rate:      	 31.6983% 	   796909 	  5.8438% 	    10608174
+Sub Rate:        	 31.4641% 	   791022 	  2.5445% 	     4619075
+Del Rate:        	  3.3701% 	    84727 	  3.1917% 	     5793755
+Ins Rate:        	  2.3686% 	    59548 	  0.1076% 	      195344
+N Rate:          	  1.3926% 	    35010 	  0.3427% 	      622055
+
+Total time:     	813.745 seconds.
