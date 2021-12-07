@@ -47,6 +47,6 @@ install_github("jokergoo/ComplexHeatmap")
 BiocManager::install("pcaMethods")
 ```
 
-Alternately, if it's easier to run a re-analysis locally than on Poseidon: data for re-running metabolomics analyses can be found in data/clean_data/metabolome; .Rmd scripts can be found in scripts/metabolomics; and output figures can be found in output/metabolomics. In addition, analysis/figure_2* contains the .Rmd files used to generate the relevant figures described by the directory name. Scripts will require editing the data path to reflect the local environment, if rerunning analysis is more done locally. 
+Once packages are installed, metabolomic analysis can be replicated in the "Metabolomic analysis.ipynb" Jupyter notebook. 
 
-In this project, we tried to replicate two kinds of metabolomic analysis reported by Shibl et al. - PCA 
+Alternately, if it's easier to run a re-analysis locally than on Poseidon: data for re-running metabolomics analyses can be found in data/clean_data/metabolome; .Rmd scripts can be found in scripts/metabolomics; and output figures can be found in output/metabolomics. In addition, analysis/figure_2* contains the .Rmd files used to generate the relevant figures described by the directory name. Scripts will require editing the data path to reflect the local environment, if rerunning analysis is more done locally. 
