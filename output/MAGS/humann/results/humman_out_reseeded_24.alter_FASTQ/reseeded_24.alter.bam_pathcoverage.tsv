@@ -1,0 +1,62 @@
+# Pathway	reseeded_24.alter.bam_Coverage
+UNMAPPED	1.0000000000
+UNINTEGRATED	1.0000000000
+UNINTEGRATED|unclassified	1.0000000000
+SO4ASSIM-PWY: assimilatory sulfate reduction I	1.0000000000
+SO4ASSIM-PWY: assimilatory sulfate reduction I|unclassified	1.0000000000
+PWY1ZNC-1: assimilatory sulfate reduction IV	1.0000000000
+PWY1ZNC-1: assimilatory sulfate reduction IV|unclassified	1.0000000000
+VALSYN-PWY: L-valine biosynthesis	0.9999999463
+VALSYN-PWY: L-valine biosynthesis|unclassified	0.9999999463
+BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched chain amino acid biosynthesis	0.9581202999
+BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched chain amino acid biosynthesis|unclassified	0.9581202999
+ILEUSYN-PWY: L-isoleucine biosynthesis I (from threonine)	0.9481928595
+ILEUSYN-PWY: L-isoleucine biosynthesis I (from threonine)|unclassified	0.9481928595
+PWY-7221: guanosine ribonucleotides de novo biosynthesis	0.9999819667
+PWY-7221: guanosine ribonucleotides de novo biosynthesis|unclassified	0.9999819667
+FAO-PWY: fatty acid &beta;-oxidation I (generic)	0.9997759587
+FAO-PWY: fatty acid &beta;-oxidation I (generic)|unclassified	0.9997759587
+PWY-5103: L-isoleucine biosynthesis III	0.9196075361
+PWY-5103: L-isoleucine biosynthesis III|unclassified	0.9196075361
+PWY-5136: fatty acid &beta;-oxidation II (plant peroxisome)	0.9997479606
+PWY-5136: fatty acid &beta;-oxidation II (plant peroxisome)|unclassified	0.9997479606
+PWY-5138: fatty acid &beta;-oxidation IV (unsaturated, even number)	0.9996639756
+PWY-5138: fatty acid &beta;-oxidation IV (unsaturated, even number)|unclassified	0.9996639756
+HISTSYN-PWY: L-histidine biosynthesis	0.3381504489
+HISTSYN-PWY: L-histidine biosynthesis|unclassified	0.3381504489
+PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I	0.0000000001
+PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I|unclassified	0.0000000001
+PWY-5686: UMP biosynthesis I	0.0008165903
+PWY-5686: UMP biosynthesis I|unclassified	0.0008165903
+PWY-7790: UMP biosynthesis II	0.0008165903
+PWY-7790: UMP biosynthesis II|unclassified	0.0008165903
+PWY-7791: UMP biosynthesis III	0.0008165903
+PWY-7791: UMP biosynthesis III|unclassified	0.0008165903
+PWY0-862: (5Z)-dodecenoate biosynthesis I	0.0000000006
+PWY0-862: (5Z)-dodecenoate biosynthesis I|unclassified	0.0000000006
+HEME-BIOSYNTHESIS-II: heme b biosynthesis I (aerobic)	0.0000076330
+HEME-BIOSYNTHESIS-II: heme b biosynthesis I (aerobic)|unclassified	0.0000076330
+HEME-BIOSYNTHESIS-II-1: heme b biosynthesis V (aerobic)	0.0000076330
+HEME-BIOSYNTHESIS-II-1: heme b biosynthesis V (aerobic)|unclassified	0.0000076330
+PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II	0.0000000000
+PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II|unclassified	0.0000000000
+PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II	0.0000000000
+PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II|unclassified	0.0000000000
+PWY-7663: gondoate biosynthesis (anaerobic)	0.0000000004
+PWY-7663: gondoate biosynthesis (anaerobic)|unclassified	0.0000000004
+PWY-7664: oleate biosynthesis IV (anaerobic)	0.0000000000
+PWY-7664: oleate biosynthesis IV (anaerobic)|unclassified	0.0000000000
+PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II	0.0000000000
+PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II|unclassified	0.0000000000
+PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis	0.0000000000
+PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis|unclassified	0.0000000000
+FASYN-ELONG-PWY: fatty acid elongation -- saturated	0.0000000000
+FASYN-ELONG-PWY: fatty acid elongation -- saturated|unclassified	0.0000000000
+PWY-7858: (5Z)-dodecenoate biosynthesis II	0.0000000000
+PWY-7858: (5Z)-dodecenoate biosynthesis II|unclassified	0.0000000000
+PWY-6282: palmitoleate biosynthesis I (from (5Z)-dodec-5-enoate)	0.0000000000
+PWY-6282: palmitoleate biosynthesis I (from (5Z)-dodec-5-enoate)|unclassified	0.0000000000
+PWY-5973: cis-vaccenate biosynthesis	0.0000000000
+PWY-5973: cis-vaccenate biosynthesis|unclassified	0.0000000000
+NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch) I	0.0000000000
+NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch) I|unclassified	0.0000000000

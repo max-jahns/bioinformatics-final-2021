@@ -1,0 +1,10 @@
+README.txt
+reseeded_05.alter.bam
+reseeded_05.alter.bam.fastq
+reseeded_05.rhodo.bam
+reseeded_05.rhodo.bam.4sub.fastq
+reseeded_05.rhodo.bam.fastq
+reseeded_24.alter.bam
+reseeded_24.alter.bam.fastq
+reseeded_24.rhodo.bam
+reseeded_24.rhodo.bam.fastq

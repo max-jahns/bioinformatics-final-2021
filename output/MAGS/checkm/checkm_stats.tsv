@@ -1,0 +1,7 @@
+    Finished parsing hits for 1 of 6 (16.67%) bins.    Finished parsing hits for 2 of 6 (33.33%) bins.    Finished parsing hits for 3 of 6 (50.00%) bins.    Finished parsing hits for 4 of 6 (66.67%) bins.    Finished parsing hits for 5 of 6 (83.33%) bins.    Finished parsing hits for 6 of 6 (100.00%) bins.Bin Id	Marker lineage	# genomes	# markers	# marker sets	0	1	2	3	4	5+	Completeness	Contamination	Strain heterogeneity
+GCA_014872775.1_ASM1487277v1_genomic	f__Rhodobacteraceae (UID3360)	56	582	313	8	572	2	0	0	0	98.90	0.22	50.00
+GCA_014872785.1_ASM1487278v1_genomic	c__Gammaproteobacteria (UID4761)	52	693	297	74	616	2	1	0	0	91.67	0.34	0.00
+GCA_014872805.1_ASM1487280v1_genomic	c__Gammaproteobacteria (UID4761)	52	693	297	18	672	3	0	0	0	96.03	0.51	0.00
+GCA_014872815.1_ASM1487281v1_genomic	f__Rhodobacteraceae (UID3360)	56	582	313	3	579	0	0	0	0	99.47	0.00	0.00
+GCA_014872825.1_ASM1487282v1_genomic	f__Rhodobacteraceae (UID3356)	67	617	330	21	593	2	1	0	0	98.79	0.61	0.00
+GCA_014872875.1_ASM1487287v1_genomic	f__Rhodobacteraceae (UID3360)	56	582	313	3	576	3	0	0	0	99.49	0.59	33.33
