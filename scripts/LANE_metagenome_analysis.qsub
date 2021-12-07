@@ -131,4 +131,5 @@ sed -i 's/_counts.txt//g' total_bin_counts.tsv
 #total_bin_counts.tsv is the input for metagenome abundance part of Figure 1A
 
 #Annotate Bins
-#Performed according to the methods. Here we did not end up using genes in downstream analysis, however it could be useful if performing manually GO ontology enrichment.
+#Performed according to the methods. Here we did not use genes in downstream analysis, as they are not needed for humann3, however they may be useful in manual GO ontology enrichment.
+Prokka
