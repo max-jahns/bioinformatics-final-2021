@@ -9,11 +9,13 @@ library(ggplot2)
 library(gridExtra)
 library(ggtern)
 
-#data = as.matrix(read.csv("~/Downloads/deseq_input.tsv", sep=",", row.names = "Contig"))
+#read in data
 data = read.csv("~/Downloads/deseq_input.tsv", row.names = "contigName" )
 
+#read in col_data csv for input to deseq
 cdata = read.csv("~/Downloads/coldat.csv", row.names = "sample")
 
+#turn dataframes into matrices
 d <- as.matrix(data)
 c <- as.matrix(cdata)
 
@@ -21,29 +23,29 @@ c <- as.matrix(cdata)
 dds = DESeqDataSetFromMatrix(countData = round(d), colData = c, design = ~ condition)
 dds <- DESeq(dds)
 res = results(dds, alpha = 0.05)
-#so yeah, the factor column, then the “numerator” followed by “denominator”, denominator should be the control numerator the treatment
+
+#also export results from deseq that are pairwise for each condition- denominator is control, numerator is treatment (numerator first, then denominator)
 res_1 = results(dds, contrast = c('condition', 'reseeded_05', 'reseeded_24'), alpha = 0.05)
 res_2 = results(dds, contrast = c('condition', 'control', 'reseeded_05'), alpha = 0.05)
 res_3 = results(dds, contrast = c('condition', 'control', 'reseeded_24'), alpha = 0.05)
 
 
+#save to files
 write.csv(res_1, file = "~/Downloads/DE_results_r05_r24.csv")
 write.csv(res_2, file = "~/Downloads/DE_results_pairwise_c_r05.csv")
 write.csv(res_3, file = "~/Downloads/DE_results_pairwise_c_r24.csv")
 
 
 
-#deseq_res = results(dds, tidy=TRUE)
-
 #Make the Triangles
 
-#bring_back_deseq
+#bring_back_deseq 
 stats = read.csv('~/Downloads/DE_results.csv')
 r05_r24 = read.csv("~/Downloads/DE_results_r05_r24.csv")
 c_r05 = read.csv("~/Downloads/DE_results_pairwise_c_r05.csv")
 c_r24 = read.csv("~/Downloads/DE_results_pairwise_c_r24.csv")
 
-#subset into dataframes for each Family
+#Match bins with Family Taxa
 genome_taxon_MAGS = read.table('~/Downloads/bin_taxonomy.tsv',
                                col.names = c("Bin_ID", "Family"))
 data_1 <- stats %>%
@@ -52,21 +54,11 @@ data_1 <- stats %>%
 data_rr <- r05_r24 %>%
   separate(X, into = c('Bin_ID', 'scaffold'), sep = '_k')  #pipe it in instead of creating intermediate object, up to you to create intermediate opject
 
-#data_rr <- data_rr %>% 
-#  mutate(linearChange = (2^log2FoldChange) / 100)
-
 data_cr5 <- c_r05 %>%
   separate(X, into = c('Bin_ID', 'scaffold'), sep = '_k')  #pipe it in instead of creating intermediate object, up to you to create intermediate opject
 
-#data_cr5 <- data_cr5 %>% 
-#  mutate(linearChange = (2^log2FoldChange) / 100)
-
 data_cr24 <- c_r24 %>%
   separate("X", into = c("Bin_ID", "scaffold"), sep = '_k')  #pipe it in instead of creating intermediate object, up to you to create intermediate opject
-
-#data_cr24 <- data_cr24 %>% 
-#  mutate(linearChange = (2^log2FoldChange) / 100)
-
 
 
 #add the family name
@@ -82,12 +74,7 @@ data_cr5 <- data_cr5 %>%
 data_cr24 <- data_cr24 %>%
   left_join(genome_taxon_MAGS, by = 'Bin_ID')
 
-
-#colnames(data_1)[1] == colnames(genome_taxon_MAGS)[1]
-#class(data_1)
-#class(genome_taxon_MAGS)
-#save(data_1, genome_taxon_MAGS, file = '~/Downloads/temp.rdata')
-
+#Export overall DESeq results
 data_2 %>% 
   #filter(padj <= 0.05) %>%  # use  this instead of filtering pvalue to filter adjusted pvalues instead
   #filter(!is.na(Family)) %>%  #uncomment if you want to remove 'NA' Family rows
@@ -96,32 +83,9 @@ data_2 %>%
   theme_bw() +
   facet_wrap(~ Family) 
 
-#data_2 %>% 
-  #mutate(linearChange = (2^log2FoldChange) / 100) %>% 
-  #filter(pvalue <= 0.05) %>%
-  #filter(padj <= 0.05) %>%  # use  this instead of filtering pvalue to filter adjusted pvalues instead
-  #filter(!is.na(Family)) %>%  #uncomment if you want to remove 'NA' Family rows
-  #ggplot(aes(linearChange, pvalue) +
-           #geom_point() +
-           #theme_bw() +
-           #facet_wrap(~ Family)
+#Back to the triangles
 
-#turn the log2fold change into a range from 0 to 1, remove all NA families
-data_3 <- data_2 %>% 
-  mutate(linearChange = (2^log2FoldChange) / 100)
-  #filter(!is.na(Family))  #uncomment if you want to remove 'NA' Family rows
-
-#subset based on family
-#data_z = data_3 %>%
-#  as_tibble() %>% 
-#  group_by(Family) %>% 
-#  group_split()
-
-
-
-#data_z = data_z %>% 
-# set_names(nm = c(map_chr(data_z, ~ unique(.x$Family)) %>% 
-#                     na.omit(), 'None'))
+#subset based on family, turn the log2fold change into a range from 0 to 1, remove all NA families
 
 
 data_rr_A = subset(data_rr, Family == "Alteromonadaceae")
@@ -193,8 +157,7 @@ data_cr24_S <- data_cr24_S %>%
 
 
 
-scale_fill_manual(values = c("steelblue2", "gray60", "orchid3", "orange2", "tomato2", "yellowgreen"))
-
+#make each of the six plots
 A = ggtern(data_rr_A, aes(linearChange,data_cr5_A$linearChange,data_cr24_A$linearChange)) +
   geom_point() +
   theme_hidetitles() +
@@ -202,9 +165,6 @@ A = ggtern(data_rr_A, aes(linearChange,data_cr5_A$linearChange,data_cr24_A$linea
   labs(title = "Alteromonadaceae") +
   theme(plot.title=element_text(hjust=0.5))
 
-  
-  #labs(x = "Control",y="Reseeding 05hrs",z="Reseeding 24hrs")
-A
   
 F = ggtern(data_rr_F, aes(linearChange,data_cr5_F$linearChange,data_cr24_F$linearChange)) +
   geom_point() +
@@ -214,14 +174,14 @@ F = ggtern(data_rr_F, aes(linearChange,data_cr5_F$linearChange,data_cr24_F$linea
   theme(plot.title=element_text(hjust=0.5))
 
   
-F
+
 L = ggtern(data_rr_L, aes(linearChange,data_cr5_L$linearChange,data_cr24_L$linearChange)) +
   geom_point() +
   theme(panel.background = element_rect(fill = "orchid3")) +
   theme_hidetitles() +
   labs(title = "Litoricolaceae") +
   theme(plot.title=element_text(hjust=0.5))
-L
+
 
 N = ggtern(data_rr_N, aes(linearChange,data_cr5_N$linearChange,data_cr24_N$linearChange))+
   geom_point() +
@@ -229,7 +189,7 @@ N = ggtern(data_rr_N, aes(linearChange,data_cr5_N$linearChange,data_cr24_N$linea
   theme_hidetitles() +
   labs(title = "Nitrincolaceae") +
   theme(plot.title=element_text(hjust=0.5))
-N
+
 
 R = ggtern(data_rr_R, aes(linearChange,data_cr5_R$linearChange,data_cr24_R$linearChange)) +
   geom_point() +
@@ -237,7 +197,7 @@ R = ggtern(data_rr_R, aes(linearChange,data_cr5_R$linearChange,data_cr24_R$linea
   theme_hidetitles() +
   labs(title = "Rhodobacteraceae") +
   theme(plot.title=element_text(hjust=0.5))
-R
+
 
 S = ggtern(data_rr_S, aes(linearChange,data_cr5_S$linearChange,data_cr24_S$linearChange))+
   geom_point() +
@@ -245,8 +205,6 @@ S = ggtern(data_rr_S, aes(linearChange,data_cr5_S$linearChange,data_cr24_S$linea
   theme_hidetitles() +
   labs(title = "Sphingomonadaceae") +
   theme(plot.title=element_text(hjust=0.5))
-
-S
 
 grid.arrange(A,F,L,N,R,S,ncol=2)
 
