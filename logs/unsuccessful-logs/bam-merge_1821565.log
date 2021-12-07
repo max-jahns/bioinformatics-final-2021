@@ -1,8 +1,0 @@
-Trinity version: Trinity-v2.3.2
-** NOTE: Latest version of Trinity is Trinity-v2.13.2, and can be obtained at:
-	https://github.com/trinityrnaseq/trinityrnaseq/releases
-
-Sunday, December 5, 2021: 16:21:15	CMD: java -Xmx64m -XX:ParallelGCThreads=2 -jar /vortexfs1/home/mjahns/.conda/envs/trinotate/opt/trinity-2.3.2/util/support_scripts/ExitTester.jar 0
-Sunday, December 5, 2021: 16:21:16	CMD: java -Xmx64m -XX:ParallelGCThreads=2 -jar /vortexfs1/home/mjahns/.conda/envs/trinotate/opt/trinity-2.3.2/util/support_scripts/ExitTester.jar 1
-Error, cannot locate file: grouped-mappings/grouped.bam at /vortexfs1/home/mjahns/.conda/envs/trinotate/bin/Trinity line 2402.
-	main::create_full_path("grouped-mappings/grouped.bam", 1) called at /vortexfs1/home/mjahns/.conda/envs/trinotate/bin/Trinity line 1164
