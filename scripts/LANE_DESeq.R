@@ -1,6 +1,7 @@
 install.packages("BiocManager")
 install.packages("ggplot2")
 install.packages("gridExtra")
+install.packages("ggtern")
 BiocManager::install("DESeq2")
 
 library(DESeq2)
