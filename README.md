@@ -26,3 +26,12 @@ This repository contains the following directories:
 ### Type of analysis 2
 
 ### Metabolomics analysis
+
+The metabolomic data used in this project were relatively small and manageable, and required analysis in R. We find R much easier to use locally rather than on Poseidon, so analysis was performed locally, and relevant scripts, data, and outputs were then moved to Poseidon. It's therefore likely that the easiest way to re-run these analyses is locally as well. Analysis was performed in R version 4.1.2.
+
+Data underwent some manual manipulation prior to being used in R. "Clean" data : 
+ - Metadata information was collapsed into a single identifier to simplify analysis
+ - Table 4 was only provided in .pdf format by Shibl et al., so relevant data were manually transferred to a usable file format. Further manual manipulation enabled some early-stage data exploration: 
+   - In Table 4, m/z were manually calculated based on the listed mass (M (Da)) and adduct.
+   - Retention time (RT) in seconds was manually calculated in Excel from RT in minutes, which was given. 
+ - Metadata (not collapsed into a single identifier) in Dataset_S01 was preserved in a separate file
