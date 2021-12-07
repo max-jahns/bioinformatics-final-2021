@@ -18,14 +18,16 @@ This repository contains the following directories:
  - data: raw data  organized into the analyses: diatom_genome, diatom_transcriptome, MAGS, metagenome, metatranscriptome, and metabolome
  - envs: yaml files that can be used to generate conda environments used in data analysis
  - jupyter-notebooks: Final jupyter notebooks for course and other notebooks for making figures with copies of files used as input for these notebooks
- - logs: log files associated with organized in subdirectories based on analyses: diatom_genome, diatom_transcriptome, MAGS, metagenome, metatranscriptome, and metabolome, Fig1A
- - output: Directories for analyeses and for clean and processed data used in figure creation, organized into the analyses: diatom_genome, diatom_transcriptome, Fig_1A, MAGS, metagenome, metatranscriptome, and metabolome
+ - logs: log files associated with organized in subdirectories based on analyses: diatom_genome, diatom_transcriptome, MAGS, metagenome, metatranscriptome, and metabolome, Fig1A, Fig1B, and Fig2. Logs are numerous as jobs were often broken into parts in order to parallelize on poseidon HPC. Each directory contains a failed_logs directory of logs that did not run.
+ - output: Directories for analyeses and for clean and processed data used in figure creation, organized into the analyses: diatom_genome, diatom_transcriptome,  Fig1A, Fig1B, Fig2, MAGS, metagenome, metatranscriptome, and metabolome
  - scripts: All slurm and R scripts used to analyze data and produce figures
  - tools: Accession number lists used for downloading data and directories for databases for tools used in this analysis
 
 ## How to run our analyses
 
 ### Metagenome, Metatranscriptome, and MAGS
+
+All analyses are wrapped in slurm scripts, numbers indicate order that they must be run. Downstream analyses scripts' used to generate /Fig1A are also present (and labelled in order which they must be run), and supplemental files used in these analyses have also been copied there in directory /Fig1A_supps. (These Fig1A_supps files are also located in the output/Fig1A directory) All wrappers include the activate on the conda environment to be used, and, if run in order, wrapper scripts will create the conda environments  needed from the /envs/ files. 
 
 
 ### Type of analysis 2
