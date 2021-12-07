@@ -27,7 +27,7 @@ This repository contains the following directories:
 
 ### Metagenome, Metatranscriptome, and MAGS
 
-All analyses are wrapped in slurm scripts, and numbers indicate the order in which they must be run. Downstream analyses' scripts used to generate /Fig1A are also present (and labeled in the order which they must be run), and supplemental files used in these analyses have also been copied there in directory /Fig1A_supps. These Fig1A_supps files are also located in the output/Fig1A directory. All wrappers include the activate on the conda environment to be used, and, if run in order, wrapper scripts will create the conda environments  needed from the /envs/ files. 
+All analyses are wrapped in slurm scripts, and numbers indicate the order in which they must be run. Downstream analyses' scripts used to generate /Fig1A are also present (and labeled in the order which they must be run), and supplemental files used in these analyses have also been copied there in directory /Fig1A_supps. These Fig1A_supps files are also located in the output/Fig1A directory. All wrappers include the activate on the conda environment to be used, and, if run in order, wrapper scripts will create the conda environments  needed from the /envs/ files. Possible specific modifications and instructions are included in each of the wrapper scripts.
 
 
 ### Diatom Transcriptome Analysis
