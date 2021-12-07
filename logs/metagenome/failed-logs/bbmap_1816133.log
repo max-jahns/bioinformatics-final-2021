@@ -1,0 +1,32 @@
+Settings:
+  Output files: "bt2/diatom.fa.*.bt2"
+  Line rate: 6 (line is 64 bytes)
+  Lines per side: 1 (side is 64 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Max bucket size: default
+  Max bucket size, sqrt multiplier: default
+  Max bucket size, len divisor: 4
+  Difference-cover sample period: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/diatom_genome/GCA_014885115.2_ASM1488511v2_genomic.fna
+Building a SMALL index
+Reading reference sizes
+Could not open index file for writing: "bt2/diatom.fa.3.bt2"
+Please make sure the directory exists and that permissions allow writing by
+Bowtie.
+  Time reading reference sizes: 00:00:00
+Total time for call to driver() for forward index: 00:00:00
+Error: Encountered internal Bowtie 2 exception (#1)
+Command: /vortexfs1/home/katherine.lane/.conda/envs/python_lab/bin/bowtie2-build-s --wrapper basic-0 /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/diatom_genome/GCA_014885115.2_ASM1488511v2_genomic.fna bt2/diatom.fa 
+Deleting "bt2/diatom.fa.3.bt2" file written during aborted indexing attempt.
+Deleting "bt2/diatom.fa.4.bt2" file written during aborted indexing attempt.
+(ERR): "bt2/diatom.fa" does not exist or is not a Bowtie 2 index
+Exiting now ...

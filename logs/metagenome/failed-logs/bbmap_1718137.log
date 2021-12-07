@@ -1,0 +1,24 @@
+java -Djava.library.path=/vortexfs1/home/katherine.lane/.conda/envs/jahala_clean_metagenome/bbtools/lib/jni/ -ea -Xmx49321m -cp /vortexfs1/home/katherine.lane/.conda/envs/jahala_clean_metagenome/bbtools/lib/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 ref=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/diatom_genome/GCA_014885115.2_ASM1488511v2_genomic.fna
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, ref=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/diatom_genome/GCA_014885115.2_ASM1488511v2_genomic.fna]
+
+BBMap version 37.62
+No output file.
+NOTE:	Ignoring reference file because it already appears to have been processed.
+NOTE:	If you wish to regenerate the index, please manually delete ref/genome/1/summary.txt
+Set genome to 1
+
+Loaded Reference:	0.567 seconds.
+Loading index for chunk 1-1, build 1
+Generated Index:	1.523 seconds.
+No reads to process; quitting.
+
+Total time:     	2.965 seconds.
+java -Djava.library.path=/vortexfs1/home/katherine.lane/.conda/envs/jahala_clean_metagenome/bbtools/lib/jni/ -ea -Xmx49321m -cp /vortexfs1/home/katherine.lane/.conda/envs/jahala_clean_metagenome/bbtools/lib/current/ align2.BBMap build=1 overwrite=true fastareadlen=500 ref=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/diatom_genome/GCA_014885115.2_ASM1488511v2_genomic.fna in=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/SRR10411456_1.trimmed.fastq.gz, /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/SRR10411456_2.trimmed.fastq.gz out=diatom_reads_out.sam
+Executing align2.BBMap [build=1, overwrite=true, fastareadlen=500, ref=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/diatom_genome/GCA_014885115.2_ASM1488511v2_genomic.fna, in=/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/SRR10411456_1.trimmed.fastq.gz,, /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/SRR10411456_2.trimmed.fastq.gz, out=diatom_reads_out.sam]
+
+BBMap version 37.62
+Exception in thread "main" java.lang.RuntimeException: Unknown parameter: /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/SRR10411456_2.trimmed.fastq.gz
+	at align2.AbstractMapper.parse(AbstractMapper.java:643)
+	at align2.AbstractMapper.<init>(AbstractMapper.java:55)
+	at align2.BBMap.<init>(BBMap.java:43)
+	at align2.BBMap.main(BBMap.java:31)

@@ -1,0 +1,3 @@
+Creating output directory: /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/control.bin.10_FASTQ
+Output files will be written to: /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metagenome/sra/megahit_assembly2/control.bin.10_FASTQ
+CRITICAL ERROR: Unable to determine the input file format. Please provide the format with the --input_format argument.
