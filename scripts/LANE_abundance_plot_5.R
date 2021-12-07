@@ -3,16 +3,18 @@
 library(tidyverse)
 library(magrittr)
 
-# sed -i 's/_/./g' ~/Downloads/total_bin_counts.tsv 
 
-#import the *.evec file
+#import bins and counts
 data_1 = read.table('~/Downloads/total_bin_counts.tsv',
                   col.names = c("Bin", "Counts"))
+
+#import bin taxonomy
 
 genome_taxon_MAGS = read.table('~/Downloads/bin_taxonomy.tsv',
                                col.names = c("Bin", "Family")
 )
 
+#match bins/counts with family
 data_2_a <- genome_taxon_MAGS %>%
   left_join(data_1, by = "Bin")
 
@@ -21,7 +23,8 @@ data_2_a <- genome_taxon_MAGS %>%
 data_2 <- data_2_a %>% arrange(Family)
 
 
-#want to turn this into a doughnut plot 
+#Make Donut Plot 
+
 # Compute percentages
 data_2$fraction = data_2$Counts / sum(data_2$Counts)
 
@@ -40,7 +43,7 @@ data_3 <- data_2 %>%
   ungroup() %>% 
   mutate(final_family = paste0(Family, ' (' ,round(total_fraction*100, digits = 2), '%)'))
 
-
+#Plot it
 ggplot(data_3, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=as_factor(final_family))) +
   geom_rect() +
   coord_polar(theta="y") +
