@@ -6,7 +6,7 @@ Paper: Shibl, A.A., et al. Diatom modulation of select bacteria through use of t
 
 ## Introduction 
 
-For this project, we addressed a paper by Shibl and colleagues which examined how phytoplankton modulate and control their bacterial community using excreted metabolites. In this paper, they used metagenomics, (meta)transcriptomics, and metabolomics to investigate interactions between the marine diatom _Asterionellopsis glacialis_ and its bacterial consortium. 
+For this project, we addressed a paper by Shibl and colleagues which examined how phytoplankton modulate their bacterial community using excreted metabolites. In this paper, they used metagenomics, (meta)transcriptomics, and metabolomics to investigate interactions between the marine diatom _Asterionellopsis glacialis_ and its bacterial consortium. 
 
 To reproduce their work, we proposed to asemble bacterial genomes from metagenomes, analyze differential gene expression during coculture using the metatranscriptomies, and complement the sequence-based -omics results with reanalysis of metabolite mass spectrometry data. This included replicating the data analysis and visualization underlying Figures 1 and 2. Figure 3 illustrates biochemical processes; figure 4 analyzes microscopy data, which is not bioinformatically relevant; figures 5a-c use experimental data, and we chose to skip reanalysis of figure 5d in order to keep our project within a reasonable scope. 
 
