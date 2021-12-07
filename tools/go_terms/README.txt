@@ -1,0 +1,13 @@
+hamap2go
+interpro2go
+pfam2go
+pirsf2go
+prints2go
+prodom2go
+prosite2go
+README.txt
+smart2go
+unipathway2go
+uniprotkb_kw2go
+uniprotkb_sl2go
+unirule2go
