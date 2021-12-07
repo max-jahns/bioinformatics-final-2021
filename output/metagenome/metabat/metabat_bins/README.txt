@@ -1,0 +1,17 @@
+all.fa
+bin.10.fa
+bin.11.fa
+bin.12.fa
+bin.13.fa
+bin.14.fa
+bin.15.fa
+bin.1.fa
+bin.2.fa
+bin.3.fa
+bin.4.fa
+bin.5.fa
+bin.6.fa
+bin.7.fa
+bin.8.fa
+bin.9.fa
+README.txt
