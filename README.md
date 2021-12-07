@@ -15,13 +15,17 @@ All genomic data is available on NCBI, and totaled about 250Gb of data. Mass spe
 ## Repository description 
 
 This repository contains the following directories: 
- - directory: description
- - directory: description
- - directory: description
+ - data: raw data, organized into the analyses: diatom_genome, diatom_transcriptome, MAGS, metagenome, metatranscriptome, and metabolome
+ - envs: 
+ - jupyter-notebooks: final jupyter notebooks for course and other notebooks for making figures with copies of files used as input for these notebooks
+ - output: clean and processed data used in figure creation, organized into the analyses: diatom_genome, diatom_transcriptome, MAGS, metagenome, metatranscriptome, and metabolome
+ - scripts: two sub-directories: processing and analysis. Processing scripts were used to process ../data/ into ../output/ for figures
+ - tools
 
 ## How to run our analyses
 
-### Type of analysis 1
+### Metagenome, Metagtranscriptome, and MAGS
+
 
 ### Type of analysis 2
 
