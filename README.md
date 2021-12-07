@@ -18,7 +18,7 @@ This repository contains the following directories:
  - data: raw data  organized into the analyses: diatom_genome, diatom_transcriptome, MAGS, metagenome, metatranscriptome, and metabolome
  - envs: yaml files that can be used to generate conda environments used in data analysis
  - jupyter-notebooks: Final jupyter notebooks for course and other notebooks for making figures with copies of files used as input for these notebooks
- - logs: log files associated with organized in subdirectories based on analyses: diatom_genome, diatom_transcriptome, MAGS, metagenome, metatranscriptome, and metabolome, Fig1A, Fig1B, and Fig2. Logs are numerous as jobs were often broken into parts in order to parallelize on poseidon HPC. Each directory contains a failed_logs directory of logs that did not run.
+ - logs: log files associated with organized in subdirectories based on analyses. Logs are numerous as jobs were often broken into parts in order to parallelize on poseidon HPC. Each directory contains a failed_logs directory of logs that did not run.
  - output: Directories for analyeses and for clean and processed data used in figure creation, organized into the analyses: diatom_genome, diatom_transcriptome,  Fig1A, Fig1B, Fig2, MAGS, metagenome, metatranscriptome, and metabolome
  - scripts: All slurm and R scripts used to analyze data and produce figures
  - tools: Accession number lists used for downloading data and directories for databases for tools used in this analysis
