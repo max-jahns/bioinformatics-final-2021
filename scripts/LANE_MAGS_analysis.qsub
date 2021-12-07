@@ -3,7 +3,7 @@
 #SBATCH --partition=compute
 #SBATCH --job-name=MAGS
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=katelane@mit.edu
+#SBATCH --mail-user=[YOUR_EMAIL]
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=180G
@@ -31,6 +31,6 @@ rootdir=/vortexfs1/omics/env-bio/collaboration/jahala/
 
 cd ${rootdir}/data/raw_data/MAGS
 checkm lineage_wf --pplacer_threads 1 --tab_table -t 16 -x fna ${rootdir}/data/raw_data/MAGS/ ${rootdir}/data/raw_data/MAGS/checkm_results
-tail -9 checkm*.log | head -7 > checkm_stats.tsv
+tail -8 checkm*.log | head -6 > checkm_stats_NCBI.tsv
 
 

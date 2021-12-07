@@ -3,7 +3,7 @@
 #SBATCH --partition=compute
 #SBATCH --job-name=metatranscriptome
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=katelane@mit.edu
+#SBATCH --mail-user=[YOUR_EMAIL]@mit.edu
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=180G
@@ -87,7 +87,70 @@ for i in `cat  ${rootdir}/data/raw_data/access_list_mt.txt`
 do
 bowtie2 -x dx_dir/bt2/all.fa -U ${rootdir}/data/raw_data/metatranscriptome/${i}.extendedFrags.fastq -S ${dx_dir}/${i}_mapped_all.sam
 
+##Humann Analysis
+#format the files first
+for i in GCA_014872775.1_ASM1487277v1_genomic.fna GCA_014872815.1_ASM1487281v1_genomic.fna  GCA_014872825.1_ASM1487282v1_genomic.fna GCA_014872875.1_ASM1487287v1_genomic.fna
+> do
+> grep '>' $i  | sed 's/>//g' | cut -f 1 -d ' ' >> Rhodobacteraceae_contigs.txt
+> done
+(sam) [katherine.lane@poseidon-l2 MAGS]$ 
+for i in GCA_014872785.1_ASM1487278v1_genomic.fna GCA_014872805.1_ASM1487280v1_genomic.fna; do grep '>' $i  | sed 's/>//g' | cut -f 1 -d ' ' >> Alteromonadaceae_contigs.txt; done
+'
 
+for i in SRR10420346 SRR10420347 SRR10420348 SRR10420349 SRR10420350 SRR10420351 SRR10420352 SRR10420353
+do
+samtools view -bu ${i}_mapped_all.sam | samtools sort -@36 > ${i}_mapped_all.sorted.bam
+samtools index ${i}_mapped_all.sorted.bam
+
+mkdir ${i}_rhodo
+    for c in `cat Rhodobacteraceae_contigs.txt`
+    do samtools view -b ${i}_mapped_all.sorted.bam $c > ${i}_rhodo/${c}_.bam.rhodo
+    done
+    samtools merge ${i}_out.bam.rhodo ${i}_rhodo/*rhodo
+samtools sort -n ${i}_out.bam.rhodo -o ${i}_out.bam.rhodo.sorted
+done
+samtools sort -n SRR10420346_out.bam.rhodo -o SRR10420346_out.bam.rhodo.sorted
+
+samtools merge reseeded_24.rhodo.bam SRR10420346_out.bam.rhodo.sorted SRR10420347_out.bam.rhodo.sorted
+samtools merge reseeded_05.rhodo.bam SRR10420348_out.bam.rhodo.sorted SRR10420349_out.bam.rhodo.sorted SRR10420350_out.bam.rhodo.sorted
+samtools merge control.rhodo.bam SRR10420351_out.bam.rhodo.sorted SRR10420352_out.bam.rhodo.sorted SRR10420353_out.bam.rhodo.sorted
+
+
+for i in SRR10420346 SRR10420347 SRR10420348 SRR10420349 SRR10420350 SRR10420351 SRR10420352 SRR10420353
+do
+#samtools view -bu ${i}_mapped_all.sam | samtools sort -@36 > ${i}_mapped_all.sorted.bam
+#samtools index ${i}_mapped_all.sorted.bam
+
+mkdir ${i}_alter
+    for c in `cat Alteromonadaceae_contigs.txt`
+    do samtools view -b ${i}_mapped_all.sorted.bam $c > ${i}_alter/${c}_.bam.alter
+    done
+    samtools merge ${i}_out.bam.alter ${i}_alter/*alter
+samtools sort -n ${i}_out.bam.alter -o ${i}_out.bam.alter.sorted
+done
+
+samtools merge reseeded_24.alter.bam SRR10420346_out.bam.alter.sorted SRR10420347_out.bam.alter.sorted
+samtools merge reseeded_05.alter.bam SRR10420348_out.bam.alter.sorted SRR10420349_out.bam.alter.sorted SRR10420350_out.bam.alter.sorted
+samtools merge control.alter.bam SRR10420351_out.bam.alter.sorted SRR10420352_out.bam.alter.sorted SRR10420353_out.bam.alter.sorted
+
+
+samtools fastq  reseeded_24.alter.bam >  reseeded_24.alter.bam.fastq
+humann --input reseeded_24.alter.bam.fastq --output humman_out_reseeded_24.alter_FASTQ
+
+samtools fastq  reseeded_05.alter.bam  > reseeded_05.alter.bam.fastq
+humann --input reseeded_05.alter.bam.fastq --output humman_out_reseeded_05.alter_FASTQ
+
+samtools fastq  control.alter.bam  > control.alter.bam.fastq
+humann --input control.alter.bam.fastq --output humman_out_control.alter_FASTQ
+
+samtools fastq  reseeded_24.rhodo.bam  > reseeded_24.rhodo.bam.fastq
+humann --input reseeded_24.rhodo.bam.fastq --output humman_out_reseeded_24.rhodo_FASTQ
+
+samtools fastq  reseeded_05.rhodo.bam  > reseeded_05.rhodo.bam.fastq
+humann --input reseeded_05.rhodo.bam.fastq --output humman_out_reseeded_05.rhodo_FASTQ
+
+samtools fastq  control.rhodo.bam  > control.rhodo.bam.fastq
+humann --input control.rhodo.bam.fastq --output humman_out_control.rhodo_FASTQ
 
 
 
