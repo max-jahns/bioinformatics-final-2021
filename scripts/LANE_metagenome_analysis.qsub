@@ -129,3 +129,6 @@ for i in bin_*counts.txt; do awk '{s+=$1} END {print FILENAME "\t" s}' $i >> tot
 sed -i 's/_counts.txt//g' total_bin_counts.tsv
 
 #total_bin_counts.tsv is the input for metagenome abundance part of Figure 1A
+
+#Annotate Bins
+#Performed according to the methods. Here we did not end up using genes in downstream analysis, however it could be useful if performing manually GO ontology enrichment.
