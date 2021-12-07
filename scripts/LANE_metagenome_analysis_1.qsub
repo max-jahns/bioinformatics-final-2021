@@ -63,6 +63,7 @@ kaiju -t ${tool}/nodes.dmp -f ${tool}/kaiju_db_refseq.fmi -i ${dir}/bowtie_metag
 #could include further instructions on kaiju
 
 
+
 ##Assembly
 megahit
 megahit -t 36 -o megahit_assembly2 -1 bowtie_metagenome_host_removed.1.fq -2 bowtie_metagenome_host_removed.2.fq
