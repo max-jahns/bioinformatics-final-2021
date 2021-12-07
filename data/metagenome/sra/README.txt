@@ -1,0 +1,3 @@
+README.txt
+SRR10411456_1.fastq
+SRR10411456_2.fastq
