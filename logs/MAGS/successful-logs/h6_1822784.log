@@ -1,0 +1,15 @@
+Creating output directory: /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/MAGS/humman_out_control.alter
+Output files will be written to: /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/MAGS/humman_out_control.alter
+Converting bam file to sam format ...
+
+Process the sam mapping results ...
+
+Computing gene families ...
+
+Computing pathways abundance and coverage ...
+
+Output files created: 
+/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/MAGS/humman_out_control.alter/control.alter_genefamilies.tsv
+/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/MAGS/humman_out_control.alter/control.alter_pathabundance.tsv
+/vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/MAGS/humman_out_control.alter/control.alter_pathcoverage.tsv
+

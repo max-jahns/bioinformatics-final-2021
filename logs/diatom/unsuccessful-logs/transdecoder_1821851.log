@@ -1,0 +1,207 @@
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/compute_base_probs.pl transcriptome-seqs.fa 0 > transdecoder-output/base_freqs.dat
+
+
+-first extracting base frequencies, we'll need them later.
+
+
+- extracting ORFs from transcripts.
+-total transcripts to examine: 15872
+[100/15872] = 0.63% done    [200/15872] = 1.26% done    [300/15872] = 1.89% done    [400/15872] = 2.52% done    [500/15872] = 3.15% done    [600/15872] = 3.78% done    [700/15872] = 4.41% done    [800/15872] = 5.04% done    [900/15872] = 5.67% done    [1000/15872] = 6.30% done    [1100/15872] = 6.93% done    [1200/15872] = 7.56% done    [1300/15872] = 8.19% done    [1400/15872] = 8.82% done    [1500/15872] = 9.45% done    [1600/15872] = 10.08% done    [1700/15872] = 10.71% done    [1800/15872] = 11.34% done    [1900/15872] = 11.97% done    [2000/15872] = 12.60% done    [2100/15872] = 13.23% done    [2200/15872] = 13.86% done    [2300/15872] = 14.49% done    [2400/15872] = 15.12% done    [2500/15872] = 15.75% done    [2600/15872] = 16.38% done    [2700/15872] = 17.01% done    [2800/15872] = 17.64% done    [2900/15872] = 18.27% done    [3000/15872] = 18.90% done    [3100/15872] = 19.53% done    [3200/15872] = 20.16% done    [3300/15872] = 20.79% done    [3400/15872] = 21.42% done    [3500/15872] = 22.05% done    [3600/15872] = 22.68% done    [3700/15872] = 23.31% done    [3800/15872] = 23.94% done    [3900/15872] = 24.57% done    [4000/15872] = 25.20% done    [4100/15872] = 25.83% done    [4200/15872] = 26.46% done    [4300/15872] = 27.09% done    [4400/15872] = 27.72% done    [4500/15872] = 28.35% done    [4600/15872] = 28.98% done    [4700/15872] = 29.61% done    [4800/15872] = 30.24% done    [4900/15872] = 30.87% done    [5000/15872] = 31.50% done    [5100/15872] = 32.13% done    [5200/15872] = 32.76% done    [5300/15872] = 33.39% done    [5400/15872] = 34.02% done    [5500/15872] = 34.65% done    [5600/15872] = 35.28% done    [5700/15872] = 35.91% done    [5800/15872] = 36.54% done    [5900/15872] = 37.17% done    [6000/15872] = 37.80% done    [6100/15872] = 38.43% done    [6200/15872] = 39.06% done    [6300/15872] = 39.69% done    [6400/15872] = 40.32% done    [6500/15872] = 40.95% done    [6600/15872] = 41.58% done    [6700/15872] = 42.21% done    [6800/15872] = 42.84% done    [6900/15872] = 43.47% done    [7000/15872] = 44.10% done    [7100/15872] = 44.73% done    [7200/15872] = 45.36% done    [7300/15872] = 45.99% done    [7400/15872] = 46.62% done    [7500/15872] = 47.25% done    [7600/15872] = 47.88% done    [7700/15872] = 48.51% done    [7800/15872] = 49.14% done    [7900/15872] = 49.77% done    [8000/15872] = 50.40% done    [8100/15872] = 51.03% done    [8200/15872] = 51.66% done    [8300/15872] = 52.29% done    [8400/15872] = 52.92% done    [8500/15872] = 53.55% done    [8600/15872] = 54.18% done    [8700/15872] = 54.81% done    [8800/15872] = 55.44% done    [8900/15872] = 56.07% done    [9000/15872] = 56.70% done    [9100/15872] = 57.33% done    [9200/15872] = 57.96% done    [9300/15872] = 58.59% done    [9400/15872] = 59.22% done    [9500/15872] = 59.85% done    [9600/15872] = 60.48% done    [9700/15872] = 61.11% done    [9800/15872] = 61.74% done    [9900/15872] = 62.37% done    [10000/15872] = 63.00% done    [10100/15872] = 63.63% done    [10200/15872] = 64.26% done    [10300/15872] = 64.89% done    [10400/15872] = 65.52% done    [10500/15872] = 66.15% done    [10600/15872] = 66.78% done    [10700/15872] = 67.41% done    [10800/15872] = 68.04% done    [10900/15872] = 68.67% done    [11000/15872] = 69.30% done    [11100/15872] = 69.93% done    [11200/15872] = 70.56% done    [11300/15872] = 71.19% done    [11400/15872] = 71.82% done    [11500/15872] = 72.45% done    [11600/15872] = 73.08% done    [11700/15872] = 73.71% done    [11800/15872] = 74.34% done    [11900/15872] = 74.97% done    [12000/15872] = 75.60% done    [12100/15872] = 76.23% done    [12200/15872] = 76.86% done    [12300/15872] = 77.49% done    [12400/15872] = 78.12% done    [12500/15872] = 78.76% done    [12600/15872] = 79.39% done    [12700/15872] = 80.02% done    [12800/15872] = 80.65% done    [12900/15872] = 81.28% done    [13000/15872] = 81.91% done    [13100/15872] = 82.54% done    [13200/15872] = 83.17% done    [13300/15872] = 83.80% done    [13400/15872] = 84.43% done    [13500/15872] = 85.06% done    [13600/15872] = 85.69% done    [13700/15872] = 86.32% done    [13800/15872] = 86.95% done    [13900/15872] = 87.58% done    [14000/15872] = 88.21% done    [14100/15872] = 88.84% done    [14200/15872] = 89.47% done    [14300/15872] = 90.10% done    [14400/15872] = 90.73% done    [14500/15872] = 91.36% done    [14600/15872] = 91.99% done    [14700/15872] = 92.62% done    [14800/15872] = 93.25% done    [14900/15872] = 93.88% done    [15000/15872] = 94.51% done    [15100/15872] = 95.14% done    [15200/15872] = 95.77% done    [15300/15872] = 96.40% done    [15400/15872] = 97.03% done    [15500/15872] = 97.66% done    [15600/15872] = 98.29% done    [15700/15872] = 98.92% done    [15800/15872] = 99.55% done    CMD: touch transdecoder-output.__checkpoints_longorfs/TD.longorfs.ok
+
+
+#################################
+### Done preparing long ORFs.  ###
+##################################
+
+	Use file: transdecoder-output/longest_orfs.pep  for Pfam and/or BlastP searches to enable homology-based coding region identification.
+
+	Then, run TransDecoder.Predict for your final coding region predictions.
+
+
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/get_top_longest_fasta_entries.pl transdecoder-output/longest_orfs.cds 5000 5000 > transdecoder-output/longest_orfs.cds.top_longest_5000
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/exclude_similar_proteins.pl transdecoder-output/longest_orfs.cds.top_longest_5000 > transdecoder-output/longest_orfs.cds.top_longest_5000.nr
+-skipping training candidate: MSTRG.8368.1.p1, not unique enough
+-skipping training candidate: MSTRG.4135.2.p1, not unique enough
+-skipping training candidate: MSTRG.14892.1.p1, not unique enough
+-skipping training candidate: MSTRG.10422.2.p1, not unique enough
+-skipping training candidate: MSTRG.15269.1.p1, not unique enough
+-skipping training candidate: MSTRG.7126.2.p1, not unique enough
+-skipping training candidate: MSTRG.9901.2.p1, not unique enough
+-skipping training candidate: MSTRG.9710.2.p1, not unique enough
+-skipping training candidate: MSTRG.5277.2.p1, not unique enough
+-skipping training candidate: MSTRG.7055.2.p1, not unique enough
+-skipping training candidate: MSTRG.797.1.p1, not unique enough
+-skipping training candidate: MSTRG.2698.1.p1, not unique enough
+-skipping training candidate: MSTRG.2120.2.p1, not unique enough
+-skipping training candidate: MSTRG.8885.2.p1, not unique enough
+-skipping training candidate: MSTRG.1166.2.p1, not unique enough
+-skipping training candidate: MSTRG.797.1.p2, not unique enough
+-skipping training candidate: MSTRG.4763.1.p1, not unique enough
+-skipping training candidate: MSTRG.31.2.p1, not unique enough
+-skipping training candidate: MSTRG.2400.2.p1, not unique enough
+-skipping training candidate: MSTRG.7052.1.p1, not unique enough
+-skipping training candidate: MSTRG.1165.1.p1, not unique enough
+-skipping training candidate: MSTRG.1165.2.p1, not unique enough
+-skipping training candidate: MSTRG.4361.2.p1, not unique enough
+-skipping training candidate: MSTRG.6699.2.p1, not unique enough
+-skipping training candidate: MSTRG.9557.1.p1, not unique enough
+-skipping training candidate: MSTRG.10477.1.p1, not unique enough
+-skipping training candidate: MSTRG.11568.2.p1, not unique enough
+-skipping training candidate: MSTRG.11918.2.p1, not unique enough
+-skipping training candidate: MSTRG.14761.2.p1, not unique enough
+-skipping training candidate: MSTRG.10477.2.p1, not unique enough
+-skipping training candidate: MSTRG.923.2.p1, not unique enough
+-skipping training candidate: MSTRG.4352.1.p1, not unique enough
+-skipping training candidate: MSTRG.8920.2.p1, not unique enough
+-skipping training candidate: MSTRG.6145.2.p1, not unique enough
+-skipping training candidate: MSTRG.5640.1.p1, not unique enough
+-skipping training candidate: MSTRG.15565.1.p1, not unique enough
+-skipping training candidate: MSTRG.9530.1.p1, not unique enough
+-skipping training candidate: MSTRG.7115.1.p2, not unique enough
+-skipping training candidate: MSTRG.13966.2.p1, not unique enough
+-skipping training candidate: MSTRG.6297.3.p1, not unique enough
+-skipping training candidate: MSTRG.7404.2.p1, not unique enough
+-skipping training candidate: MSTRG.6185.1.p1, not unique enough
+-skipping training candidate: MSTRG.5087.2.p1, not unique enough
+-skipping training candidate: MSTRG.3879.1.p1, not unique enough
+-skipping training candidate: MSTRG.31.1.p1, not unique enough
+-skipping training candidate: MSTRG.2627.2.p1, not unique enough
+-skipping training candidate: MSTRG.15074.2.p1, not unique enough
+-skipping training candidate: MSTRG.13038.2.p1, not unique enough
+-skipping training candidate: MSTRG.5277.2.p2, not unique enough
+-skipping training candidate: MSTRG.3878.1.p1, not unique enough
+-skipping training candidate: MSTRG.5640.1.p2, not unique enough
+-skipping training candidate: MSTRG.6297.1.p1, not unique enough
+-skipping training candidate: MSTRG.9710.1.p2, not unique enough
+-skipping training candidate: MSTRG.7113.1.p1, not unique enough
+-skipping training candidate: MSTRG.8602.2.p1, not unique enough
+-skipping training candidate: MSTRG.5665.1.p1, not unique enough
+-skipping training candidate: MSTRG.3758.2.p1, not unique enough
+-skipping training candidate: MSTRG.6210.2.p1, not unique enough
+-skipping training candidate: MSTRG.12792.1.p1, not unique enough
+-skipping training candidate: MSTRG.14135.1.p1, not unique enough
+-skipping training candidate: MSTRG.7811.1.p1, not unique enough
+-skipping training candidate: MSTRG.14129.2.p1, not unique enough
+-skipping training candidate: MSTRG.3893.2.p1, not unique enough
+-skipping training candidate: MSTRG.5918.2.p1, not unique enough
+-skipping training candidate: MSTRG.15074.4.p1, not unique enough
+-skipping training candidate: MSTRG.3758.2.p2, not unique enough
+-skipping training candidate: MSTRG.8482.2.p1, not unique enough
+-skipping training candidate: MSTRG.10831.2.p1, not unique enough
+-skipping training candidate: MSTRG.3391.2.p1, not unique enough
+-skipping training candidate: MSTRG.7403.4.p1, not unique enough
+-skipping training candidate: MSTRG.15258.2.p1, not unique enough
+-skipping training candidate: MSTRG.6145.1.p2, not unique enough
+-skipping training candidate: MSTRG.13363.1.p1, not unique enough
+-skipping training candidate: MSTRG.15565.2.p2, not unique enough
+-skipping training candidate: MSTRG.5918.3.p1, not unique enough
+-skipping training candidate: MSTRG.6263.2.p1, not unique enough
+-skipping training candidate: MSTRG.3999.2.p1, not unique enough
+-skipping training candidate: MSTRG.12266.2.p1, not unique enough
+-skipping training candidate: MSTRG.8628.2.p1, not unique enough
+-skipping training candidate: MSTRG.15074.2.p2, not unique enough
+-skipping training candidate: MSTRG.846.1.p1, not unique enough
+-skipping training candidate: MSTRG.971.2.p1, not unique enough
+-skipping training candidate: MSTRG.4833.2.p1, not unique enough
+-skipping training candidate: MSTRG.1135.1.p1, not unique enough
+-skipping training candidate: MSTRG.1572.1.p1, not unique enough
+-skipping training candidate: MSTRG.2454.1.p1, not unique enough
+-skipping training candidate: MSTRG.13276.2.p1, not unique enough
+-skipping training candidate: MSTRG.2825.2.p1, not unique enough
+-skipping training candidate: MSTRG.4833.3.p1, not unique enough
+-skipping training candidate: MSTRG.4861.2.p1, not unique enough
+-skipping training candidate: MSTRG.9843.2.p1, not unique enough
+-skipping training candidate: MSTRG.10886.1.p2, not unique enough
+-skipping training candidate: MSTRG.3367.2.p1, not unique enough
+-skipping training candidate: MSTRG.11586.2.p1, not unique enough
+-skipping training candidate: MSTRG.11586.3.p1, not unique enough
+-skipping training candidate: MSTRG.13556.1.p2, not unique enough
+-skipping training candidate: MSTRG.3391.2.p2, not unique enough
+-skipping training candidate: MSTRG.15215.2.p1, not unique enough
+-skipping training candidate: MSTRG.14666.1.p1, not unique enough
+-skipping training candidate: MSTRG.2728.1.p1, not unique enough
+-skipping training candidate: MSTRG.15215.2.p2, not unique enough
+-skipping training candidate: MSTRG.9975.1.p1, not unique enough
+-skipping training candidate: MSTRG.521.1.p1, not unique enough
+-skipping training candidate: MSTRG.4188.2.p1, not unique enough
+-skipping training candidate: MSTRG.7822.2.p1, not unique enough
+-skipping training candidate: MSTRG.12962.2.p2, not unique enough
+-skipping training candidate: MSTRG.3845.2.p1, not unique enough
+-skipping training candidate: MSTRG.14734.2.p1, not unique enough
+-skipping training candidate: MSTRG.15074.4.p2, not unique enough
+-skipping training candidate: MSTRG.2092.2.p2, not unique enough
+-skipping training candidate: MSTRG.8628.2.p2, not unique enough
+
+	-redundancy-minimized set includes 4889 / 5000 = 97.78%
+
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/get_top_longest_fasta_entries.pl transdecoder-output/longest_orfs.cds.top_longest_5000.nr 500 > transdecoder-output/longest_orfs.cds.top_500_longest
+PCT_GC: 39.8
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/seq_n_baseprobs_to_loglikelihood_vals.pl transdecoder-output/longest_orfs.cds.top_500_longest transdecoder-output/base_freqs.dat > transdecoder-output/hexamer.scores
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/score_CDS_likelihood_all_6_frames.pl transdecoder-output/longest_orfs.cds transdecoder-output/hexamer.scores > transdecoder-output/longest_orfs.cds.scores
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/select_best_ORFs_per_transcript.pl --gff3_file transdecoder-output/longest_orfs.gff3 --cds_scores transdecoder-output/longest_orfs.cds.scores  --min_length_auto_accept 590  > transdecoder-output/longest_orfs.cds.best_candidates.gff3 
+Selecting best orfs
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/train_start_PWM.pl --transcripts transcriptome-seqs.fa --selected_orfs transdecoder-output/longest_orfs.cds.top_500_longest --out_prefix transdecoder-output/start_refinement
+Training start codon pattern recognition* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/PWM/build_atgPWM_+-.pl  --transcripts transcriptome-seqs.fa  --selected_orfs transdecoder-output/longest_orfs.cds.top_500_longest  --out_prefix transdecoder-output/start_refinement --pwm_left 20 --pwm_right 10 
+Error, feature_seq: ACAAAATGTTATCAAGAAACATGTGGATTGAAN contains non-GATC chars... skipping
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/PWM/feature_scoring.+-.pl  --features_plus transdecoder-output/start_refinement.+.features  --features_minus transdecoder-output/start_refinement.-.features  --atg_position 20  > transdecoder-output/start_refinement.feature.scores
+-round: 1
+Error, feature_seq: ACAAAATGTTATCAAGAAACATGTGGATTGAAN contains non-GATC chars... skipping
+-round: 2
+Error, feature_seq: ACAAAATGTTATCAAGAAACATGTGGATTGAAN contains non-GATC chars... skipping
+-round: 3
+-round: 4
+-round: 5
+Error, feature_seq: ACAAAATGTTATCAAGAAACATGTGGATTGAAN contains non-GATC chars... skipping
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/PWM/feature_scores_to_ROC.pl transdecoder-output/start_refinement.feature.scores > transdecoder-output/start_refinement.feature.scores.roc
+-parsing scores
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/PWM/plot_ROC.Rscript transdecoder-output/start_refinement.feature.scores.roc || :
+/usr/bin/env: Rscript: No such file or directory
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/PWM/compute_AUC.pl transdecoder-output/start_refinement.feature.scores.roc
+Can't exec "Rscript": No such file or directory at /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/PWM/compute_AUC.pl line 82.
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/PWM/make_seqLogo.Rscript transdecoder-output/start_refinement.+.pwm || :
+/usr/bin/env: Rscript: No such file or directory
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/PWM/make_seqLogo.Rscript transdecoder-output/start_refinement.-.pwm || :
+/usr/bin/env: Rscript: No such file or directory
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/PWM/deplete_feature_noise.pl  --features_plus transdecoder-output/start_refinement.+.features  --pwm_minus transdecoder-output/start_refinement.-.pwm  --out_prefix transdecoder-output/start_refinement.enhanced
+num features: 57	num_incorporate: 17
+-feature swap of score: 1.56944265708227 instead of -1.63207259057518
+-feature swap of score: 0.326356090019695 instead of -2.80423260699834
+-feature swap of score: 0.978268210732348 instead of -0.100351392440762
+-feature swap of score: 8.50562968256446 instead of 1.23346600798039
+-feature swap of score: 2.79684229421498 instead of 0.694281447816483
+-feature swap of score: 1.17792322517407 instead of 0.802889309793748
+-feature swap of score: 3.26054773063554 instead of 2.88353834298198
+-feature swap of score: 3.24040367481445 instead of 2.40846984700733
+-num feature swaps: 8
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/PWM/feature_scoring.+-.pl  --features_plus transdecoder-output/start_refinement.enhanced.+.features  --features_minus transdecoder-output/start_refinement.-.features  --atg_position 20  > transdecoder-output/start_refinement.enhanced.feature.scores
+-round: 1
+Error, feature_seq: ACAAAATGTTATCAAGAAACATGTGGATTGAAN contains non-GATC chars... skipping
+-round: 2
+Error, feature_seq: ACAAAATGTTATCAAGAAACATGTGGATTGAAN contains non-GATC chars... skipping
+-round: 3
+Error, feature_seq: ACAAAATGTTATCAAGAAACATGTGGATTGAAN contains non-GATC chars... skipping
+-round: 4
+Error, feature_seq: ACAAAATGTTATCAAGAAACATGTGGATTGAAN contains non-GATC chars... skipping
+-round: 5
+Error, feature_seq: ACAAAATGTTATCAAGAAACATGTGGATTGAAN contains non-GATC chars... skipping
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/PWM/feature_scores_to_ROC.pl transdecoder-output/start_refinement.enhanced.feature.scores > transdecoder-output/start_refinement.enhanced.feature.scores.roc
+-parsing scores
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/PWM/plot_ROC.Rscript transdecoder-output/start_refinement.enhanced.feature.scores.roc || :
+/usr/bin/env: Rscript: No such file or directory
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/PWM/compute_AUC.pl transdecoder-output/start_refinement.enhanced.feature.scores.roc
+Can't exec "Rscript": No such file or directory at /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/PWM/compute_AUC.pl line 82.
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/PWM/make_seqLogo.Rscript transdecoder-output/start_refinement.enhanced.+.pwm || :
+/usr/bin/env: Rscript: No such file or directory
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/start_codon_refinement.pl --transcripts transcriptome-seqs.fa --gff3_file transdecoder-output/longest_orfs.cds.best_candidates.gff3 --workdir transdecoder-output > transdecoder-output/longest_orfs.cds.best_candidates.gff3.revised_starts.gff3
+Refining start codon selections.
+-number of revised start positions: 454
+* Running CMD: cp transdecoder-output/longest_orfs.cds.best_candidates.gff3.revised_starts.gff3 transcriptome-seqs.fa.transdecoder.gff3
+copying output to final output file: transcriptome-seqs.fa.transdecoder.gff3* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/gff3_file_to_bed.pl transcriptome-seqs.fa.transdecoder.gff3 > transcriptome-seqs.fa.transdecoder.bed
+Making bed file: transcriptome-seqs.fa.transdecoder.bed
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/gff3_file_to_proteins.pl --gff3 transcriptome-seqs.fa.transdecoder.gff3 --fasta transcriptome-seqs.fa  --genetic_code Universal > transcriptome-seqs.fa.transdecoder.pep
+Making pep file: transcriptome-seqs.fa.transdecoder.pep
+* Running CMD: /vortexfs1/home/mjahns/.conda/envs/transdecoder/opt/transdecoder/util/gff3_file_to_proteins.pl --gff3 transcriptome-seqs.fa.transdecoder.gff3 --fasta transcriptome-seqs.fa --seqType CDS  --genetic_code Universal > transcriptome-seqs.fa.transdecoder.cds
+Making cds file: transcriptome-seqs.fa.transdecoder.cds
+transdecoder is finished.  See output files transcriptome-seqs.fa.transdecoder.*
+
+

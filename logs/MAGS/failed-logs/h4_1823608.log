@@ -1,0 +1,3 @@
+[M::bam2fq_mainloop] discarded 0 singletons
+[M::bam2fq_mainloop] processed 27347064 reads
+slurmstepd: error: *** JOB 1823608 ON pn048 CANCELLED AT 2021-12-07T03:21:13 DUE TO TIME LIMIT ***

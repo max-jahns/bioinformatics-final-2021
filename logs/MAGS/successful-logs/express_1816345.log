@@ -1,0 +1,81 @@
+WARNING: Could not connect to update server to verify current version. Please check at the eXpress website (http://bio.math.berkeley.edu/eXpress).
+
+2021-Dec-04 21:18:20 - Attempting to read 'SRR10420346_mapped_all.sam' in BAM format...
+2021-Dec-04 21:18:21 - Input is not in BAM format. Trying SAM...
+2021-Dec-04 21:18:21 - Loading target sequences and measuring bias background...
+2021-Dec-04 21:18:25 - Initialized 196 targets.
+2021-Dec-04 21:18:25 - Processing input fragment alignments...
+2021-Dec-04 21:18:29 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:18:51 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:19:14 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:19:36 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:19:58 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:20:20 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:20:43 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:21:05 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:21:09 - Fragments Processed (SRR10420346_mapped_all.sam): 1000000	Number of Bundles: 196.
+2021-Dec-04 21:21:27 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:21:49 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:22:12 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:22:33 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:22:56 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:23:18 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:23:40 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:24:02 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:24:02 - Fragments Processed (SRR10420346_mapped_all.sam): 2000000	Number of Bundles: 196.
+2021-Dec-04 21:24:24 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:24:46 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:25:09 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:25:31 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:25:53 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:26:15 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:26:37 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:26:59 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:27:03 - Fragments Processed (SRR10420346_mapped_all.sam): 3000000	Number of Bundles: 196.
+2021-Dec-04 21:27:22 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:27:43 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:28:06 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:28:28 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:28:50 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:29:12 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:29:35 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:29:57 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:30:01 - Fragments Processed (SRR10420346_mapped_all.sam): 4000000	Number of Bundles: 196.
+2021-Dec-04 21:30:19 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:30:41 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:31:04 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:31:26 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:31:48 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:32:10 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:32:33 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:32:53 - Fragments Processed (SRR10420346_mapped_all.sam): 5000000	Number of Bundles: 196.
+2021-Dec-04 21:32:55 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:33:17 - Synchronized auxiliary parameter tables.
+2021-Dec-04 21:33:20 - Fragments Processed (SRR10420346_mapped_all.sam): 6000000	Number of Bundles: 196.
+2021-Dec-04 21:33:24 - Fragments Processed (SRR10420346_mapped_all.sam): 7000000	Number of Bundles: 196.
+2021-Dec-04 21:33:29 - Fragments Processed (SRR10420346_mapped_all.sam): 8000000	Number of Bundles: 196.
+2021-Dec-04 21:33:33 - Fragments Processed (SRR10420346_mapped_all.sam): 9000000	Number of Bundles: 196.
+2021-Dec-04 21:33:37 - Fragments Processed (SRR10420346_mapped_all.sam): 10000000	Number of Bundles: 196.
+2021-Dec-04 21:33:42 - Fragments Processed (SRR10420346_mapped_all.sam): 11000000	Number of Bundles: 196.
+2021-Dec-04 21:33:46 - Fragments Processed (SRR10420346_mapped_all.sam): 12000000	Number of Bundles: 196.
+2021-Dec-04 21:33:51 - Fragments Processed (SRR10420346_mapped_all.sam): 13000000	Number of Bundles: 196.
+2021-Dec-04 21:33:55 - Fragments Processed (SRR10420346_mapped_all.sam): 14000000	Number of Bundles: 196.
+2021-Dec-04 21:33:59 - Fragments Processed (SRR10420346_mapped_all.sam): 15000000	Number of Bundles: 196.
+2021-Dec-04 21:34:04 - Fragments Processed (SRR10420346_mapped_all.sam): 16000000	Number of Bundles: 196.
+2021-Dec-04 21:34:08 - Fragments Processed (SRR10420346_mapped_all.sam): 17000000	Number of Bundles: 196.
+2021-Dec-04 21:34:13 - Fragments Processed (SRR10420346_mapped_all.sam): 18000000	Number of Bundles: 196.
+2021-Dec-04 21:34:17 - Fragments Processed (SRR10420346_mapped_all.sam): 19000000	Number of Bundles: 196.
+2021-Dec-04 21:34:21 - Fragments Processed (SRR10420346_mapped_all.sam): 20000000	Number of Bundles: 196.
+2021-Dec-04 21:34:26 - Fragments Processed (SRR10420346_mapped_all.sam): 21000000	Number of Bundles: 196.
+2021-Dec-04 21:34:30 - Fragments Processed (SRR10420346_mapped_all.sam): 22000000	Number of Bundles: 196.
+2021-Dec-04 21:34:34 - Fragments Processed (SRR10420346_mapped_all.sam): 23000000	Number of Bundles: 196.
+2021-Dec-04 21:34:39 - Fragments Processed (SRR10420346_mapped_all.sam): 24000000	Number of Bundles: 196.
+2021-Dec-04 21:34:43 - Fragments Processed (SRR10420346_mapped_all.sam): 25000000	Number of Bundles: 196.
+2021-Dec-04 21:34:48 - Fragments Processed (SRR10420346_mapped_all.sam): 26000000	Number of Bundles: 196.
+2021-Dec-04 21:34:52 - Fragments Processed (SRR10420346_mapped_all.sam): 27000000	Number of Bundles: 196.
+2021-Dec-04 21:34:57 - Fragments Processed (SRR10420346_mapped_all.sam): 28000000	Number of Bundles: 196.
+2021-Dec-04 21:35:02 - Fragments Processed (SRR10420346_mapped_all.sam): 29000000	Number of Bundles: 196.
+2021-Dec-04 21:35:03 - Waiting for auxiliary parameter update to complete...
+2021-Dec-04 21:35:03 - COMPLETED: Processed 29218978 mapped fragments, targets are in 196 bundles.
+2021-Dec-04 21:35:03 - Writing results to file...
+2021-Dec-04 21:35:03 - Done.

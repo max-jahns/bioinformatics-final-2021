@@ -1,0 +1,19 @@
+WARNING: Could not connect to update server to verify current version. Please check at the eXpress website (http://bio.math.berkeley.edu/eXpress).
+
+2021-Dec-04 22:34:36 - Attempting to read 'SRR10420346_mapped_all.sam' in BAM format...
+2021-Dec-04 22:34:36 - Input is not in BAM format. Trying SAM...
+2021-Dec-04 22:34:36 - Loading target sequences and measuring bias background...
+2021-Dec-04 22:34:40 - Initialized 196 targets.
+2021-Dec-04 22:34:40 - Processing input fragment alignments...
+2021-Dec-04 22:34:44 - Synchronized auxiliary parameter tables.
+2021-Dec-04 22:35:07 - Synchronized auxiliary parameter tables.
+2021-Dec-04 22:35:31 - Synchronized auxiliary parameter tables.
+2021-Dec-04 22:35:54 - Synchronized auxiliary parameter tables.
+2021-Dec-04 22:36:17 - Synchronized auxiliary parameter tables.
+2021-Dec-04 22:36:40 - Synchronized auxiliary parameter tables.
+2021-Dec-04 22:37:04 - Synchronized auxiliary parameter tables.
+2021-Dec-04 22:37:14 - Fragments Processed (SRR10420346_mapped_all.sam): 1000000	Number of Bundles: 196.
+2021-Dec-04 22:37:27 - Synchronized auxiliary parameter tables.
+2021-Dec-04 22:37:51 - Synchronized auxiliary parameter tables.
+2021-Dec-04 22:38:14 - Synchronized auxiliary parameter tables.
+slurmstepd: error: *** JOB 1816428 ON pn109 CANCELLED AT 2021-12-04T22:38:29 ***

@@ -1,0 +1,2 @@
+/cm/local/apps/slurm/var/spool/job1815916/slurm_script: line 18: syntax error near unexpected token `NEWNAME=$(echo $file | cut -d "/" -f 2| cut -d "." -f 1)'
+/cm/local/apps/slurm/var/spool/job1815916/slurm_script: line 18: `NEWNAME=$(echo $file | cut -d "/" -f 2| cut -d "." -f 1)'
