@@ -81,13 +81,21 @@ done
 #bowtie2
 cd ${dx_dir}
 mkdir ${dx_dir}/bt2 #create index directory
-bowtie2-build ${dx_dir}/all.fa ${dx_dir}/bt2/all.fa #create index
+bowtie2-build ${dx_dir}/all.fa ${dx_dir}/bt2/all.fa 
 
 for i in `cat  ${rootdir}/data/raw_data/access_list_mt.txt`
 do
 bowtie2 -x dx_dir/bt2/all.fa -U ${rootdir}/data/raw_data/metatranscriptome/${i}.extendedFrags.fastq -S ${dx_dir}/${i}_mapped_all.sam
 
-##Humann Analysis
+
+
+   
+submission header, activate metatranscriptome conda environment
+
+##Differential Expression with Humann
+
+##Humann Analysis of Bins Provided
+
 #format the files first
 for i in GCA_014872775.1_ASM1487277v1_genomic.fna GCA_014872815.1_ASM1487281v1_genomic.fna  GCA_014872825.1_ASM1487282v1_genomic.fna GCA_014872875.1_ASM1487287v1_genomic.fna
 > do
@@ -153,9 +161,58 @@ samtools fastq  control.rhodo.bam  > control.rhodo.bam.fastq
 humann --input control.rhodo.bam.fastq --output humman_out_control.rhodo_FASTQ
 
 
+##Humann Analysis of MAGS binned here
+
+
+#make files containing scaffold names
+for i in SRR10420346 SRR10420347 SRR10420348 SRR10420349 SRR10420350 SRR10420351 SRR10420352 SRR10420353; do samtools view -bu ${i}_mapped_all.sam | samtools sort -@ 36 > ${i}_mapped_all.sorted.bam; samtools index ${i}_mapped_all.sorted.bam; done
+
+for i in SRR10420346 SRR10420347 SRR10420348 SRR10420349 SRR10420350 SRR10420351 SRR10420352 SRR10420353
+do
+mkdir ${i}_bin.10
+    for c in `cat bin.10.contigs` 
+    do samtools view -b ${i}_mapped_all.sorted.bam $c > ${i}_bin.10/${c}_.bam.bin.10
+    done
+samtools merge ${i}_out.bam.bin.10 ${i}_bin.10/*bin.10
+done
+
+for i in `cat bins.txt`
+do
+samtools merge reseeded_24.${i}.bam SRR10420346_out.bam.${i} SRR10420347_out.bam.${i} 
+samtools merge reseeded_05.${i}.bam SRR10420348_out.bam.${i} SRR10420349_out.bam.${i}  SRR10420350_out.bam.${i} 
+samtools merge control.${i}.bam SRR10420351_out.bam.${i} SRR10420352_out.bam.${i} SRR10420353_out.bam.${i}
+
+samtools fastq  reseeded_05.${i}.bam >  reseeded_05.${i}.bam.fastq
+samtools fastq  reseeded_24.${i}.bam >  reseeded_24.${i}.bam.fastq
+samtools fastq  control.${i}.bam > control.${i}.bam.fastq
+done
+
+for i in `cat bins.txt`
+do
+echo "humann --input reseeded_05.${i}.bam.fastq --output humman_out_reseeded_05.${i}_FASTQ" > humann_reseeded_05_${i}.qsub
+echo "humann --input reseeded_24.${i}.bam.fastq --output humman_out_reseeded_24.${i}_FASTQ" > humann_reseeded_24_${i}.qsub
+echo "humann --input control.${i}.bam.fastq --output control.${i}_FASTQ"  > humann_control_${i}.qsub
+done
+
+for i in humann*qsub
+do
+sbatch $i
+done
+#submits 36 jobs to the cluster
 
 
 
+#Differential Expression with DESeq
+(metabat) [katherine.lane@poseidon-l2 megahit_assembly2]$ jgi_summarize_bam_contig_depths --outputDepth temp_depth.txt SRR10420352_mapped_all.sorted.bam
+
+ for i in SRR*_mapped_all.sorted.bam; do echo $i
+> b=`basename $i _mapped_all.sorted.bam`
+> jgi_summarize_bam_contig_depths --outputDepth ${b}_depth.txt $i
+> done
 
 
+(metabat) [katherine.lane@poseidon-l2 DESEQ]$ for i in *depth.txt ; do cut -f 3 $i > ${i}.tmp; done
+(metabat) [katherine.lane@poseidon-l2 DESEQ]$ for i in *tmp; do b=`basename $i _depth.txt.tmp`; sed "s/total/${b}_total/g" $i > ${i}.tmp
+(metabat) [katherine.lane@poseidon-l2 DESEQ]$ cut -f 1 SRR10420346_depth.txt >names.tmp
+(metabat) [katherine.lane@poseidon-l2 DESEQ]$ paste names.tmp SRR10420346_depth.txt.tmp.tmp SRR10420348_depth.txt.tmp.tmp SRR10420349_depth.txt.tmp.tmp SRR10420350_depth.txt.tmp.tmp SRR10420351_depth.txt.tmp.tmp SRR10420352_depth.txt.tmp.tmp SRR10420353_depth.txt.tmp.tmp > deseq_input.tsv
 

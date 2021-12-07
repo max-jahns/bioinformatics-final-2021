@@ -15,19 +15,26 @@ All genomic data is available on NCBI, and totaled about 250Gb of data. Mass spe
 ## Repository description 
 
 This repository contains the following directories: 
- - directory: description
- - directory: description
- - directory: description
+ - data: raw data  organized into the analyses: diatom_genome, diatom_transcriptome, MAGS, metagenome, metatranscriptome, and metabolome
+ - envs: yaml files that can be used to generate conda environments used in data analysis
+ - jupyter-notebooks: Final jupyter notebooks for course and other notebooks for making figures with copies of files used as input for these notebooks
+ - logs: log files associated with organized in subdirectories based on analyses: diatom_genome, diatom_transcriptome, MAGS, metagenome, metatranscriptome, and metabolome, Fig1A, Fig1B, and Fig2. Logs are numerous as jobs were often broken into parts in order to parallelize on poseidon HPC. Each directory contains a failed_logs directory of logs that did not run.
+ - output: Directories for analyeses and for clean and processed data used in figure creation, organized into the analyses: diatom_genome, diatom_transcriptome,  Fig1A, Fig1B, Fig2, MAGS, metagenome, metatranscriptome, and metabolome
+ - scripts: All slurm and R scripts used to analyze data and produce figures
+ - tools: Accession number lists used for downloading data and directories for databases for tools used in this analysis
 
 ## How to run our analyses
 
-### Type of analysis 1
+### Metagenome, Metatranscriptome, and MAGS
+
+All analyses are wrapped in slurm scripts, numbers indicate order that they must be run. Downstream analyses scripts' used to generate /Fig1A are also present (and labelled in order which they must be run), and supplemental files used in these analyses have also been copied there in directory /Fig1A_supps. (These Fig1A_supps files are also located in the output/Fig1A directory) All wrappers include the activate on the conda environment to be used, and, if run in order, wrapper scripts will create the conda environments  needed from the /envs/ files. 
+
 
 ### Type of analysis 2
 
 ### Metabolomics analysis
 
-The metabolomic data used in this project were relatively small and manageable, and required analysis in R. We find R much easier to use locally rather than on Poseidon, so analysis was performed locally, and relevant scripts, data, and outputs were then moved to Poseidon. Analysis was performed in R version 4.1.2.
+The metabolomic data used in this project were relatively small and manageable, and required analysis in R. Analysis was performed in R version 4.1.2.
 
 Data underwent some manual manipulation prior to being used in R. "Clean" data reflects this manual manipulation: 
  - Metadata information was collapsed into a single identifier to simplify analysis
@@ -36,4 +43,17 @@ Data underwent some manual manipulation prior to being used in R. "Clean" data r
    - Retention time (RT) in seconds was manually calculated in Excel from RT in minutes, which was given. 
  - Metadata (not collapsed into a single identifier) in Dataset_S01 was preserved in a separate file
 
-Data for re-running metabolomics analyses can be found in data/clean_data/metabolome; scripts can be found in scripts/metabolomics; and output figures can be found in output/metabolomics. In addition, analysis/figure_2* contains the scripts used to generate the relevant figures described by the directory name. Scripts will require editing the data path - to reflect the local environment, if rerunning analysis is also more easily done locally, or Poseidon path.
+R packages required for this analysis include tidyverse, BiocManager, rstatix, devtools, ComplexHeatmap, and pcaMethods. If not already installed, these packages can be installed as follows: 
+
+```
+install.packages("tidyverse")
+install.packages("BiocManager")
+install.packages("rstatix")
+install.packages("devtools")
+install_github("jokergoo/ComplexHeatmap")
+BiocManager::install("pcaMethods")
+```
+
+Once packages are installed, metabolomic analysis can be replicated in the "Metabolomic analysis.ipynb" Jupyter notebook. 
+
+Alternately, if it's easier to run a re-analysis locally than on Poseidon: data for re-running metabolomics analyses can be found in data/clean_data/metabolome; .Rmd scripts can be found in scripts/metabolomics; and output figures can be found in output/metabolomics. In addition, analysis/figure_2* contains the .Rmd files used to generate the relevant figures described by the directory name. Scripts will require editing the data path to reflect the local environment, if rerunning analysis is more done locally. 

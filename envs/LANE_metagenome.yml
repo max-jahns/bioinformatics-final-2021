@@ -1,0 +1,16 @@
+name: metagenome
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - sra-tools=2.11.3
+  - trimmomatic
+  - flash
+  - express
+  - sortmerna
+  - bowtie2
+  - humann3
+  - samtools
+  - gtdbtk=1.3.0
+  - prokka
