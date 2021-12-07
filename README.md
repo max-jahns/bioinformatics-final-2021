@@ -30,7 +30,28 @@ This repository contains the following directories:
 All analyses are wrapped in slurm scripts, numbers indicate order that they must be run. Downstream analyses scripts' used to generate /Fig1A are also present (and labelled in order which they must be run), and supplemental files used in these analyses have also been copied there in directory /Fig1A_supps. (These Fig1A_supps files are also located in the output/Fig1A directory) All wrappers include the activate on the conda environment to be used, and, if run in order, wrapper scripts will create the conda environments  needed from the /envs/ files. 
 
 
-### Type of analysis 2
+### Diatom Transcriptome Analysis
+
+Analysis of the diatom _Asterionellopsis glacialis_ transcriptome in reseeded and diatom_only cultures can be performed using the following pipeline:
+ - _First_, all data aquistion, manipulation, and analysis of the transcriptome can be performed by running the 'diatom-transcriptome.qsub' script located in the 'scripts' directory
+   - Please note, that running this script requires the diatom_transcriptome.yml conda environment to be active. You find the yml build in 'envs'.
+   - The script is broken up into 'jobs' which are denoted by the :: '.job' :: header. Each job can be run seperately but MUST be run sequentially.
+     - Each job lists its required inputs, including the path files where the job will look for the input.
+     - Each job also lists the expected outputs. If running jobs seperately from the overall pipeline after the job has completed that the output can be found as listed, and that it is in the correct directory for the input of the next job.
+   - The 'diatom-transcriptome.qsub' pipeline will produce all intermediate files, as if the jobs were run seperately.
+   - The comments and outputted statement at the end of the 'diatom-transcriptome.qsub' will guide you through making sure the outputted data is ready for use in the diffrential expression step.
+ - _Second_, after the pipeline has successfully completed, differential expression analysis can be performed using the DESeq2 package. The script for this process is provided in a jupyter notebook and can be found under 'jupyer-notebooks/differential-expression-analysis.ipnyb'.
+     - To open this notebook, you can use the conda environment found in the 'r_jupyter.yml' file in the 'envs' directory.
+     - This notebook requires four R packages to be installed which are listed at the top of the notebook. If these are not installed, uncomment the first chunk of the notebook to run instillation.
+  - _Third_, to sumamrize all of this data and create figure1b, run the 'figure1b-creator-and-discussion.ipynb' jupyter notebook found in the 'jupyter-notebooks' directory.
+     - To open this notebook, you can use the conda environment found in the 'r_jupyter.yml' file in the 'envs' directory.
+     - This notebook requires three R packages to be installed which are listed at the top of the notebook. If these are not installed, uncomment the first chunk of the notebook t run instillation.
+
+To summarize the pipeline is as follows... run 'scripts/diatom-transcriptome.qsub' -> open and run 'jupyer-notebooks/differential-expression-analysis.ipnyb' -> open and run 'figure1b-creator-and-discussion.ipynb'
+
+Detailed analysis of the differences between our findings and the findings of Shibl et al. can be found in the 'figure1b-creator-and-discussion.ipynb' and 'final-comparision.ipnyb' jupyter notebooks.
+
+
 
 ### Metabolomics analysis
 
