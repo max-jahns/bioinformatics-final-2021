@@ -133,3 +133,10 @@ sed -i 's/_counts.txt//g' total_bin_counts.tsv
 #Annotate Bins
 #Performed according to the methods. Here we did not use genes in downstream analysis, as they are not needed for humann3, however they may be useful in manual GO ontology enrichment.
 Prokka
+mkdir /vortexfs1/omics/env-bio/users/katherine.lane/hw3-binning-kate-lane/scripts/prokka_bins_dir/
+
+for i in /vortexfs1/omics/env-bio/users/katherine.lane/hw3-binning-kate-lane/scripts/bins_dir/*fa
+do
+b=`basename $i .fa`
+cp $i /vortexfs1/omics/env-bio/users/katherine.lane/hw3-binning-kate-lane/scripts/prokka_bins_dir/${b}.fasta
+prokka --locustag $b --outdir $b --prefix $b /vortexfs1/omics/env-bio/users/katherine.lane/hw3-binning-kate-lane/scripts/prokka_bins_dir/${b}.fasta
