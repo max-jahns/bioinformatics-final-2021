@@ -1,0 +1,209 @@
+---
+title: "EB_mtab_compound_matching"
+author: "KHH"
+date: "12/6/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+The goal of this script is to look for a match in m/z and RT between the mzRTs described in the compound ID list (Table 4) and the mzRT + intensity data. Because the datasets are small, and because R plays very well locally but doesn't play as well on the HPC or Jupyter (especially with respect to downloading packages), I think this will work best if any reanalysis is also evaluated locally. Regardless, I've commented out lines that will not play well with the HPC (e.g., figure output). 
+
+Because my initial analysis was performed locally, the data path needs to be changed before reanalysis. This should be relevant when loading data and when outputting figures. I've tried to call attention to those spots. 
+
+## Load relevant libraries and data
+
+Change data path! 
+
+The data path here reflects my local analysis. Path should be changed to reflect the location of the data - you will need "Dataset_S01_edit.csv" and "Table_S4.csv," both of which can be found in the jahala directory and github repo under data/clean_data
+
+Data underwent some manual manipulation prior to being used in R: 
+ - Metadata information was collapsed into a single identifier to simplify analysis
+ - Table 4 was only provided in .pdf format by Shibl et al., so relevant data were manually transferred to a usable file format
+  - In table 4, m/z were manually calculated based on the listed mass (M (Da)) and adduct
+  - Retention time (RT) in seconds was manually calcualted in Excel from RT in minutes, which was given
+
+```{r}
+require(tidyverse)
+require(rstatix)
+
+mtab_data <- "~/Documents/MIT:WHOI JP/Classes/2021-2022/Environmental_Bioinformatics/Project/Paper/Dataset_S01_edit.csv"
+d_mtab <- read.table(mtab_data, header = TRUE, sep = ",", stringsAsFactors = FALSE)
+dim(d_mtab)
+#d_mtab_numeric <- d_mtab[c(1:72), c(2:1238)]
+#d_mtab_numeric_log <- mutate(log10(d_mtab_numeric + 1))
+
+mtab_ID <- "~/Documents/MIT:WHOI JP/Classes/2021-2022/Environmental_Bioinformatics/Project/Paper/Table_S4.csv"
+d_ID <- read.table(mtab_ID, header = TRUE, sep = ",", stringsAsFactors = FALSE)
+```
+
+## Set m/z ranges that reflect reasonable error tolerances
+
+Your error tolerance could be determined by the precision required for unambiguous formula assignments (0.0001 Da); by the reported instrumental accuracy for the instrument which generated these data (1 ppm, according to Bruker's advertising); or by other prior knowledge (e,g,, when I'm looking for a compound in chromatograms I generate for work, I extract for a m/z using a 5 ppm tolerance - so I consider 5 ppm to be a reasonable error threshold)
+
+```{r}
+#Select desired error tolerance - in order, 0.0001 Da; 1ppm; or 5ppm. Uncomment relevant line. Default is most tolerant - 5 ppm
+
+#d_ID$error <- 0.0001
+#d_ID$error <- d_ID$Calculated.m.z*(1E-6)
+d_ID$error <- d_ID$Calculated.m.z*(5E-6)
+
+d_ID$m.z.low <- d_ID$Calculated.m.z - d_ID$error
+d_ID$m.z.high <- d_ID$Calculated.m.z + d_ID$error
+```
+
+#Filter out mzRT data from intensity table - intensity is not relevant at present
+
+```{r}
+d_mzRT <- d_mtab[c(1:1237), c(1:2)]
+```
+
+##Try a way of matching "identified" compounds against sample mzRTs
+
+I'm pretty sure this is bad R and I should have tried this in a different language (literally anything else) with a for loop but I'm hacking it like this regardless. Sorry for the wildly inelegant solution!
+
+Here, I'm checking each sample m/z listed against the relevant m/z range for each metabolite reported as "confirmed" by Shibl et al. I generate a new column in my sample dataframe for each metabolite; that column contains a logical operator, where "TRUE" means that mzRT is a reasonable match for the "confirmed" metabolite represented by that column. I then count the instances of "TRUE" to evaluate if a reasonable m/z match for the reported "confirmed" metabolite is present in the sample data. 
+
+```{r}
+d_mzRT$aminobenzoate <- between(d_mzRT$m.z..positive.mode., d_ID[1,7], d_ID[1,8])
+length(d_mzRT$aminobenzoate[d_mzRT$aminobenzoate==TRUE])
+
+d_mzRT$Norvaline <- between(d_mzRT$m.z..positive.mode., d_ID[2,7], d_ID[2,8])
+length(d_mzRT$Norvaline[d_mzRT$Norvaline==TRUE])
+
+d_mzRT$Threonine <- between(d_mzRT$m.z..positive.mode., d_ID[3,7], d_ID[3,8])
+length(d_mzRT$Threonine[d_mzRT$Threonine==TRUE])
+
+d_mzRT$Hydroxybenzaldehyde <- between(d_mzRT$m.z..positive.mode., d_ID[4,7], d_ID[4,8])
+length(d_mzRT$Hydroxybenzaldehyde[d_mzRT$Hydroxybenzaldehyde==TRUE])
+
+d_mzRT$Leucine <- between(d_mzRT$m.z..positive.mode., d_ID[5,7], d_ID[5,8])
+length(d_mzRT$Leucine[d_mzRT$Leucine==TRUE])
+
+d_mzRT$Phenylacetic <- between(d_mzRT$m.z..positive.mode., d_ID[6,7], d_ID[6,8])
+length(d_mzRT$Phenylacetic[d_mzRT$Phenylacetic==TRUE])
+
+d_mzRT$Phenyl <- between(d_mzRT$m.z..positive.mode., d_ID[7,7], d_ID[7,8])
+length(d_mzRT$Phenyl[d_mzRT$Phenyl==TRUE])
+
+d_mzRT$Salicylic <- between(d_mzRT$m.z..positive.mode., d_ID[8,7], d_ID[8,8])
+length(d_mzRT$Salicylic[d_mzRT$Salicylic==TRUE])
+
+d_mzRT$Acetamidobutanoic <- between(d_mzRT$m.z..positive.mode., d_ID[9,7], d_ID[9,8])
+length(d_mzRT$Acetamidobutanoic[d_mzRT$Acetamidobutanoic==TRUE])
+
+d_mzRT$Methyglutaric <- between(d_mzRT$m.z..positive.mode., d_ID[10,7], d_ID[10,8])
+length(d_mzRT$Methyglutaric[d_mzRT$Methyglutaric==TRUE])
+
+d_mzRT$Hydroxyphenylacetate <- between(d_mzRT$m.z..positive.mode., d_ID[11,7], d_ID[11,8])
+length(d_mzRT$Hydroxyphenylacetate[d_mzRT$Hydroxyphenylacetate==TRUE])
+
+d_mzRT$Aminoadipate <- between(d_mzRT$m.z..positive.mode., d_ID[12,7], d_ID[12,8])
+length(d_mzRT$Aminoadipate[d_mzRT$Aminoadipate==TRUE])
+
+d_mzRT$Hydroxyphenylglycine <- between(d_mzRT$m.z..positive.mode., d_ID[13,7], d_ID[13,8])
+length(d_mzRT$Hydroxyphenylglycine[d_mzRT$Hydroxyphenylglycine==TRUE])
+
+d_mzRT$Methylhistidine <- between(d_mzRT$m.z..positive.mode., d_ID[14,7], d_ID[14,8])
+length(d_mzRT$Methylhistidine[d_mzRT$Methylhistidine==TRUE])
+
+d_mzRT$Quinolinecarboxylic <- between(d_mzRT$m.z..positive.mode., d_ID[15,7], d_ID[15,8])
+length(d_mzRT$Quinolinecarboxylic[d_mzRT$Quinolinecarboxylic==TRUE])
+
+d_mzRT$Suberic <- between(d_mzRT$m.z..positive.mode., d_ID[16,7], d_ID[16,8])
+length(d_mzRT$Suberic[d_mzRT$Suberic==TRUE])
+
+d_mzRT$Citrulline <- between(d_mzRT$m.z..positive.mode., d_ID[17,7], d_ID[17,8])
+length(d_mzRT$Citrulline[d_mzRT$Citrulline==TRUE])
+
+d_mzRT$Hippurate <- between(d_mzRT$m.z..positive.mode., d_ID[18,7], d_ID[18,8])
+length(d_mzRT$Hippurate[d_mzRT$Hippurate==TRUE])
+
+d_mzRT$Phosphoglyceric <- between(d_mzRT$m.z..positive.mode., d_ID[19,7], d_ID[19,8])
+length(d_mzRT$Phosphoglyceric[d_mzRT$Phosphoglyceric==TRUE])
+
+d_mzRT$Azelaic <- between(d_mzRT$m.z..positive.mode., d_ID[20,7], d_ID[20,8])
+length(d_mzRT$Azelaic[d_mzRT$Azelaic==TRUE])
+
+d_mzRT$Nacetylgalactosamine <- between(d_mzRT$m.z..positive.mode., d_ID[21,7], d_ID[21,8])
+length(d_mzRT$Nacetylgalactosamine[d_mzRT$Nacetylgalactosamine==TRUE])
+
+d_mzRT$Carnosine <- between(d_mzRT$m.z..positive.mode., d_ID[22,7], d_ID[22,8])
+length(d_mzRT$Carnosine[d_mzRT$Carnosine==TRUE])
+
+d_mzRT$Oleic <- between(d_mzRT$m.z..positive.mode., d_ID[23,7], d_ID[23,8])
+length(d_mzRT$Oleic[d_mzRT$Oleic==TRUE])
+
+d_mzRT$Stearic <- between(d_mzRT$m.z..positive.mode., d_ID[24,7], d_ID[24,8])
+length(d_mzRT$Stearic[d_mzRT$Stearic==TRUE])
+
+d_mzRT$Sphinganine <- between(d_mzRT$m.z..positive.mode., d_ID[25,7], d_ID[25,8])
+length(d_mzRT$Sphinganine[d_mzRT$Sphinganine==TRUE])
+
+d_mzRT$NTetradecanoylaspartic <- between(d_mzRT$m.z..positive.mode., d_ID[26,7], d_ID[26,8])
+length(d_mzRT$NTetradecanoylaspartic[d_mzRT$NTetradecanoylaspartic==TRUE])
+
+d_mzRT$Rosmarinic <- between(d_mzRT$m.z..positive.mode., d_ID[27,7], d_ID[27,8])
+length(d_mzRT$Rosmarinic[d_mzRT$Rosmarinic==TRUE])
+
+d_mzRT$glycerophosphocholine <- between(d_mzRT$m.z..positive.mode., d_ID[28,7], d_ID[28,8])
+length(d_mzRT$glycerophosphocholine[d_mzRT$glycerophosphocholine==TRUE])
+```
+
+This tells me that there is only one identified compound in the "d_ID" table that has matches in the "d_mzRT" table, and that there are three mzRTs that have an mzRT within error of that compound. That compound is "NTetradecanoylaspartic" (actual name N-Tetradecanoylaspartic acid). Now, of those three, let's see if there is a RT with a reasonable match
+
+##Filter for possible N-Tetradecanoylaspartic acid matches
+
+```{r}
+d_mzRT_Ntetradecanoylaspartic <- filter(d_mzRT, d_mzRT$NTetradecanoylaspartic==TRUE)
+```
+
+##Compare retention times
+
+I again apologize for the inelegant solution, but there's literally only one compound to look for out of only 28 compounds, so I've used view(d_ID) to find the retention time for identified N-Tetradecanoylaspartic acid. It's commented out here because I expect it won't work well with the HPC
+
+```{r}
+#view(d_ID)
+```
+
+This gives the RT for the N-tetradecanoylaspartic acid standard as 930.0 seconds
+
+Now, calculate the difference between sample RT and standard RT for the sample mzRTs which could (by mz) be N-Tttradecanoylaspartic acid
+
+```{r}
+d_mzRT_Ntetradecanoylaspartic$RT_diff_min <- (d_mzRT_Ntetradecanoylaspartic$RT - 930.0)/60
+print(d_mzRT_Ntetradecanoylaspartic$RT_diff_min)
+```
+
+All of the possible compounds to match N-tetradecanoylaspartic acid by m/z have a difference in retention time of at least 4.9 minutes - these cannot be the same compound. 
+
+So, in summary: 
+ - Shibl et al. claimed to have identified 28 compounds that went into their heatmap
+ - Of those 28, using a relatively liberal error of 5 ppm, 27 did not have a matching m/z in the available mzRT+intensity data
+ - One of the "identified" compounds, N-tetradecanoylaspartic acid, had matches in the available mzRT+intensity data. However none of those matches had a retention time close to Shibl et al.'s N-tetradecanoylaspartic acid standard; therefore these mzRTs cannot be the same compound
+ - 0 of the compounds reported as "identified" by Shibl et al. can be found in the available mzRT+intensity data
+
+##Plot this
+
+```{r}
+ID_result <- c('no mz match', 'mz match, no RT match')
+num_compounds <- c(27, 1)
+mzRT_results <- data.frame(ID_result, num_compounds)
+```
+
+```{r}
+#plot <- ggplot(mzRT_results, aes(x = ID_result, y = num_compounds, fill = ID_result))
+#plot + geom_col(show.legend = FALSE) + theme_bw() + geom_text(aes(label=num_compounds), vjust= -0.5) + ylab("Number of compounds") + xlab("ID result")
+```
+
+And export it!
+
+```{r}
+pdf(file = "~/Documents/MIT:WHOI JP/Classes/2021-2022/Environmental_Bioinformatics/Project/Paper/mzRT_match_results.pdf")
+plot <- ggplot(mzRT_results, aes(x = ID_result, y = num_compounds, fill = ID_result))
+plot + geom_col(show.legend = FALSE) + theme_bw() + geom_text(aes(label=num_compounds), vjust= -0.5) + ylab("Number of compounds") + xlab("ID result")
+dev.off()
+```
+

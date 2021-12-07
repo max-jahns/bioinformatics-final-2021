@@ -22,8 +22,8 @@
 #### -a subdirectory called 'trinotate' that contains a 'uniprot_sprot.pep', 'Trinotate.sqlite', and a 'Pfam-A.hmm' (if you do not, navigate to the path for the conda environment where trinotate is installed and look for the directory 'trinotate-sample-data', inside you will see a bash script called 'runMe.sh'. Run this in the tools folder and it will get all of these files for you.
 #### -a file to convert stringtie ouput into a table for DESeq called 'prepDE.py' (is this is missing, it is avaliable on the stringtie website  
 #### -a file containing the sequences of the illumina adapters called 'TruSeq3-PE.fa'
-# --make sure you are running this script from a conda environment identical to the 'diatom-transcriptome.yml' found in 'envs'
-# -this script will stop at functional annotation. differential expression and figure creation are carried out in the jupyter notebooks 'differential-expression-analysis.ipynb' and 'figure1b-creator-and-discussion.ipynb' respectively
+# --make sure you are running this script from a conda environment identical to the 'diatom_transcriptome.yml' found in 'envs'
+# -this script will stop at functional annotation. differential expression and figure creation are carried out in the jupyter notebooks 'differential-expression-analysis.ipynb' and 'figure1b-creator-and-discussion.ipynb' respectively (please use the r_jupyter.yml environment to open this)
 
 
 

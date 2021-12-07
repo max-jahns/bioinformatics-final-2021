@@ -1,0 +1,56 @@
+---
+title: "EB_mtab_20211206_heatmap"
+author: "KHH"
+date: "12/6/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Because the "confirmed" metabolites from Shibl et al. cannot be found in the list of sample mzRTs, generating a heatmap is a bit nonsensical. Regardless, this script is intended to be a quick exploration into how generating a heatmap would work, if I had relevant and reliable data. 
+
+Because my initial analysis was performed locally, the data path needs to be changed before reanalysis. This should be relevant when loading data and when outputting figures. I've tried to call attention to those spots. 
+
+##Install ComplexHeatmap
+
+```{r}
+library(devtools)
+
+install_github("jokergoo/ComplexHeatmap")
+```
+
+##Load packages I think I'll need
+
+```{r}
+require(ComplexHeatmap)
+require(tidyverse)
+```
+
+##Load data I think I'll need
+Change the path! 
+
+Load the same transposed data, with simplified sample identifiers, that I used in generating the PCAs: "Dataset_S01_edit_3.R.csv." ComplexHeatmap didn't play well with non-numeric data, so this dataframe is trimmed accordingly. 
+
+```{r}
+mtab_data <- "~/Documents/MIT:WHOI JP/Classes/2021-2022/Environmental_Bioinformatics/Project/Paper/Dataset_S01_edit_3_R.csv"
+d_mtab <- read.table(mtab_data, header = FALSE, sep = ",", stringsAsFactors = FALSE)
+d_mtab_heatmap <- d_mtab[c(1:72), c(2:1238)]
+```
+
+##Try making a heatmap
+
+Change the path!
+
+```{r}
+d_mtab_heatmap <- data.matrix(d_mtab_heatmap)
+pdf(file = "~/Documents/MIT:WHOI JP/Classes/2021-2022/Environmental_Bioinformatics/Project/heatmap_1.pdf")
+heatmap(d_mtab_heatmap)
+dev.off()
+#heatmap(d_mtab_heatmap)
+```
+
+Interesting! It is mostly super boring and indistinguishable, but there are possibly interesting features on the left there. 
+
+Possible next steps: Collapse the number of samples (right side of figure here) into average value for any given condition/time (this more closely matches the paper's analysis, although I think truly trying to replicate their analysis is nonsensical without compound ID). Collapse number of compounds (bottom of figure here) into most interesting compounds - the stuff on the left. 
