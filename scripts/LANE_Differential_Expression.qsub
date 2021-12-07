@@ -111,3 +111,15 @@ done
 
 
 #Differential Expression with DESeq
+(metabat) [katherine.lane@poseidon-l2 megahit_assembly2]$ jgi_summarize_bam_contig_depths --outputDepth temp_depth.txt SRR10420352_mapped_all.sorted.bam
+
+ for i in SRR*_mapped_all.sorted.bam; do echo $i
+> b=`basename $i _mapped_all.sorted.bam`
+> jgi_summarize_bam_contig_depths --outputDepth ${b}_depth.txt $i
+> done
+
+
+(metabat) [katherine.lane@poseidon-l2 DESEQ]$ for i in *depth.txt ; do cut -f 3 $i > ${i}.tmp; done
+(metabat) [katherine.lane@poseidon-l2 DESEQ]$ for i in *tmp; do b=`basename $i _depth.txt.tmp`; sed "s/total/${b}_total/g" $i > ${i}.tmp
+(metabat) [katherine.lane@poseidon-l2 DESEQ]$ cut -f 1 SRR10420346_depth.txt >names.tmp
+(metabat) [katherine.lane@poseidon-l2 DESEQ]$ paste names.tmp SRR10420346_depth.txt.tmp.tmp SRR10420348_depth.txt.tmp.tmp SRR10420349_depth.txt.tmp.tmp SRR10420350_depth.txt.tmp.tmp SRR10420351_depth.txt.tmp.tmp SRR10420352_depth.txt.tmp.tmp SRR10420353_depth.txt.tmp.tmp > deseq_input.tsv
