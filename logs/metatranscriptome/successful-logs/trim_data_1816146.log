@@ -1,0 +1,62 @@
+TrimmomaticPE: Started with arguments:
+ -threads 36 SRR10420346_1.fastq SRR10420346_2.fastq SRR10420346_1.trimmed.fastq.gz SRR10420346_1un.trimmed.fastq.gz SRR10420346_2.trimmed.fastq.gz SRR10420346_2un.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:40:15 MINLEN:75
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred33
+Input Read Pairs: 102835265 Both Surviving: 98326533 (95.62%) Forward Only Surviving: 3345507 (3.25%) Reverse Only Surviving: 0 (0.00%) Dropped: 1163225 (1.13%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 36 SRR10420347_1.fastq SRR10420347_2.fastq SRR10420347_1.trimmed.fastq.gz SRR10420347_1un.trimmed.fastq.gz SRR10420347_2.trimmed.fastq.gz SRR10420347_2un.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:40:15 MINLEN:75
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred33
+Input Read Pairs: 20633581 Both Surviving: 20087167 (97.35%) Forward Only Surviving: 393340 (1.91%) Reverse Only Surviving: 0 (0.00%) Dropped: 153074 (0.74%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 36 SRR10420348_1.fastq SRR10420348_2.fastq SRR10420348_1.trimmed.fastq.gz SRR10420348_1un.trimmed.fastq.gz SRR10420348_2.trimmed.fastq.gz SRR10420348_2un.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:40:15 MINLEN:75
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred33
+Input Read Pairs: 25118165 Both Surviving: 23783336 (94.69%) Forward Only Surviving: 1032328 (4.11%) Reverse Only Surviving: 0 (0.00%) Dropped: 302501 (1.20%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 36 SRR10420349_1.fastq SRR10420349_2.fastq SRR10420349_1.trimmed.fastq.gz SRR10420349_1un.trimmed.fastq.gz SRR10420349_2.trimmed.fastq.gz SRR10420349_2un.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:40:15 MINLEN:75
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred33
+Input Read Pairs: 51543672 Both Surviving: 49005062 (95.07%) Forward Only Surviving: 2132281 (4.14%) Reverse Only Surviving: 0 (0.00%) Dropped: 406329 (0.79%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 36 SRR10420350_1.fastq SRR10420350_2.fastq SRR10420350_1.trimmed.fastq.gz SRR10420350_1un.trimmed.fastq.gz SRR10420350_2.trimmed.fastq.gz SRR10420350_2un.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:40:15 MINLEN:75
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred33
+Input Read Pairs: 64803185 Both Surviving: 59152873 (91.28%) Forward Only Surviving: 4329402 (6.68%) Reverse Only Surviving: 0 (0.00%) Dropped: 1320910 (2.04%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 36 SRR10420351_1.fastq SRR10420351_2.fastq SRR10420351_1.trimmed.fastq.gz SRR10420351_1un.trimmed.fastq.gz SRR10420351_2.trimmed.fastq.gz SRR10420351_2un.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:40:15 MINLEN:75
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred33
+Input Read Pairs: 53253237 Both Surviving: 49318166 (92.61%) Forward Only Surviving: 3232529 (6.07%) Reverse Only Surviving: 0 (0.00%) Dropped: 702542 (1.32%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 36 SRR10420352_1.fastq SRR10420352_2.fastq SRR10420352_1.trimmed.fastq.gz SRR10420352_1un.trimmed.fastq.gz SRR10420352_2.trimmed.fastq.gz SRR10420352_2un.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:40:15 MINLEN:75
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred33
+Input Read Pairs: 61627747 Both Surviving: 58015108 (94.14%) Forward Only Surviving: 2865962 (4.65%) Reverse Only Surviving: 0 (0.00%) Dropped: 746677 (1.21%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 36 SRR10420353_1.fastq SRR10420353_2.fastq SRR10420353_1.trimmed.fastq.gz SRR10420353_1un.trimmed.fastq.gz SRR10420353_2.trimmed.fastq.gz SRR10420353_2un.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:40:15 MINLEN:75
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred33
+Input Read Pairs: 102353778 Both Surviving: 96274628 (94.06%) Forward Only Surviving: 4940177 (4.83%) Reverse Only Surviving: 0 (0.00%) Dropped: 1138973 (1.11%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 36 SRR10411456_1.fastq SRR10411456_2.fastq SRR10411456_1.trimmed.fastq.gz SRR10411456_1un.trimmed.fastq.gz SRR10411456_2.trimmed.fastq.gz SRR10411456_2un.trimmed.fastq.gz ILLUMINACLIP:TruSeq3-PE.fa:2:40:15 MINLEN:75
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Quality encoding detected as phred33
+slurmstepd: error: *** JOB 1816146 ON pn053 CANCELLED AT 2021-12-04T21:46:35 ***

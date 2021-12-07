@@ -1,0 +1,2919 @@
+
+  Program:     SortMeRNA version 2.0, 29/11/2014
+  Copyright:   2012-2015 Bonsai Bioinformatics Research Group:
+               LIFL, University Lille 1, CNRS UMR 8022, INRIA Nord-Europe
+               OTU-picking extensions and continuing support developed in the Knight Lab,
+               BioFrontiers Institute, University of Colorado at Boulder
+  Disclaimer:  SortMeRNA comes with ABSOLUTELY NO WARRANTY; without even the
+               implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+               See the GNU Lesser General Public License for more details.
+  Contact:     Evguenia Kopylova, jenya.kopylov@gmail.com 
+               Laurent Noé, laurent.noe@lifl.fr
+               Hélène Touzet, helene.touzet@lifl.fr
+
+
+  Computing read file statistics ... done [60.21 sec]
+  size of reads file: 11538891220 bytes
+  partial section(s) to be executed: 62 of size 188743680 bytes 
+  Parameters summary:
+    Number of seeds = 2
+    Edges = 4 (as integer)
+    SW match = 2
+    SW mismatch = -3
+    SW gap open penalty = 5
+    SW gap extend penalty = 2
+    SW ambiguous nucleotide = -3
+    SQ tags are not output
+    Number of threads = 36
+
+  [4mBegin mmap reads section # 1[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Seed length = 18
+    Pass 1 = 18, Pass 2 = 9, Pass 3 = 3
+    Gumbel lambda = 0.612228
+    Gumbel K = 0.334926
+    Minimal SW score based on E-value = 61
+    Loading index part 1/1 ...  done [1.99 sec]
+    Begin index search ...  done [2.05 sec]
+    Freeing index ...  done [0.18 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Seed length = 18
+    Pass 1 = 18, Pass 2 = 9, Pass 3 = 3
+    Gumbel lambda = 0.612068
+    Gumbel K = 0.344763
+    Minimal SW score based on E-value = 61
+    Loading index part 1/1 ...  done [2.40 sec]
+    Begin index search ...  done [2.12 sec]
+    Freeing index ...  done [0.21 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Seed length = 18
+    Pass 1 = 18, Pass 2 = 9, Pass 3 = 3
+    Gumbel lambda = 0.617817
+    Gumbel K = 0.340589
+    Minimal SW score based on E-value = 57
+    Loading index part 1/1 ...  done [0.65 sec]
+    Begin index search ...  done [9.07 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Seed length = 18
+    Pass 1 = 18, Pass 2 = 9, Pass 3 = 3
+    Gumbel lambda = 0.616617
+    Gumbel K = 0.341306
+    Minimal SW score based on E-value = 59
+    Loading index part 1/1 ...  done [2.24 sec]
+    Begin index search ...  done [0.99 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Seed length = 18
+    Pass 1 = 18, Pass 2 = 9, Pass 3 = 3
+    Gumbel lambda = 0.596230
+    Gumbel K = 0.322143
+    Minimal SW score based on E-value = 60
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Seed length = 18
+    Pass 1 = 18, Pass 2 = 9, Pass 3 = 3
+    Gumbel lambda = 0.597749
+    Gumbel K = 0.325630
+    Minimal SW score based on E-value = 57
+    Loading index part 1/1 ...  done [0.53 sec]
+    Begin index search ...  done [0.60 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Seed length = 18
+    Pass 1 = 18, Pass 2 = 9, Pass 3 = 3
+    Gumbel lambda = 0.602397
+    Gumbel K = 0.328927
+    Minimal SW score based on E-value = 62
+    Loading index part 1/1 ...  done [3.08 sec]
+    Begin index search ...  done [2.36 sec]
+    Freeing index ...  done [0.22 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Seed length = 18
+    Pass 1 = 18, Pass 2 = 9, Pass 3 = 3
+    Gumbel lambda = 0.603075
+    Gumbel K = 0.330488
+    Minimal SW score based on E-value = 62
+    Loading index part 1/1 ...  done [2.42 sec]
+    Begin index search ...  done [2.76 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 71859
+    Writing aligned FASTA/FASTQ ...  done [0.64 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.56 sec]
+
+  [4mBegin mmap reads section # 2[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.06 sec]
+    Freeing index ...  done [0.15 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.59 sec]
+    Begin index search ...  done [2.43 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [13.01 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.67 sec]
+    Begin index search ...  done [1.07 sec]
+    Freeing index ...  done [0.09 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.59 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.45 sec]
+    Begin index search ...  done [2.40 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.92 sec]
+    Freeing index ...  done [0.17 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 145863
+    Writing aligned FASTA/FASTQ ...  done [0.70 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.49 sec]
+
+  [4mBegin mmap reads section # 3[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.10 sec]
+    Begin index search ...  done [2.16 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.41 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [18.79 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.15 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.48 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.59 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.45 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [3.32 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 223793
+    Writing aligned FASTA/FASTQ ...  done [0.73 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.51 sec]
+
+  [4mBegin mmap reads section # 4[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.10 sec]
+    Begin index search ...  done [2.31 sec]
+    Freeing index ...  done [0.21 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [2.67 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [24.37 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.69 sec]
+    Begin index search ...  done [1.25 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.55 sec]
+    Freeing index ...  done [0.23 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.95 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 306114
+    Writing aligned FASTA/FASTQ ...  done [0.84 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.43 sec]
+
+  [4mBegin mmap reads section # 5[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.84 sec]
+    Freeing index ...  done [0.27 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.19 sec]
+    Begin index search ...  done [2.85 sec]
+    Freeing index ...  done [0.21 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [30.48 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.69 sec]
+    Begin index search ...  done [1.34 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.86 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.70 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.45 sec]
+    Begin index search ...  done [2.69 sec]
+    Freeing index ...  done [0.21 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.05 sec]
+    Begin index search ...  done [2.84 sec]
+    Freeing index ...  done [0.18 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 392809
+    Writing aligned FASTA/FASTQ ...  done [0.80 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.85 sec]
+
+  [4mBegin mmap reads section # 6[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.11 sec]
+    Begin index search ...  done [2.05 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.13 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [8.82 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [0.99 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.83 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.59 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.36 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.74 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 464001
+    Writing aligned FASTA/FASTQ ...  done [0.65 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.97 sec]
+
+  [4mBegin mmap reads section # 7[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.06 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [2.20 sec]
+    Freeing index ...  done [0.19 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.25 sec]
+    Begin index search ...  done [12.94 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.66 sec]
+    Begin index search ...  done [1.05 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.59 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.41 sec]
+    Begin index search ...  done [2.48 sec]
+    Freeing index ...  done [0.22 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.77 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 538269
+    Writing aligned FASTA/FASTQ ...  done [0.67 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.53 sec]
+
+  [4mBegin mmap reads section # 8[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.14 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.46 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [18.94 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.16 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.56 sec]
+    Freeing index ...  done [0.21 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.94 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 616671
+    Writing aligned FASTA/FASTQ ...  done [0.74 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.44 sec]
+
+  [4mBegin mmap reads section # 9[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.24 sec]
+    Freeing index ...  done [0.19 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [2.61 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.26 sec]
+    Begin index search ...  done [22.09 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.70 sec]
+    Begin index search ...  done [1.21 sec]
+    Freeing index ...  done [0.10 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.48 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.45 sec]
+    Begin index search ...  done [2.58 sec]
+    Freeing index ...  done [0.24 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.81 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 698240
+    Writing aligned FASTA/FASTQ ...  done [0.73 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.38 sec]
+
+  [4mBegin mmap reads section # 10[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.19 sec]
+    Freeing index ...  done [0.15 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.51 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.25 sec]
+    Begin index search ...  done [20.58 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.67 sec]
+    Begin index search ...  done [1.18 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.48 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.78 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 778983
+    Writing aligned FASTA/FASTQ ...  done [0.75 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.43 sec]
+
+  [4mBegin mmap reads section # 11[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.11 sec]
+    Begin index search ...  done [2.03 sec]
+    Freeing index ...  done [0.15 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [2.08 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [9.67 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.66 sec]
+    Begin index search ...  done [1.00 sec]
+    Freeing index ...  done [0.09 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.83 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.59 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.35 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.77 sec]
+    Freeing index ...  done [0.16 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 850249
+    Writing aligned FASTA/FASTQ ...  done [0.74 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.53 sec]
+
+  [4mBegin mmap reads section # 12[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.10 sec]
+    Freeing index ...  done [0.15 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [2.30 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [14.95 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.67 sec]
+    Begin index search ...  done [1.08 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.41 sec]
+    Begin index search ...  done [2.50 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [3.21 sec]
+    Freeing index ...  done [0.17 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 925081
+    Writing aligned FASTA/FASTQ ...  done [0.70 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.46 sec]
+
+  [4mBegin mmap reads section # 13[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.21 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.49 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [20.84 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.67 sec]
+    Begin index search ...  done [1.18 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.47 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.89 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 1003158
+    Writing aligned FASTA/FASTQ ...  done [0.72 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.52 sec]
+
+  [4mBegin mmap reads section # 14[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.11 sec]
+    Begin index search ...  done [2.25 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [2.81 sec]
+    Freeing index ...  done [0.18 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [24.28 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.69 sec]
+    Begin index search ...  done [1.23 sec]
+    Freeing index ...  done [0.07 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.62 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.91 sec]
+    Freeing index ...  done [0.17 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 1085074
+    Writing aligned FASTA/FASTQ ...  done [1.19 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.68 sec]
+
+  [4mBegin mmap reads section # 15[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [2.36 sec]
+    Freeing index ...  done [0.19 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [2.79 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.25 sec]
+    Begin index search ...  done [27.03 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.69 sec]
+    Begin index search ...  done [1.27 sec]
+    Freeing index ...  done [0.10 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.61 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.44 sec]
+    Begin index search ...  done [2.59 sec]
+    Freeing index ...  done [0.21 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.83 sec]
+    Freeing index ...  done [0.18 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 1168882
+    Writing aligned FASTA/FASTQ ...  done [0.95 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.38 sec]
+
+  [4mBegin mmap reads section # 16[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.13 sec]
+    Begin index search ...  done [2.11 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.35 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [16.32 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.70 sec]
+    Begin index search ...  done [1.12 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.51 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.91 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 1245682
+    Writing aligned FASTA/FASTQ ...  done [0.71 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.68 sec]
+
+  [4mBegin mmap reads section # 17[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.10 sec]
+    Begin index search ...  done [2.18 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [2.50 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [21.44 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.21 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.51 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [3.21 sec]
+    Freeing index ...  done [0.16 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 1325849
+    Writing aligned FASTA/FASTQ ...  done [0.76 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.44 sec]
+
+  [4mBegin mmap reads section # 18[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.34 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [2.97 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.25 sec]
+    Begin index search ...  done [25.46 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.27 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.86 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.59 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.96 sec]
+    Freeing index ...  done [0.18 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 1410789
+    Writing aligned FASTA/FASTQ ...  done [1.07 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.94 sec]
+
+  [4mBegin mmap reads section # 19[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.11 sec]
+    Begin index search ...  done [2.41 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [3.53 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [24.69 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.70 sec]
+    Begin index search ...  done [1.28 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.57 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.55 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.97 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 1505244
+    Writing aligned FASTA/FASTQ ...  done [0.88 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.30 sec]
+
+  [4mBegin mmap reads section # 20[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.46 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [3.41 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [29.02 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.67 sec]
+    Begin index search ...  done [1.36 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.57 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.52 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [3.04 sec]
+    Freeing index ...  done [0.16 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 1600473
+    Writing aligned FASTA/FASTQ ...  done [0.89 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.75 sec]
+
+  [4mBegin mmap reads section # 21[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.11 sec]
+    Freeing index ...  done [0.15 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [2.35 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [15.54 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.67 sec]
+    Begin index search ...  done [1.10 sec]
+    Freeing index ...  done [0.07 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.61 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.41 sec]
+    Begin index search ...  done [2.41 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.97 sec]
+    Freeing index ...  done [0.17 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 1677441
+    Writing aligned FASTA/FASTQ ...  done [0.72 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.43 sec]
+
+  [4mBegin mmap reads section # 22[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.10 sec]
+    Begin index search ...  done [2.28 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [2.84 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [21.04 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.20 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.56 sec]
+    Freeing index ...  done [0.26 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.97 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 1757407
+    Writing aligned FASTA/FASTQ ...  done [0.75 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.44 sec]
+
+  [4mBegin mmap reads section # 23[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.37 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.71 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [25.25 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.69 sec]
+    Begin index search ...  done [1.25 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.46 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.92 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 1840203
+    Writing aligned FASTA/FASTQ ...  done [0.77 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.48 sec]
+
+  [4mBegin mmap reads section # 24[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.55 sec]
+    Freeing index ...  done [0.15 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [2.83 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [28.28 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.53 sec]
+    Freeing index ...  done [0.09 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.56 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.98 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 1926465
+    Writing aligned FASTA/FASTQ ...  done [1.02 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.43 sec]
+
+  [4mBegin mmap reads section # 25[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.48 sec]
+    Freeing index ...  done [0.15 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [3.25 sec]
+    Freeing index ...  done [0.19 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [33.70 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.69 sec]
+    Begin index search ...  done [1.42 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.86 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.57 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.57 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [3.05 sec]
+    Freeing index ...  done [0.16 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 2017941
+    Writing aligned FASTA/FASTQ ...  done [0.84 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.34 sec]
+
+  [4mBegin mmap reads section # 26[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.11 sec]
+    Begin index search ...  done [2.08 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [2.29 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.25 sec]
+    Begin index search ...  done [13.84 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.07 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.83 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.39 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.86 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 2092583
+    Writing aligned FASTA/FASTQ ...  done [0.72 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.49 sec]
+
+  [4mBegin mmap reads section # 27[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [2.17 sec]
+    Freeing index ...  done [0.18 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [2.46 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.25 sec]
+    Begin index search ...  done [17.88 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.67 sec]
+    Begin index search ...  done [1.14 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.86 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.51 sec]
+    Freeing index ...  done [0.23 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.94 sec]
+    Freeing index ...  done [0.17 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 2170504
+    Writing aligned FASTA/FASTQ ...  done [0.79 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.45 sec]
+
+  [4mBegin mmap reads section # 28[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.11 sec]
+    Begin index search ...  done [2.29 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.79 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [24.31 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.24 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.62 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.97 sec]
+    Freeing index ...  done [0.18 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 2252890
+    Writing aligned FASTA/FASTQ ...  done [0.78 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.51 sec]
+
+  [4mBegin mmap reads section # 29[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.10 sec]
+    Begin index search ...  done [2.31 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [3.13 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [23.33 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.22 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.52 sec]
+    Begin index search ...  done [2.50 sec]
+    Freeing index ...  done [0.23 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.89 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 2342088
+    Writing aligned FASTA/FASTQ ...  done [0.82 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.46 sec]
+
+  [4mBegin mmap reads section # 30[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.55 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [3.38 sec]
+    Freeing index ...  done [0.22 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [26.80 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.67 sec]
+    Begin index search ...  done [1.28 sec]
+    Freeing index ...  done [0.07 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.76 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.49 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.80 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 2434941
+    Writing aligned FASTA/FASTQ ...  done [0.88 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.30 sec]
+
+  [4mBegin mmap reads section # 31[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.13 sec]
+    Begin index search ...  done [2.19 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [2.56 sec]
+    Freeing index ...  done [0.18 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [18.98 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.17 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.59 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.48 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.88 sec]
+    Freeing index ...  done [0.18 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 2516465
+    Writing aligned FASTA/FASTQ ...  done [0.77 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.38 sec]
+
+  [4mBegin mmap reads section # 32[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.10 sec]
+    Begin index search ...  done [2.09 sec]
+    Freeing index ...  done [0.15 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.24 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [13.65 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.06 sec]
+    Freeing index ...  done [0.07 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.83 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.48 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.89 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 2590732
+    Writing aligned FASTA/FASTQ ...  done [0.69 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.47 sec]
+
+  [4mBegin mmap reads section # 33[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.11 sec]
+    Begin index search ...  done [2.21 sec]
+    Freeing index ...  done [0.15 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.44 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [19.67 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.67 sec]
+    Begin index search ...  done [1.17 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.56 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.92 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 2668759
+    Writing aligned FASTA/FASTQ ...  done [0.72 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.46 sec]
+
+  [4mBegin mmap reads section # 34[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.10 sec]
+    Begin index search ...  done [2.25 sec]
+    Freeing index ...  done [0.15 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.63 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.25 sec]
+    Begin index search ...  done [23.29 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.24 sec]
+    Freeing index ...  done [0.10 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.44 sec]
+    Begin index search ...  done [2.68 sec]
+    Freeing index ...  done [0.24 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.95 sec]
+    Freeing index ...  done [0.16 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 2749185
+    Writing aligned FASTA/FASTQ ...  done [0.74 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.43 sec]
+
+  [4mBegin mmap reads section # 35[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.10 sec]
+    Begin index search ...  done [2.41 sec]
+    Freeing index ...  done [0.18 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [2.91 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [30.17 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.32 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.57 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.44 sec]
+    Begin index search ...  done [2.43 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.05 sec]
+    Begin index search ...  done [2.86 sec]
+    Freeing index ...  done [0.16 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 2834921
+    Writing aligned FASTA/FASTQ ...  done [0.89 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.37 sec]
+
+  [4mBegin mmap reads section # 36[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.10 sec]
+    Begin index search ...  done [2.16 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [2.56 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [20.87 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.19 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.44 sec]
+    Begin index search ...  done [2.52 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.90 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 2914922
+    Writing aligned FASTA/FASTQ ...  done [0.74 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.48 sec]
+
+  [4mBegin mmap reads section # 37[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.19 sec]
+    Begin index search ...  done [2.08 sec]
+    Freeing index ...  done [0.18 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.19 sec]
+    Begin index search ...  done [2.20 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [12.66 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.66 sec]
+    Begin index search ...  done [1.04 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.83 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.43 sec]
+    Freeing index ...  done [0.24 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.80 sec]
+    Freeing index ...  done [0.17 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 2988858
+    Writing aligned FASTA/FASTQ ...  done [0.69 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.53 sec]
+
+  [4mBegin mmap reads section # 38[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.12 sec]
+    Begin index search ...  done [2.05 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.36 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.25 sec]
+    Begin index search ...  done [18.64 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.70 sec]
+    Begin index search ...  done [1.13 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.48 sec]
+    Begin index search ...  done [2.40 sec]
+    Freeing index ...  done [0.22 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.82 sec]
+    Freeing index ...  done [0.16 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 3066227
+    Writing aligned FASTA/FASTQ ...  done [0.72 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.44 sec]
+
+  [4mBegin mmap reads section # 39[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.10 sec]
+    Begin index search ...  done [2.20 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [2.48 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.25 sec]
+    Begin index search ...  done [20.87 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.17 sec]
+    Freeing index ...  done [0.09 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.44 sec]
+    Begin index search ...  done [2.53 sec]
+    Freeing index ...  done [0.23 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.05 sec]
+    Begin index search ...  done [2.90 sec]
+    Freeing index ...  done [0.16 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 3145432
+    Writing aligned FASTA/FASTQ ...  done [0.71 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.43 sec]
+
+  [4mBegin mmap reads section # 40[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.11 sec]
+    Begin index search ...  done [2.31 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [2.84 sec]
+    Freeing index ...  done [0.19 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [29.29 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.69 sec]
+    Begin index search ...  done [1.34 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.57 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.46 sec]
+    Begin index search ...  done [2.65 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.95 sec]
+    Freeing index ...  done [0.18 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 3230312
+    Writing aligned FASTA/FASTQ ...  done [0.77 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.37 sec]
+
+  [4mBegin mmap reads section # 41[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.10 sec]
+    Freeing index ...  done [0.18 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.33 sec]
+    Freeing index ...  done [0.21 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [16.11 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.66 sec]
+    Begin index search ...  done [1.11 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.48 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.60 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.39 sec]
+    Freeing index ...  done [0.21 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.83 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 3305290
+    Writing aligned FASTA/FASTQ ...  done [0.68 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.46 sec]
+
+  [4mBegin mmap reads section # 42[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.10 sec]
+    Begin index search ...  done [2.07 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [2.22 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [13.00 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.66 sec]
+    Begin index search ...  done [1.06 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.83 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.41 sec]
+    Begin index search ...  done [2.45 sec]
+    Freeing index ...  done [0.23 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.85 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 3378281
+    Writing aligned FASTA/FASTQ ...  done [0.71 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.53 sec]
+
+  [4mBegin mmap reads section # 43[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.17 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [2.43 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [19.86 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.18 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.56 sec]
+    Freeing index ...  done [0.23 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.90 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 3456262
+    Writing aligned FASTA/FASTQ ...  done [0.70 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.56 sec]
+
+  [4mBegin mmap reads section # 44[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.20 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.54 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [22.02 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.71 sec]
+    Begin index search ...  done [1.20 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.91 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.65 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.87 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 3535638
+    Writing aligned FASTA/FASTQ ...  done [0.79 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.72 sec]
+
+  [4mBegin mmap reads section # 45[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.35 sec]
+    Freeing index ...  done [0.15 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [2.80 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [28.79 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.32 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.86 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.57 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.68 sec]
+    Freeing index ...  done [0.22 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.05 sec]
+    Begin index search ...  done [2.92 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 3619926
+    Writing aligned FASTA/FASTQ ...  done [0.81 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.38 sec]
+
+  [4mBegin mmap reads section # 46[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.28 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.62 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [23.50 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.23 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.60 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.46 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.91 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 3701071
+    Writing aligned FASTA/FASTQ ...  done [0.75 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.40 sec]
+
+  [4mBegin mmap reads section # 47[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.12 sec]
+    Begin index search ...  done [2.14 sec]
+    Freeing index ...  done [0.15 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [2.46 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [18.95 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.14 sec]
+    Freeing index ...  done [0.07 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.41 sec]
+    Begin index search ...  done [2.47 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.86 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 3778877
+    Writing aligned FASTA/FASTQ ...  done [0.73 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.62 sec]
+
+  [4mBegin mmap reads section # 48[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.29 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [2.65 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [24.36 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.67 sec]
+    Begin index search ...  done [1.25 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.41 sec]
+    Begin index search ...  done [2.47 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.97 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 3860990
+    Writing aligned FASTA/FASTQ ...  done [0.76 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.61 sec]
+
+  [4mBegin mmap reads section # 49[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.56 sec]
+    Freeing index ...  done [0.18 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [3.06 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [25.65 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.67 sec]
+    Begin index search ...  done [1.27 sec]
+    Freeing index ...  done [0.07 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.57 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.56 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.91 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 3947951
+    Writing aligned FASTA/FASTQ ...  done [0.82 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.35 sec]
+
+  [4mBegin mmap reads section # 50[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.11 sec]
+    Begin index search ...  done [2.40 sec]
+    Freeing index ...  done [0.18 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [3.41 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [27.32 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.67 sec]
+    Begin index search ...  done [1.32 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.87 sec]
+    Freeing index ...  done [0.07 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.57 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.56 sec]
+    Freeing index ...  done [0.23 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.90 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 4042527
+    Writing aligned FASTA/FASTQ ...  done [0.88 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.26 sec]
+
+  [4mBegin mmap reads section # 51[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.10 sec]
+    Begin index search ...  done [2.49 sec]
+    Freeing index ...  done [0.15 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [3.21 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [29.11 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.67 sec]
+    Begin index search ...  done [1.34 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.86 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.57 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.65 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.95 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 4132782
+    Writing aligned FASTA/FASTQ ...  done [0.84 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.35 sec]
+
+  [4mBegin mmap reads section # 52[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.17 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.33 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [16.29 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.65 sec]
+    Begin index search ...  done [1.24 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.83 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.47 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.89 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 4209272
+    Writing aligned FASTA/FASTQ ...  done [0.73 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.59 sec]
+
+  [4mBegin mmap reads section # 53[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.24 sec]
+    Freeing index ...  done [0.15 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [2.56 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [22.76 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.22 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.68 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.91 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 4289632
+    Writing aligned FASTA/FASTQ ...  done [0.75 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.95 sec]
+
+  [4mBegin mmap reads section # 54[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.11 sec]
+    Begin index search ...  done [2.31 sec]
+    Freeing index ...  done [0.18 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.19 sec]
+    Begin index search ...  done [2.71 sec]
+    Freeing index ...  done [0.21 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [26.20 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.27 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.59 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.92 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 4372214
+    Writing aligned FASTA/FASTQ ...  done [0.76 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.50 sec]
+
+  [4mBegin mmap reads section # 55[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.43 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.89 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [27.57 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.69 sec]
+    Begin index search ...  done [1.31 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.57 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.60 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [3.08 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 4458418
+    Writing aligned FASTA/FASTQ ...  done [0.79 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.37 sec]
+
+  [4mBegin mmap reads section # 56[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.46 sec]
+    Freeing index ...  done [0.18 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [3.02 sec]
+    Freeing index ...  done [0.19 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [30.88 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.37 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.87 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.57 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.65 sec]
+    Freeing index ...  done [0.25 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.96 sec]
+    Freeing index ...  done [0.17 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 4546587
+    Writing aligned FASTA/FASTQ ...  done [0.96 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.33 sec]
+
+  [4mBegin mmap reads section # 57[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.09 sec]
+    Freeing index ...  done [0.18 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.32 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [15.09 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.66 sec]
+    Begin index search ...  done [1.09 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.41 sec]
+    Begin index search ...  done [2.51 sec]
+    Freeing index ...  done [0.23 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.86 sec]
+    Freeing index ...  done [0.16 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 4622032
+    Writing aligned FASTA/FASTQ ...  done [0.92 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.44 sec]
+
+  [4mBegin mmap reads section # 58[0m:
+  Time to mmap reads and set up pointers [0.41 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.09 sec]
+    Begin index search ...  done [2.17 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.49 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [20.13 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.67 sec]
+    Begin index search ...  done [1.18 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.45 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.90 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 4700824
+    Writing aligned FASTA/FASTQ ...  done [0.74 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.46 sec]
+
+  [4mBegin mmap reads section # 59[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.10 sec]
+    Begin index search ...  done [2.20 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [2.65 sec]
+    Freeing index ...  done [0.19 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [26.15 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.69 sec]
+    Begin index search ...  done [1.28 sec]
+    Freeing index ...  done [0.09 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.86 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.58 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.56 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.93 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 4783257
+    Writing aligned FASTA/FASTQ ...  done [0.77 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.44 sec]
+
+  [4mBegin mmap reads section # 60[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.10 sec]
+    Begin index search ...  done [2.30 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.18 sec]
+    Begin index search ...  done [2.94 sec]
+    Freeing index ...  done [0.18 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [25.09 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.66 sec]
+    Begin index search ...  done [1.24 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.84 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.61 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.43 sec]
+    Begin index search ...  done [2.54 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.04 sec]
+    Begin index search ...  done [2.79 sec]
+    Freeing index ...  done [0.15 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 4869604
+    Writing aligned FASTA/FASTQ ...  done [1.10 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.42 sec]
+
+  [4mBegin mmap reads section # 61[0m:
+  Time to mmap reads and set up pointers [0.40 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.15 sec]
+    Begin index search ...  done [2.35 sec]
+    Freeing index ...  done [0.18 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.17 sec]
+    Begin index search ...  done [3.10 sec]
+    Freeing index ...  done [0.17 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [29.89 sec]
+    Freeing index ...  done [0.03 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.68 sec]
+    Begin index search ...  done [1.34 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.85 sec]
+    Freeing index ...  done [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.57 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.42 sec]
+    Begin index search ...  done [2.62 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.03 sec]
+    Begin index search ...  done [2.85 sec]
+    Freeing index ...  done [0.16 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 4961244
+    Writing aligned FASTA/FASTQ ...  done [0.85 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [4.32 sec]
+
+  [4mBegin mmap reads section # 62[0m:
+  Time to mmap reads and set up pointers [0.06 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta[0m
+    Loading index part 1/1 ...  done [1.16 sec]
+    Begin index search ...  done [0.56 sec]
+    Freeing index ...  done [0.15 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.15 sec]
+    Begin index search ...  done [0.49 sec]
+    Freeing index ...  done [0.16 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.24 sec]
+    Begin index search ...  done [4.18 sec]
+    Freeing index ...  done [0.04 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.67 sec]
+    Begin index search ...  done [0.19 sec]
+    Freeing index ...  done [0.08 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta[0m
+    Loading index part 1/1 ...  done [0.47 sec]
+    Begin index search ...  done [0.13 sec]
+    Freeing index ...  done [0.05 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [0.22 sec]
+    Begin index search ...  done [0.08 sec]
+    Freeing index ...  done [0.02 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta[0m
+    Loading index part 1/1 ...  done [1.41 sec]
+    Begin index search ...  done [0.35 sec]
+    Freeing index ...  done [0.20 sec]
+
+  Begin analysis of: [0;34m/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta[0m
+    Loading index part 1/1 ...  done [1.02 sec]
+    Begin index search ...  done [0.42 sec]
+    Freeing index ...  done [0.14 sec]
+    Total number of reads mapped (incl. all reads file sections searched): 4974888
+    Writing aligned FASTA/FASTQ ...  done [0.15 sec]
+    Writing not-aligned FASTA/FASTQ ...  done [0.59 sec]

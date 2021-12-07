@@ -1,0 +1,92 @@
+[process:1376] === Options processing starts ... ===
+Found value: sortmerna
+Found flag: --ref
+Found value: /vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db1.idx:/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db2.idx of previous flag: --ref
+Found flag: --ref
+Found value: /vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db3.idx:/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db4.idx of previous flag: --ref
+Found flag: --ref
+Found value: /vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db5.idx:/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db6.idx of previous flag: --ref
+Found flag: --ref
+Found value: /vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db7.idx:/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db8.idx of previous flag: --ref
+Found flag: --reads
+Found value: /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metatranscriptome/sra_2/SRR10420346.extendedFrags.fastq of previous flag: --reads
+Found flag: --sam
+Previous flag: --sam is Boolean. Setting to True
+Found flag: --num_alignments
+Found value: 1 of previous flag: --num_alignments
+Found flag: --fastx
+Previous flag: --fastx is Boolean. Setting to True
+Found flag: --aligned
+Found value: out_SRR10420346_aligned_rRNA of previous flag: --aligned
+Found flag: --other
+Found value: out_SRR10420346_filtered_rRNA of previous flag: --other
+Found flag: -a
+Found value: 36 of previous flag: -a
+Found flag: -m
+Found value: 180 of previous flag: -m
+Found flag: -v
+[process:1460] Processing option: a with value: 36
+
+[opt_a:840] [0;33mWARNING[0m: Option '-a' was Deprecated in favour of '-threads'. Redirecting to 'threads' ...
+[process:1460] Processing option: aligned with value: out_SRR10420346_aligned_rRNA
+[process:1460] Processing option: fastx with value: 
+[process:1460] Processing option: m with value: 180
+[process:1460] Processing option: num_alignments with value: 1
+[process:1460] Processing option: other with value: out_SRR10420346_filtered_rRNA
+[process:1460] Processing option: reads with value: /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metatranscriptome/sra_2/SRR10420346.extendedFrags.fastq
+[opt_reads:97] Processing reads file [1] out of total [1] files
+[process:1460] Processing option: ref with value: /vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db1.idx:/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db2.idx
+[opt_ref:157] Processing reference [1] out of total [4] references
+
+[opt_ref:194] [0;31mERROR[0m: The file /vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db1.idx:/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db2.idx is not an existing/valid absolute or relative path
+Reference file (FASTA) absolute or relative path.
+
+       Use mutliple times, once per a reference file
+
+
+[process:1376] === Options processing starts ... ===
+Found value: sortmerna
+Found flag: --ref
+Found value: /vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db1.idx:/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db2.idx of previous flag: --ref
+Found flag: --ref
+Found value: /vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5.8s-database-id98.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db3.idx:/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/rfam-5s-database-id98.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db4.idx of previous flag: --ref
+Found flag: --ref
+Found value: /vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-16s-id95.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db5.idx:/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-arc-23s-id98.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db6.idx of previous flag: --ref
+Found flag: --ref
+Found value: /vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-16s-id90.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db7.idx:/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-bac-23s-id98.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db8.idx of previous flag: --ref
+Found flag: --reads
+Found value: /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metatranscriptome/sra_2/SRR10420347.extendedFrags.fastq of previous flag: --reads
+Found flag: --sam
+Previous flag: --sam is Boolean. Setting to True
+Found flag: --num_alignments
+Found value: 1 of previous flag: --num_alignments
+Found flag: --fastx
+Previous flag: --fastx is Boolean. Setting to True
+Found flag: --aligned
+Found value: out_SRR10420347_aligned_rRNA of previous flag: --aligned
+Found flag: --other
+Found value: out_SRR10420347_filtered_rRNA of previous flag: --other
+Found flag: -a
+Found value: 36 of previous flag: -a
+Found flag: -m
+Found value: 180 of previous flag: -m
+Found flag: -v
+[process:1460] Processing option: a with value: 36
+
+[opt_a:840] [0;33mWARNING[0m: Option '-a' was Deprecated in favour of '-threads'. Redirecting to 'threads' ...
+[process:1460] Processing option: aligned with value: out_SRR10420347_aligned_rRNA
+[process:1460] Processing option: fastx with value: 
+[process:1460] Processing option: m with value: 180
+[process:1460] Processing option: num_alignments with value: 1
+[process:1460] Processing option: other with value: out_SRR10420347_filtered_rRNA
+[process:1460] Processing option: reads with value: /vortexfs1/omics/env-bio/collaboration/jahala/data/raw_data/metatranscriptome/sra_2/SRR10420347.extendedFrags.fastq
+[opt_reads:97] Processing reads file [1] out of total [1] files
+[process:1460] Processing option: ref with value: /vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db1.idx:/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db2.idx
+[opt_ref:157] Processing reference [1] out of total [4] references
+
+[opt_ref:194] [0;31mERROR[0m: The file /vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-18s-id95.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db1.idx:/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/silva-euk-28s-id98.fasta,/vortexfs1/omics/env-bio/collaboration/jahala/tools/sortmerna/db2.idx is not an existing/valid absolute or relative path
+Reference file (FASTA) absolute or relative path.
+
+       Use mutliple times, once per a reference file
+
+
