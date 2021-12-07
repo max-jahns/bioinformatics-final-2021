@@ -27,11 +27,13 @@ This repository contains the following directories:
 
 ### Metabolomics analysis
 
-The metabolomic data used in this project were relatively small and manageable, and required analysis in R. We find R much easier to use locally rather than on Poseidon, so analysis was performed locally, and relevant scripts, data, and outputs were then moved to Poseidon. It's therefore likely that the easiest way to re-run these analyses is locally as well. Analysis was performed in R version 4.1.2.
+The metabolomic data used in this project were relatively small and manageable, and required analysis in R. We find R much easier to use locally rather than on Poseidon, so analysis was performed locally, and relevant scripts, data, and outputs were then moved to Poseidon. Analysis was performed in R version 4.1.2.
 
-Data underwent some manual manipulation prior to being used in R. "Clean" data : 
+Data underwent some manual manipulation prior to being used in R. "Clean" data reflects this manual manipulation: 
  - Metadata information was collapsed into a single identifier to simplify analysis
  - Table 4 was only provided in .pdf format by Shibl et al., so relevant data were manually transferred to a usable file format. Further manual manipulation enabled some early-stage data exploration: 
    - In Table 4, m/z were manually calculated based on the listed mass (M (Da)) and adduct.
    - Retention time (RT) in seconds was manually calculated in Excel from RT in minutes, which was given. 
  - Metadata (not collapsed into a single identifier) in Dataset_S01 was preserved in a separate file
+
+Data for re-running metabolomics analyses can be found in data/clean_data/metabolome; scripts can be found in scripts/metabolomics; and output figures can be found in output/metabolomics. In addition, analysis/figure_2* contains the scripts used to generate the relevant figures described by the directory name. Scripts will require editing the data path - to reflect the local environment, if rerunning analysis is also more easily done locally, or Poseidon path.
