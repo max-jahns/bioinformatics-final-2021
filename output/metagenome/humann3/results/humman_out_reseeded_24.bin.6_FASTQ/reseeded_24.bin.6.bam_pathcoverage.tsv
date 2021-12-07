@@ -1,0 +1,143 @@
+# Pathway	reseeded_24.bin.6.bam_Coverage
+UNMAPPED	1.0000000000
+UNINTEGRATED	1.0000000000
+UNINTEGRATED|g__Alteromonas.s__Alteromonas_macleodii	1.0000000000
+UNINTEGRATED|unclassified	1.0000000000
+FAO-PWY: fatty acid &beta;-oxidation I (generic)	1.0000000000
+FAO-PWY: fatty acid &beta;-oxidation I (generic)|g__Alteromonas.s__Alteromonas_macleodii	1.0000000000
+PWY-5136: fatty acid &beta;-oxidation II (plant peroxisome)	1.0000000000
+PWY-5136: fatty acid &beta;-oxidation II (plant peroxisome)|g__Alteromonas.s__Alteromonas_macleodii	1.0000000000
+PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II	1.0000000000
+PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II|g__Alteromonas.s__Alteromonas_macleodii	1.0000000000
+PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II	1.0000000000
+PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II|g__Alteromonas.s__Alteromonas_macleodii	1.0000000000
+PWY-5138: fatty acid &beta;-oxidation IV (unsaturated, even number)	1.0000000000
+PWY-5138: fatty acid &beta;-oxidation IV (unsaturated, even number)|g__Alteromonas.s__Alteromonas_macleodii	1.0000000000
+SO4ASSIM-PWY: assimilatory sulfate reduction I	1.0000000000
+SO4ASSIM-PWY: assimilatory sulfate reduction I|g__Alteromonas.s__Alteromonas_macleodii	1.0000000000
+PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I	0.9866143353
+PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I|g__Alteromonas.s__Alteromonas_macleodii	0.9946939536
+PWY1ZNC-1: assimilatory sulfate reduction IV	1.0000000000
+PWY1ZNC-1: assimilatory sulfate reduction IV|g__Alteromonas.s__Alteromonas_macleodii	1.0000000000
+PWY-6124: inosine-5'-phosphate biosynthesis II	0.9999998767
+PWY-6124: inosine-5'-phosphate biosynthesis II|g__Alteromonas.s__Alteromonas_macleodii	0.9999999844
+PWY-6123: inosine-5'-phosphate biosynthesis I	0.9999998972
+PWY-6123: inosine-5'-phosphate biosynthesis I|g__Alteromonas.s__Alteromonas_macleodii	0.9999999870
+PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)	0.7541384846
+PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)|unclassified	1.0000000000
+SULFATE-CYS-PWY: superpathway of sulfate assimilation and cysteine biosynthesis	0.9103054602
+SULFATE-CYS-PWY: superpathway of sulfate assimilation and cysteine biosynthesis|g__Alteromonas.s__Alteromonas_macleodii	0.9524555187
+PWY-7221: guanosine ribonucleotides de novo biosynthesis	0.9800549916
+PWY-7221: guanosine ribonucleotides de novo biosynthesis|g__Alteromonas.s__Alteromonas_macleodii	0.9920619901
+PWY-5667: CDP-diacylglycerol biosynthesis I	0.9999999878
+PWY-5667: CDP-diacylglycerol biosynthesis I|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY0-1319: CDP-diacylglycerol biosynthesis II	0.9999999878
+PWY0-1319: CDP-diacylglycerol biosynthesis II|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-6125: superpathway of guanosine nucleotides de novo biosynthesis II	0.0000000126
+PWY-6125: superpathway of guanosine nucleotides de novo biosynthesis II|g__Alteromonas.s__Alteromonas_macleodii	0.0000001340
+PWY-841: superpathway of purine nucleotides de novo biosynthesis I	0.0000000000
+PWY-841: superpathway of purine nucleotides de novo biosynthesis I|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+SER-GLYSYN-PWY: superpathway of L-serine and glycine biosynthesis I	0.8227789735
+SER-GLYSYN-PWY: superpathway of L-serine and glycine biosynthesis I|g__Alteromonas.s__Alteromonas_macleodii	0.9009140511
+PWY0-862: (5Z)-dodecenoate biosynthesis I	0.0149430672
+PWY0-862: (5Z)-dodecenoate biosynthesis I|g__Alteromonas.s__Alteromonas_macleodii	0.0433321982
+PWY-7208: superpathway of pyrimidine nucleobases salvage	0.0000011517
+PWY-7208: superpathway of pyrimidine nucleobases salvage|g__Alteromonas.s__Alteromonas_macleodii	0.0000083650
+PWY-2942: L-lysine biosynthesis III	0.0000000000
+PWY-7977: L-methionine biosynthesis IV	0.0008141715
+PWY-7977: L-methionine biosynthesis IV|g__Alteromonas.s__Alteromonas_macleodii	0.0032339607
+PWY-7664: oleate biosynthesis IV (anaerobic)	0.0081295975
+PWY-7664: oleate biosynthesis IV (anaerobic)|g__Alteromonas.s__Alteromonas_macleodii	0.0250520119
+PWY-5097: L-lysine biosynthesis VI	0.0000000000
+PWY-5973: cis-vaccenate biosynthesis	0.0124837179
+PWY-5973: cis-vaccenate biosynthesis|g__Alteromonas.s__Alteromonas_macleodii	0.0363730194
+PWY-7663: gondoate biosynthesis (anaerobic)	0.0100119719
+PWY-7663: gondoate biosynthesis (anaerobic)|g__Alteromonas.s__Alteromonas_macleodii	0.0293116464
+FASYN-ELONG-PWY: fatty acid elongation -- saturated	0.0069763379
+FASYN-ELONG-PWY: fatty acid elongation -- saturated|g__Alteromonas.s__Alteromonas_macleodii	0.0215503031
+PWY-7234: inosine-5'-phosphate biosynthesis III	0.0000000000
+PWY-7234: inosine-5'-phosphate biosynthesis III|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-6282: palmitoleate biosynthesis I (from (5Z)-dodec-5-enoate)	0.0059272267
+PWY-6282: palmitoleate biosynthesis I (from (5Z)-dodec-5-enoate)|g__Alteromonas.s__Alteromonas_macleodii	0.0184761107
+PWY-7858: (5Z)-dodecenoate biosynthesis II	0.0063421443
+PWY-7858: (5Z)-dodecenoate biosynthesis II|g__Alteromonas.s__Alteromonas_macleodii	0.0198344547
+PWY-3841: folate transformations II (plants)	0.0000000000
+PWY-3841: folate transformations II (plants)|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+1CMET2-PWY: folate transformations III (E. coli)	0.0000000000
+1CMET2-PWY: folate transformations III (E. coli)|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)	0.0000000000
+ANAGLYCOLYSIS-PWY: glycolysis III (from glucose)|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+ARO-PWY: chorismate biosynthesis I	0.0000000000
+ARO-PWY: chorismate biosynthesis I|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II	0.0000033728
+PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II|g__Alteromonas.s__Alteromonas_macleodii	0.0000028596
+PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis	0.0000033728
+PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis|g__Alteromonas.s__Alteromonas_macleodii	0.0000028596
+PYRIDOXSYN-PWY: pyridoxal 5'-phosphate biosynthesis I	0.0000000000
+PYRIDOXSYN-PWY: pyridoxal 5'-phosphate biosynthesis I|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-6703: preQ0 biosynthesis	0.0000000000
+PWY-6703: preQ0 biosynthesis|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+DAPLYSINESYN-PWY: L-lysine biosynthesis I	0.0000000000
+PWY-5855: ubiquinol-7 biosynthesis (early decarboxylation)	0.0000000000
+PWY-5855: ubiquinol-7 biosynthesis (early decarboxylation)|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-5686: UMP biosynthesis I	0.0000000000
+PWY-5686: UMP biosynthesis I|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+HISTSYN-PWY: L-histidine biosynthesis	0.0000000000
+HISTSYN-PWY: L-histidine biosynthesis|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis	0.0000000000
+COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-7197: pyrimidine deoxyribonucleotide phosphorylation	0.0000000000
+PWY-7197: pyrimidine deoxyribonucleotide phosphorylation|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-6163: chorismate biosynthesis from 3-dehydroquinate	0.0000000000
+PWY-6163: chorismate biosynthesis from 3-dehydroquinate|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I	0.0000000000
+PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-7199: pyrimidine deoxyribonucleosides salvage	0.0000000004
+PWY-7199: pyrimidine deoxyribonucleosides salvage|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+NONMEVIPP-PWY: methylerythritol phosphate pathway I	0.0000000000
+NONMEVIPP-PWY: methylerythritol phosphate pathway I|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+UDPNAGSYN-PWY: UDP-N-acetyl-D-glucosamine biosynthesis I	0.0000000000
+UDPNAGSYN-PWY: UDP-N-acetyl-D-glucosamine biosynthesis I|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-6147: 6-hydroxymethyl-dihydropterin diphosphate biosynthesis I	0.0000000000
+PWY-6147: 6-hydroxymethyl-dihydropterin diphosphate biosynthesis I|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-5659: GDP-mannose biosynthesis	0.0000000000
+DTDPRHAMSYN-PWY: dTDP-&beta;-L-rhamnose biosynthesis	0.0000000000
+DTDPRHAMSYN-PWY: dTDP-&beta;-L-rhamnose biosynthesis|unclassified	1.0000000000
+PANTO-PWY: phosphopantothenate biosynthesis I	0.0000000000
+PANTO-PWY: phosphopantothenate biosynthesis I|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-6823: molybdopterin biosynthesis	0.0000000000
+PWY-6823: molybdopterin biosynthesis|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY66-429: fatty acid biosynthesis initiation (mitochondria)	0.0000000000
+PWY66-429: fatty acid biosynthesis initiation (mitochondria)|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-6700: queuosine biosynthesis I (de novo)	0.0000000000
+PWY-6700: queuosine biosynthesis I (de novo)|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-6936: seleno-amino acid biosynthesis (plants)	0.0000000000
+PWY-6936: seleno-amino acid biosynthesis (plants)|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+OANTIGEN-PWY: O-antigen building blocks biosynthesis (E. coli)	0.0000000000
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)	0.0000000000
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-1269: CMP-3-deoxy-D-manno-octulosonate biosynthesis	0.0000000000
+PWY-1269: CMP-3-deoxy-D-manno-octulosonate biosynthesis|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-6151: S-adenosyl-L-methionine salvage I	0.0000000000
+PWY-6151: S-adenosyl-L-methionine salvage I|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+NAGLIPASYN-PWY: lipid IVA biosynthesis (E. coli)	0.0000000000
+NAGLIPASYN-PWY: lipid IVA biosynthesis (E. coli)|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-8073: lipid IVA biosynthesis (P. putida)	0.0000000000
+PWY-8073: lipid IVA biosynthesis (P. putida)|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+HEME-BIOSYNTHESIS-II: heme b biosynthesis I (aerobic)	0.0000000000
+HEME-BIOSYNTHESIS-II: heme b biosynthesis I (aerobic)|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+HEME-BIOSYNTHESIS-II-1: heme b biosynthesis V (aerobic)	0.0000000000
+HEME-BIOSYNTHESIS-II-1: heme b biosynthesis V (aerobic)|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+HEMESYN2-PWY: heme b biosynthesis II (oxygen-independent)	0.0000000000
+HEMESYN2-PWY: heme b biosynthesis II (oxygen-independent)|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)	0.0000000000
+ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+HISDEG-PWY: L-histidine degradation I	0.0000000000
+HISDEG-PWY: L-histidine degradation I|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+GLUTORN-PWY: L-ornithine biosynthesis I	0.0000000000
+GLUTORN-PWY: L-ornithine biosynthesis I|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-5695: inosine 5'-phosphate degradation	0.0000000000
+PWY-5695: inosine 5'-phosphate degradation|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000
+PWY-6608: guanosine nucleotides degradation III	0.0000000000
+PWY-6608: guanosine nucleotides degradation III|g__Alteromonas.s__Alteromonas_macleodii	0.0000000000

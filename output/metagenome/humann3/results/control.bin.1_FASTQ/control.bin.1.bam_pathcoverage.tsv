@@ -1,0 +1,54 @@
+# Pathway	control.bin.1.bam_Coverage
+UNMAPPED	1.0000000000
+UNINTEGRATED	1.0000000000
+UNINTEGRATED|unclassified	1.0000000000
+PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II	1.0000000000
+PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II|unclassified	1.0000000000
+PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II	1.0000000000
+PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II|unclassified	1.0000000000
+PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I	0.9999941757
+PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I|unclassified	0.9999941757
+PWY-7221: guanosine ribonucleotides de novo biosynthesis	0.9999912636
+PWY-7221: guanosine ribonucleotides de novo biosynthesis|unclassified	0.9999912636
+PWY1ZNC-1: assimilatory sulfate reduction IV	0.9999952547
+PWY1ZNC-1: assimilatory sulfate reduction IV|unclassified	0.9999952547
+SO4ASSIM-PWY: assimilatory sulfate reduction I	0.9999952547
+SO4ASSIM-PWY: assimilatory sulfate reduction I|unclassified	0.9999952547
+PWY-6969: TCA cycle V (2-oxoglutarate synthase)	0.6639144389
+PWY-6969: TCA cycle V (2-oxoglutarate synthase)|unclassified	0.6639144389
+PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II	0.0763929344
+PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II|unclassified	0.0763929344
+PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis	0.0763929344
+PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis|unclassified	0.0763929344
+PWY-7663: gondoate biosynthesis (anaerobic)	0.0073504923
+PWY-7663: gondoate biosynthesis (anaerobic)|unclassified	0.0073504923
+PWY0-862: (5Z)-dodecenoate biosynthesis I	0.0000000287
+PWY0-862: (5Z)-dodecenoate biosynthesis I|unclassified	0.0000000287
+PWY66-429: fatty acid biosynthesis initiation (mitochondria)	0.0000000000
+PWY66-429: fatty acid biosynthesis initiation (mitochondria)|unclassified	0.0000000000
+PWY-5913: partial TCA cycle (obligate autotrophs)	0.0000000000
+PWY-5913: partial TCA cycle (obligate autotrophs)|unclassified	0.0000000000
+DTDPRHAMSYN-PWY: dTDP-&beta;-L-rhamnose biosynthesis	0.0000000000
+DTDPRHAMSYN-PWY: dTDP-&beta;-L-rhamnose biosynthesis|unclassified	0.0000000000
+VALSYN-PWY: L-valine biosynthesis	0.0000000000
+VALSYN-PWY: L-valine biosynthesis|unclassified	0.0000000000
+GLYOXYLATE-BYPASS: glyoxylate cycle	0.0000000000
+GLYOXYLATE-BYPASS: glyoxylate cycle|unclassified	0.0000000000
+PWY-6123: inosine-5'-phosphate biosynthesis I	0.0000000000
+PWY-6123: inosine-5'-phosphate biosynthesis I|unclassified	0.0000000000
+PWY-6124: inosine-5'-phosphate biosynthesis II	0.0000000000
+PWY-6124: inosine-5'-phosphate biosynthesis II|unclassified	0.0000000000
+PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I	0.0000000000
+PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I|unclassified	0.0000000000
+PWY-6823: molybdopterin biosynthesis	0.0000000000
+PWY-6823: molybdopterin biosynthesis|unclassified	0.0000000000
+PWY-7664: oleate biosynthesis IV (anaerobic)	0.0000000000
+PWY-7664: oleate biosynthesis IV (anaerobic)|unclassified	0.0000000000
+FASYN-ELONG-PWY: fatty acid elongation -- saturated	0.0000000000
+FASYN-ELONG-PWY: fatty acid elongation -- saturated|unclassified	0.0000000000
+PWY-6282: palmitoleate biosynthesis I (from (5Z)-dodec-5-enoate)	0.0000000000
+PWY-6282: palmitoleate biosynthesis I (from (5Z)-dodec-5-enoate)|unclassified	0.0000000000
+PWY-7858: (5Z)-dodecenoate biosynthesis II	0.0000000000
+PWY-7858: (5Z)-dodecenoate biosynthesis II|unclassified	0.0000000000
+PWY-5973: cis-vaccenate biosynthesis	0.0000000000
+PWY-5973: cis-vaccenate biosynthesis|unclassified	0.0000000000

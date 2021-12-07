@@ -1,0 +1,122 @@
+# Pathway	reseeded_05.bin.15.bam_Coverage
+UNMAPPED	1.0000000000
+UNINTEGRATED	1.0000000000
+UNINTEGRATED|unclassified	1.0000000000
+VALSYN-PWY: L-valine biosynthesis	0.9999999109
+VALSYN-PWY: L-valine biosynthesis|unclassified	0.9999999109
+NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch) I	0.7102432137
+NONOXIPENT-PWY: pentose phosphate pathway (non-oxidative branch) I|unclassified	0.7102432137
+COA-PWY: coenzyme A biosynthesis I (prokaryotic)	0.9999998580
+COA-PWY: coenzyme A biosynthesis I (prokaryotic)|unclassified	0.9999998580
+PWY-8178: pentose phosphate pathway (non-oxidative branch) II	0.0000037167
+PWY-8178: pentose phosphate pathway (non-oxidative branch) II|unclassified	0.0000037167
+BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched chain amino acid biosynthesis	0.0000547530
+BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched chain amino acid biosynthesis|unclassified	0.0000547530
+ILEUSYN-PWY: L-isoleucine biosynthesis I (from threonine)	0.0000438029
+ILEUSYN-PWY: L-isoleucine biosynthesis I (from threonine)|unclassified	0.0000438029
+HEME-BIOSYNTHESIS-II: heme b biosynthesis I (aerobic)	0.6504662446
+HEME-BIOSYNTHESIS-II: heme b biosynthesis I (aerobic)|unclassified	0.6504662446
+HEME-BIOSYNTHESIS-II-1: heme b biosynthesis V (aerobic)	0.6504662446
+HEME-BIOSYNTHESIS-II-1: heme b biosynthesis V (aerobic)|unclassified	0.6504662446
+PWY-5686: UMP biosynthesis I	0.0541397443
+PWY-5686: UMP biosynthesis I|unclassified	0.0541397443
+PWY-7790: UMP biosynthesis II	0.0541397443
+PWY-7790: UMP biosynthesis II|unclassified	0.0541397443
+PWY-7791: UMP biosynthesis III	0.0541397443
+PWY-7791: UMP biosynthesis III|unclassified	0.0541397443
+PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)	0.0003090370
+PWY0-1586: peptidoglycan maturation (meso-diaminopimelate containing)|unclassified	0.0003090370
+ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)	0.0000000021
+ARGSYNBSUB-PWY: L-arginine biosynthesis II (acetyl cycle)|unclassified	0.0000000021
+PWY0-862: (5Z)-dodecenoate biosynthesis I	0.2864236889
+PWY0-862: (5Z)-dodecenoate biosynthesis I|unclassified	0.2864236889
+PWY-5103: L-isoleucine biosynthesis III	0.0000273773
+PWY-5103: L-isoleucine biosynthesis III|unclassified	0.0000273773
+PWY-5973: cis-vaccenate biosynthesis	0.3065771143
+PWY-5973: cis-vaccenate biosynthesis|unclassified	0.3065771143
+PWY-7663: gondoate biosynthesis (anaerobic)	0.2613592505
+PWY-7663: gondoate biosynthesis (anaerobic)|unclassified	0.2613592505
+PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II	0.2511568478
+PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II|unclassified	0.2511568478
+PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis	0.2511568478
+PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis|unclassified	0.2511568478
+CALVIN-PWY: Calvin-Benson-Bassham cycle	0.0000000000
+CALVIN-PWY: Calvin-Benson-Bassham cycle|unclassified	0.0000000000
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)	0.0000000016
+ARGSYN-PWY: L-arginine biosynthesis I (via L-ornithine)|unclassified	0.0000000016
+PWY66-429: fatty acid biosynthesis initiation (mitochondria)	0.1377497963
+PWY66-429: fatty acid biosynthesis initiation (mitochondria)|unclassified	0.1377497963
+NONMEVIPP-PWY: methylerythritol phosphate pathway I	0.0008389255
+NONMEVIPP-PWY: methylerythritol phosphate pathway I|unclassified	0.0008389255
+PWY-7221: guanosine ribonucleotides de novo biosynthesis	0.0004221784
+PWY-7221: guanosine ribonucleotides de novo biosynthesis|unclassified	0.0004221784
+PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I	0.0067635833
+PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I|unclassified	0.0067635833
+PWY0-162: superpathway of pyrimidine ribonucleotides de novo biosynthesis	0.0000000008
+PWY0-162: superpathway of pyrimidine ribonucleotides de novo biosynthesis|unclassified	0.0000000008
+COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis	0.0000000000
+COMPLETE-ARO-PWY: superpathway of aromatic amino acid biosynthesis|unclassified	0.0000000000
+PWY-1269: CMP-3-deoxy-D-manno-octulosonate biosynthesis	0.0154116356
+PWY-1269: CMP-3-deoxy-D-manno-octulosonate biosynthesis|unclassified	0.0154116356
+PWY-5723: Rubisco shunt	0.0000000000
+PWY-5723: Rubisco shunt|unclassified	0.0000000000
+GLUTORN-PWY: L-ornithine biosynthesis I	0.0000000073
+GLUTORN-PWY: L-ornithine biosynthesis I|unclassified	0.0000000073
+PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I	0.0000000005
+PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I|unclassified	0.0000000005
+ARO-PWY: chorismate biosynthesis I	0.0000000005
+ARO-PWY: chorismate biosynthesis I|unclassified	0.0000000005
+PWY-6700: queuosine biosynthesis I (de novo)	0.0000064613
+PWY-6700: queuosine biosynthesis I (de novo)|unclassified	0.0000064613
+PWY-6163: chorismate biosynthesis from 3-dehydroquinate	0.0000000005
+PWY-6163: chorismate biosynthesis from 3-dehydroquinate|unclassified	0.0000000005
+PWY-6125: superpathway of guanosine nucleotides de novo biosynthesis II	0.0000000004
+PWY-6125: superpathway of guanosine nucleotides de novo biosynthesis II|unclassified	0.0000000004
+PWY-7664: oleate biosynthesis IV (anaerobic)	0.0000000000
+PWY-7664: oleate biosynthesis IV (anaerobic)|unclassified	0.0000000000
+PWY-6270: isoprene biosynthesis I	0.0000000000
+PWY-6270: isoprene biosynthesis I|unclassified	0.0000000000
+PWY-7560: methylerythritol phosphate pathway II	0.0000000000
+PWY-7560: methylerythritol phosphate pathway II|unclassified	0.0000000000
+FASYN-ELONG-PWY: fatty acid elongation -- saturated	0.0000000000
+FASYN-ELONG-PWY: fatty acid elongation -- saturated|unclassified	0.0000000000
+PWY-6123: inosine-5'-phosphate biosynthesis I	0.0000024455
+PWY-6123: inosine-5'-phosphate biosynthesis I|unclassified	0.0000024455
+PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II	0.0000000003
+PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II|unclassified	0.0000000003
+PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II	0.0000000003
+PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II|unclassified	0.0000000003
+PWY-6282: palmitoleate biosynthesis I (from (5Z)-dodec-5-enoate)	0.0000000000
+PWY-6282: palmitoleate biosynthesis I (from (5Z)-dodec-5-enoate)|unclassified	0.0000000000
+PWY-7858: (5Z)-dodecenoate biosynthesis II	0.0000000000
+PWY-7858: (5Z)-dodecenoate biosynthesis II|unclassified	0.0000000000
+PWY-6385: peptidoglycan biosynthesis III (mycobacteria)	0.0000000000
+PWY-6385: peptidoglycan biosynthesis III (mycobacteria)|unclassified	0.0000000000
+PWY-6823: molybdopterin biosynthesis	0.0000000000
+PWY-6823: molybdopterin biosynthesis|unclassified	0.0000000000
+PEPTIDOGLYCANSYN-PWY: peptidoglycan biosynthesis I (meso-diaminopimelate containing)	0.0000000000
+PEPTIDOGLYCANSYN-PWY: peptidoglycan biosynthesis I (meso-diaminopimelate containing)|unclassified	0.0000000000
+GLUCONEO-PWY: gluconeogenesis I	0.0000000000
+GLUCONEO-PWY: gluconeogenesis I|unclassified	0.0000000000
+PWY-7234: inosine-5'-phosphate biosynthesis III	0.0000000000
+PWY-7234: inosine-5'-phosphate biosynthesis III|unclassified	0.0000000000
+HISTSYN-PWY: L-histidine biosynthesis	0.0000000000
+HISTSYN-PWY: L-histidine biosynthesis|unclassified	0.0000000000
+PWY-6124: inosine-5'-phosphate biosynthesis II	0.0000000000
+PWY-6124: inosine-5'-phosphate biosynthesis II|unclassified	0.0000000000
+PWY-5913: partial TCA cycle (obligate autotrophs)	0.0000000000
+PWY-5913: partial TCA cycle (obligate autotrophs)|unclassified	0.0000000000
+PWY-7197: pyrimidine deoxyribonucleotide phosphorylation	0.0000000000
+PWY-7197: pyrimidine deoxyribonucleotide phosphorylation|unclassified	0.0000000000
+PWY-6387: UDP-N-acetylmuramoyl-pentapeptide biosynthesis I (meso-diaminopimelate containing)	0.0000000000
+PWY-6387: UDP-N-acetylmuramoyl-pentapeptide biosynthesis I (meso-diaminopimelate containing)|unclassified	0.0000000000
+PWY-7953: UDP-N-acetylmuramoyl-pentapeptide biosynthesis III (meso-diaminopimelate containing)	0.0000000000
+PWY-7953: UDP-N-acetylmuramoyl-pentapeptide biosynthesis III (meso-diaminopimelate containing)|unclassified	0.0000000000
+DAPLYSINESYN-PWY: L-lysine biosynthesis I	0.0000000000
+DAPLYSINESYN-PWY: L-lysine biosynthesis I|unclassified	0.0000000000
+GLYOXYLATE-BYPASS: glyoxylate cycle	0.0000000000
+GLYOXYLATE-BYPASS: glyoxylate cycle|unclassified	0.0000000000
+PWY-6703: preQ0 biosynthesis	0.0000000000
+PWY-6703: preQ0 biosynthesis|unclassified	0.0000000000
+UDPNAGSYN-PWY: UDP-N-acetyl-D-glucosamine biosynthesis I	0.0000000000
+UDPNAGSYN-PWY: UDP-N-acetyl-D-glucosamine biosynthesis I|unclassified	0.0000000000

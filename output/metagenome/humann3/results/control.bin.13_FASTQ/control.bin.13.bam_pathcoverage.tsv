@@ -1,0 +1,20 @@
+# Pathway	control.bin.13.bam_Coverage
+UNMAPPED	1.0000000000
+UNINTEGRATED	1.0000000000
+UNINTEGRATED|unclassified	1.0000000000
+SO4ASSIM-PWY: assimilatory sulfate reduction I	1.0000000000
+SO4ASSIM-PWY: assimilatory sulfate reduction I|unclassified	1.0000000000
+PWY1ZNC-1: assimilatory sulfate reduction IV	0.9999999960
+PWY1ZNC-1: assimilatory sulfate reduction IV|unclassified	0.9999999960
+VALSYN-PWY: L-valine biosynthesis	0.9999999520
+VALSYN-PWY: L-valine biosynthesis|unclassified	0.9999999520
+PWY-7221: guanosine ribonucleotides de novo biosynthesis	0.6326984866
+PWY-7221: guanosine ribonucleotides de novo biosynthesis|unclassified	0.6326984866
+BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched chain amino acid biosynthesis	0.0002621840
+BRANCHED-CHAIN-AA-SYN-PWY: superpathway of branched chain amino acid biosynthesis|unclassified	0.0002621840
+ILEUSYN-PWY: L-isoleucine biosynthesis I (from threonine)	0.0002097587
+ILEUSYN-PWY: L-isoleucine biosynthesis I (from threonine)|unclassified	0.0002097587
+HISTSYN-PWY: L-histidine biosynthesis	0.2820033213
+HISTSYN-PWY: L-histidine biosynthesis|unclassified	0.2820033213
+PWY-5103: L-isoleucine biosynthesis III	0.0001311095
+PWY-5103: L-isoleucine biosynthesis III|unclassified	0.0001311095
