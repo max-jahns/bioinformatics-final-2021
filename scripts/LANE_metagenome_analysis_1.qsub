@@ -3,12 +3,12 @@
 #SBATCH --partition=compute
 #SBATCH --job-name=metagenome
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=katelane@mit.edu
+#SBATCH --mail-user=[YOUR EMAIL]@mit.edu
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=180G
 #SBATCH --time=48:00:00
-#SBATCH --output=metagenome%j.log
+#SBATCH --output=metagenome_%j.log
 #export OMP_NUM_THREADS=36
 
 #Run the setup.sh script first
