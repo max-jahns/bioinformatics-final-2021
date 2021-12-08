@@ -5,14 +5,14 @@ channels:
   - defaults
 dependencies:
   - sra-tools=2.11.3
-  - trimmomatic
-  - flash
-  - express
+  - trimmomatic=0.32
+  - flash=1.2.11
+  - express=1.5.1
   - sortmerna=3
-  - bowtie2
-  - humann3
+  - bowtie2=2.3.3
+  - humann=3.0.1
   - samtools
   - gtdbtk=1.3.0
-  - prokka
-  - metabat2
-  - bwa
+  - prokka=1.12.0
+  - metabat2=2.15.0
+  - bbtools=37.10
